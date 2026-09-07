@@ -1,0 +1,31 @@
+{
+  "source": "https://github.com/terrorlua/obfuscator-samples",
+  "ref": "main",
+  "snapshotNote": "Top-level families reviewed against the public repository on 2026-09-05. Public Prometheus examples show dense encoded string-table fragments; this release adds a conservative static table decoder. Run corpus:update to fetch the complete current sample tree locally.",
+  "families": [
+    "77fuscator",
+    "Boronide",
+    "Hercules",
+    "IronBrew2",
+    "Ironbrew1",
+    "Ironbrew3",
+    "LPS",
+    "LuaObfuscator",
+    "Luraph",
+    "MoonSec",
+    "MoonVeil",
+    "PSU",
+    "Prometheus",
+    "SynapseXen",
+    "wYnFuscate"
+  ],
+  "known_luraph_versions": [
+    "v1", "v2", "v3", "v4", "v5.1", "v6.3", "v7.2.3", "v8.0", "v9.2", "v10.2",
+    "v11.1", "v11.3", "v11.5", "v11.6", "v11.8.1", "v12.2", "v13.2.1", "v13.4.3",
+    "v13.4.5", "v13.5.3", "v13.5.4", "v13.5.6", "v13.5.8", "v13.5.9", "v13.6.6",
+    "v13.6.7", "v13.7", "v13.8", "v13.8.1", "v14.0.2", "v14.0.3", "v14.1", "v14.2",
+    "v14.3", "v14.4", "v14.4.1", "v14.4.2", "v14.5", "v14.5.1", "v14.5.2", "v14.6",
+    "v14.6.0", "v14.6.2", "v14.7", "v14.8", "v14.9", "v15.0"
+  ],
+  "known_moonsec_variants": ["V2", "V3"]
+}
