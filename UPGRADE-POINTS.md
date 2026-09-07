@@ -63,6 +63,8 @@
 ### 5. Chain resolver: URL động
 - ✅ ~~Chặn URL theo host~~ — **đã bỏ ở v3.3.1**: mọi link được liệt kê,
   Discord CDN (host script phổ biến) được theo như thường
+- ✅ URL nối từ các literal (`"https://.../" .. "script.lua"`) được gấp an toàn
+  trước khi phân loại và tự động follow; biểu thức có biến vẫn giữ `dynamic`
 - URL build bằng concatenation (`"https://"..host.."/x.lua"`) hoặc `%s` format
   → đánh dấu `dynamic`, không theo được
 - **Gợi ý**: constant-fold chuỗi concat trước khi extract URL; evaluator cho

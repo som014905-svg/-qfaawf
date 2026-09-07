@@ -1,4 +1,4 @@
-# 🔓 Luau Deobfuscation Engine v4.8.6
+# 🔓 Luau Deobfuscation Engine
 
 Engine deobfuscate script **Luau / Lua** (Roblox) — chạy standalone bằng **Bun**. Core không cần dependency (`node:zlib` + `node:crypto` có sẵn); engine **Luraph VM Structural Decoder** dùng thêm `luau-web` (Luau WASM thật) — optional, tự fallback về static analysis nếu thiếu.
 
@@ -17,6 +17,21 @@ Engine deobfuscate script **Luau / Lua** (Roblox) — chạy standalone bằng *
 > - `UPGRADE-POINTS.md` — 🔍 **các điểm còn yếu cần nâng cấp tiếp** (ưu tiên cao/trung bình/thấp + gợi ý cách làm + cách test nhanh)
 
 ---
+
+## 🆕 Chain resolver: gấp URL literal
+
+Loader chain giờ nhận diện URL được tạo từ các chuỗi literal nối bằng `..`, ví dụ:
+
+```lua
+loadstring(game:HttpGet("https://example.com/" .. "script.lua"))()
+```
+
+URL được gấp bằng vị trí token, không thực thi Lua. URL chứa biến, phép tính động
+hoặc placeholder `%s` vẫn được đánh dấu `dynamic` và không tự động follow.
+
+```bash
+npx tsx test-samples/unit-smoke.ts
+```
 
 
 ## 🆕 v4.8.6 — HeavyWeightFishing specialized profile
@@ -45,6 +60,25 @@ The package now ships a reproducible updater for the public `terrorlua/obfuscato
 Run `bun run corpus:update` to mirror the current Lua/Luau samples locally, then use
 `bun run test:corpus:detect` and `bun run test:corpus` for detection/deobfuscation sweeps.
 The updater records SHA-256 hashes and the upstream Git blob SHA in `corpus/upstream/manifest.json`.
+
+### Corpus validation status
+
+The upstream repository currently exposes 15 top-level families. It does
+**not** currently contain an XON sample, so XON support is not claimed until a
+reproducible sample is available and passes the detector/deobfuscation harness.
+
+```bash
+# Refresh the public corpus and write hashes/family statistics
+bun run corpus:update
+
+# Check detector coverage, then run the deobfuscation sweep
+bun run test:corpus:detect
+bun run test:corpus
+```
+
+The updater walks GitHub directories individually, which avoids the HTTP 500
+failure caused by the repository-wide recursive tree endpoint on large corpus
+snapshots.
 
 ## 🆕 v4.8 corpus-driven structural cleanup
 

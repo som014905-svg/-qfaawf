@@ -1,4 +1,26 @@
 
+# v5.7.0 — Corpus updater reliability and validation notes
+
+- Reworked `scripts-update-corpus.ts` to traverse GitHub's Contents API by
+  directory instead of relying on the repository-wide recursive Git tree,
+  which can return HTTP 500 for the current public corpus size.
+- The generated manifest now records the discovered top-level families and
+  prints the family count in the update summary.
+- Verified the updater against a small public repository and refreshed the
+  documentation to distinguish tested support from unverified obfuscator
+  names. The current `terrorlua/obfuscator-samples` tree has no XON family.
+- Added a source-tail guard to multi-pass cleanup so Luraph v15 candidates
+  cannot be accepted after being truncated during generic formatting.
+- Expanded conservative readability renaming to include local/parameter names
+  such as `v`, `i`, `j`, and `k`; globals, properties, table keys, and
+  reassigned names remain protected.
+- Property occurrences no longer suppress renaming of safe local occurrences
+  with the same short name. The Luraph v15 sample now renames 55 cryptic
+  locals/registers to `arg*`/`num*` names while leaving property accesses intact.
+- Readability naming now refines generic arguments by usage: indexed values use
+  `tbl*`, callable values use `fn*`, arithmetic/state-like values use `num*`,
+  and unknown values use `value*`.
+
 # v5.5.0 — Hercules deobfuscator + Clyde register-VM + Dava fork variants
 
 ## New: HerculesDeobfuscator (`hercules.ts`)

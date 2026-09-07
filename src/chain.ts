@@ -72,7 +72,8 @@ function escapeRe(s: string): string {
 
 /**
  * Extract every script-looking URL from a Lua source, classified by how it
- * is used. Sorted by follow-priority (highest first).
+ * is used. Literal concatenations are folded before classification and the
+ * result is sorted by follow-priority (highest first).
  */
 export function extractScriptUrls(src: string): ScriptUrl[] {
   const byUrl = new Map<string, ScriptUrl>();
@@ -82,9 +83,24 @@ export function extractScriptUrls(src: string): ScriptUrl[] {
   } catch {
     return [];
   }
+  // Resolve only adjacent string literals joined by `..`. This is deliberately
+  // token-position based, so comments, long strings, and executable expressions
+  // cannot be evaluated accidentally while recovering a loader URL.
+  const candidates: StringLiteral[] = [...literals];
+  for (let i = 0; i < literals.length; i++) {
+    let value = literals[i].value;
+    let end = literals[i].end;
+    for (let j = i + 1; j < literals.length; j++) {
+      const between = src.slice(end, literals[j].start);
+      if (!/^\s*\.\.\s*$/.test(between)) break;
+      value += literals[j].value;
+      end = literals[j].end;
+      candidates.push({ ...literals[i], value, end });
+    }
+  }
   const hasLoadstring = /\bloadstring\b/.test(src);
 
-  for (const lit of literals) {
+  for (const lit of candidates) {
     const raw = lit.value.trim();
     if (!/^https?:\/\//i.test(raw)) continue;
     if (!isScriptUrl(raw)) continue;

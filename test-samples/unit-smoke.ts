@@ -16,6 +16,13 @@ const directUrls = extractScriptUrls(`loadstring(game:HttpGet("https://example.c
 assert.equal(directUrls[0]?.usage, "loadstring");
 assert.equal(directUrls[0]?.score, 100);
 
+const concatenatedUrl = extractScriptUrls(
+  `loadstring(game:HttpGet("https://example.com/" .. "script.lua"))()`
+);
+assert.equal(concatenatedUrl[0]?.url, "https://example.com/script.lua");
+assert.equal(concatenatedUrl[0]?.usage, "loadstring");
+assert.equal(concatenatedUrl[0]?.dynamic, false);
+
 assert.equal(validateLuaSource("local x = (1 + 2)\n").ok, true);
 assert.equal(validateLuaSource("local x = (1 + 2\n").ok, false);
 

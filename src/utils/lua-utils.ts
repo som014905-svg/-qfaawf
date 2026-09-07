@@ -740,7 +740,7 @@ export function renameObfuscatedIdentifiers(src: string): { result: string; rena
 /** Idiomatic short names that must never be renamed. */
 const RENAME_KEEP = new Set([
   // loop / generic conventions
-  "i", "j", "k", "v", "n", "self", "_", "_G", "_ENV",
+  "n", "self", "_", "_G", "_ENV",
   // meaningful 2–3 letter words
   "ok", "err", "msg", "key", "val", "res", "obj", "arg", "args", "len",
   "str", "num", "tab", "fn", "cb", "id", "ret", "out", "pos", "idx",
@@ -881,6 +881,41 @@ export function renameCrypticLocals(src: string): { result: string; renamed: num
     }
   }
 
+  // Refine generic parameter names from their use sites. This is deliberately
+  // heuristic, but it gives VM code useful names without changing semantics:
+  // `x[...]` is table-like, `x(...)` is callable, and arithmetic/comparison
+  // with numeric literals is value/state-like.
+  const usageScore = new Map<string, { tbl: number; fn: number; num: number; value: number }>();
+  const usageFor = (name: string) => {
+    let score = usageScore.get(name);
+    if (!score) {
+      score = { tbl: 0, fn: 0, num: 0, value: 0 };
+      usageScore.set(name, score);
+    }
+    return score;
+  };
+  const arithmetic = new Set(["+", "-", "*", "/", "%", "^", "//", "<", ">", "<=", ">=", "==", "~=", "and", "or"]);
+  for (let m = 0; m < sig.length; m++) {
+    const t = sig[m];
+    if (t.kind !== "identifier" || !declPrefix.has(t.text) || !isCrypticLocalName(t.text)) continue;
+    const score = usageFor(t.text);
+    const prev = sig[m - 1];
+    const next = sig[m + 1];
+    if (next?.text === "[") score.tbl += 3;
+    if (next?.text === "(") score.fn += 3;
+    if (arithmetic.has(prev?.text ?? "") || arithmetic.has(next?.text ?? "") ||
+        prev?.kind === "number" || next?.kind === "number") score.num += 2;
+    score.value++;
+  }
+  for (const [name, score] of usageScore) {
+    const current = declPrefix.get(name);
+    if (current !== "arg" && current !== "var") continue;
+    if (score.tbl >= score.fn && score.tbl >= score.num && score.tbl > 0) declPrefix.set(name, "tbl");
+    else if (score.fn >= score.num && score.fn > 0) declPrefix.set(name, "fn");
+    else if (score.num > 0) declPrefix.set(name, "num");
+    else if (score.value > 0) declPrefix.set(name, "value");
+  }
+
   // ---- Pass 2: safety analysis per candidate name ----
   const occurrences = new Map<string, number[]>();
   for (let m = 0; m < sig.length; m++) {
@@ -899,12 +934,11 @@ export function renameCrypticLocals(src: string): { result: string; renamed: num
     for (const m of idxs) {
       const prev = sig[m - 1];
       const next = sig[m + 1];
-      if (prev && (prev.text === "." || prev.text === ":")) {
-        safe = false; // property access with same text — too risky
-        break;
-      }
-      if (next && next.text === "=" && !isLocalDeclTarget(sig, m)) {
-        safe = false; // possible table key { a = … } or re-assignment
+      // A property occurrence does not invalidate the local occurrences of
+      // the same short name. It is simply excluded from replacements below.
+      // This matters for VM code where `v` may be both a register and a field.
+      if (next && next.text === "=" && !isLocalDeclTarget(sig, m) && !declPrefix.has(name)) {
+        safe = false; // ambiguous constructor field, not a proven local
         break;
       }
     }
@@ -937,7 +971,7 @@ export function renameCrypticLocals(src: string): { result: string; renamed: num
     const newName = renameMap.get(t.text);
     if (!newName) continue;
     const prev = sig[m - 1];
-    if (prev && (prev.text === "." || prev.text === ":")) continue; // paranoia
+    if (prev && (prev.text === "." || prev.text === ":")) continue;
     replacements.push({ start: t.start, end: t.end, text: newName });
   }
   if (replacements.length === 0) return { result: src, renamed: 0 };

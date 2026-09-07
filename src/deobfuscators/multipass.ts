@@ -3,7 +3,7 @@ import { DeobfuscateContext, DeobfuscateResult } from '../types';
 import { GenericDeobfuscator } from './generic';
 import { scoreLuaSource, diffSummary } from '../utils/quality';
 import { foldConstants } from '../passes/constant-fold';
-import { renameCrypticLocals } from '../utils/lua-utils';
+import { renameCrypticLocals, tokenize } from '../utils/lua-utils';
 import { recoverControlFlow } from '../passes/control-flow';
 import { validateLuaSource } from '../utils/validate';
 import { inlineStaticTables, inlineOffsetTableLookups, inlineNumericCacheAccessors, normalizeStdlibAliases, normalizeEnvStdlibAliases, foldSimpleXorDecoderFunctions, foldEncodedStringTableLiterals } from "../passes/static-resolve";
@@ -12,6 +12,19 @@ import { ModernVMDeobfuscator } from "./modern-vm";
 export interface MultiPassOptions {
   maxPasses: number;
   minImprovement: number;
+}
+
+function tailTokens(source: string, count = 8): string[] {
+  return [...tokenize(source)]
+    .filter((token) => token.kind !== "whitespace" && token.kind !== "newline" && token.kind !== "eof")
+    .slice(-count)
+    .map((token) => token.text);
+}
+
+function preservesTail(source: string, candidate: string): boolean {
+  const sourceTail = tailTokens(source);
+  const candidateTail = tailTokens(candidate);
+  return sourceTail.length === candidateTail.length && sourceTail.every((token, index) => token === candidateTail[index]);
 }
 
 /**
@@ -92,7 +105,9 @@ export async function runMultiPass(
       const candidate = table.result;
       const q = cachedScore(candidate);
       const beforeQ = cachedScore(current);
-      if ((xorDec.changed + encodedTables.changed + offsetTable.changed + cacheAccess.changed + envAlias.changed + alias.changed + table.changed) > 0 && q.balanced && q.score >= beforeQ.score - 0.02) {
+      const changed = xorDec.changed + encodedTables.changed + offsetTable.changed + cacheAccess.changed + envAlias.changed + alias.changed + table.changed;
+      if (changed > 0 && q.balanced && q.score >= beforeQ.score - 0.02 &&
+          (candidate.length >= current.length || preservesTail(current, candidate))) {
         current = candidate;
         foldNotes = [...foldNotes, ...xorDec.notes, ...encodedTables.notes, ...offsetTable.notes, ...cacheAccess.notes, ...envAlias.notes, ...alias.notes, ...table.notes];
       }
@@ -134,6 +149,10 @@ export async function runMultiPass(
     // Step B: run generic cleanup on the folded candidate.
     const childCtx: DeobfuscateContext = { ...ctx, input: current };
     const result = await generic.deobfuscate(childCtx);
+    if (result.output.length < current.length && !preservesTail(current, result.output)) {
+      history.push(`pass ${pass}: rejected candidate with a changed/truncated source tail`);
+      break;
+    }
     const before = cachedScore(current);
     const after = cachedScore(result.output);
     const delta = after.score - before.score;
