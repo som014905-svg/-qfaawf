@@ -266,7 +266,7 @@ export async function runDeobfuscation(
   // than a generic cleanup. This is intentionally capped to keep worst-case
   // runtime bounded on very large samples.
   candidates.sort((a, b) => b.rank - a.rank);
-  if (candidates.length > 1) {
+  if (candidates.length > 0) {
     const refineCount = Math.min(4, candidates.length);
     ctx.log(`>>> x10 portfolio refinement: ${refineCount} candidate(s)...`);
     for (let i = 0; i < refineCount; i++) {
@@ -446,6 +446,26 @@ export async function runDeobfuscation(
       }
     } catch (e: unknown) {
       ctx.log(`    validation failed: ${e instanceof Error ? e.message : String(e)}`);
+    }
+  }
+
+  // The winner may have changed substantially during the final cleanup or
+  // deep-convergence rounds. Re-score the actual emitted source so reports
+  // and CLI output never expose stale pre-cleanup quality metrics.
+  if (best) {
+    try {
+      const finalValidation = validation ?? validateLuaSource(best.output);
+      bestQuality = scoreOutputDetailed({
+        source: best.output,
+        inputBytes,
+        syntaxOk: finalValidation.ok,
+        syntaxErrors: finalValidation.issues.filter((x) => x.severity === "error").length,
+      });
+      if (selectionNote) {
+        selectionNote += `; final quality ${(bestQuality.score * 100).toFixed(0)}%`;
+      }
+    } catch (e: unknown) {
+      ctx.log(`    final quality scoring failed: ${e instanceof Error ? e.message : String(e)}`);
     }
   }
 

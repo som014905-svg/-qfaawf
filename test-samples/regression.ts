@@ -31,6 +31,7 @@ import {
   resolveColumnRoles,
 } from "../src/vm/luraph-lifter";
 import { extractScriptUrls } from "../src/chain";
+import { runDeobfuscation } from "../src/deobfuscators/orchestrator";
 
 let passed = 0;
 const failures: string[] = [];
@@ -53,8 +54,8 @@ function test_guard(name: string, fn: () => void | Promise<void>): void {
 
 // Since the harness above is async-chained, collect tests synchronously and
 // await at the end instead.
-const tests: Array<[string, () => void]> = [];
-function t(name: string, fn: () => void): void {
+const tests: Array<[string, () => void | Promise<void>]> = [];
+function t(name: string, fn: () => void | Promise<void>): void {
   tests.push([name, fn]);
 }
 void test_guard;
@@ -268,6 +269,38 @@ t("quality: broken syntax ranks below valid", () => {
   });
   assert.ok(good.score > bad.score, `${good.score} must beat ${bad.score}`);
   assert.ok(good.syntaxScore === 1 && bad.syntaxScore < 1);
+});
+
+t("orchestrator: quality report matches final cleaned output", async () => {
+  const input = `local x = "he" .. "llo"\nprint(x)\n`;
+  const report = await runDeobfuscation(
+    {
+      input,
+      baseName: "quality-regression",
+      source: "text",
+      log: () => {},
+    },
+    {
+      timeoutMs: 10_000,
+      acceptThreshold: 0.5,
+      maxPasses: 2,
+      minPassImprovement: 0,
+      parallel: false,
+      useCache: false,
+      deepRounds: 0,
+    },
+  );
+  assert.ok(report.best, "orchestrator should produce a result");
+  assert.ok(report.qualityDetailed, "final quality should be reported");
+  const validation = validateLuaSource(report.best.output);
+  const expected = scoreOutputDetailed({
+    source: report.best.output,
+    inputBytes: Buffer.byteLength(input),
+    syntaxOk: validation.ok,
+    syntaxErrors: validation.issues.filter((x) => x.severity === "error").length,
+  });
+  assert.equal(report.qualityDetailed.score, expected.score);
+  assert.match(report.selectionNote ?? "", /final quality/);
 });
 
 // ── validator ────────────────────────────────────────────────────────────
@@ -622,7 +655,7 @@ async function main(): Promise<void> {
   console.log(`regression: ${tests.length} tests`);
   for (const [name, fn] of tests) {
     try {
-      fn();
+      await fn();
       passed++;
       console.log(`  ✓ ${name}`);
     } catch (e) {
