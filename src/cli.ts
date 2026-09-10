@@ -129,11 +129,11 @@ async function main(): Promise<void> {
       deobf: {
         timeoutMs: args.timeout,
         acceptThreshold: 0.5,
-        maxPasses: 6,
+        maxPasses: 10,
         minPassImprovement: 0.012,
         // Tự bật sequential cho file lớn (an toàn bộ nhớ) — trừ khi user ép --seq.
         parallel: args.seq ? false : undefined,
-        deepRounds: args.deep,
+        deepRounds: Math.max(0, Math.min(4, args.deep)),
         deepMinImprovement: 0.008,
       },
     },

@@ -1,0 +1,17 @@
+{
+  "version": "6.0.0",
+  "sample": "Văn bản đã dán (1)(20260910-121654).txt",
+  "input_bytes": 2877924,
+  "output_bytes": 2684203,
+  "input_lines": 34148,
+  "output_lines": 32132,
+  "while_true_dispatchers_before": 369,
+  "while_true_dispatchers_after": 313,
+  "functions_lifted": 44,
+  "state_visits_recovered": 236,
+  "mode": "static conservative function-level VM recovery",
+  "network_or_dynamic_execution": false,
+  "notes": [
+    "Only acyclic, fully-proven dispatcher transitions are inlined. Ambiguous/cyclic blocks are preserved."
+  ]
+}

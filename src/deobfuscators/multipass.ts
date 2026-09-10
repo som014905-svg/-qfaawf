@@ -10,6 +10,8 @@ import { inlineStaticTables, inlineOffsetTableLookups, inlineNumericCacheAccesso
 import { ModernVMDeobfuscator } from "./modern-vm";
 import { recoverBinaryTreeDispatch } from "../passes/binary-tree-dispatch";
 import { recoverSemanticIdentifiers } from "../passes/semantic-identifiers";
+import { recoverFunctionLevelVm } from "../passes/function-level-vm";
+import { flattenStateDispatchers } from "../passes/state-dispatch-flattener";
 
 export interface MultiPassOptions {
   maxPasses: number;
@@ -37,6 +39,15 @@ function preservesTail(source: string, candidate: string): boolean {
  * plus a readability pass that renames cryptic locals (`local a = {…}` →
  * `local tbl1 = {…}`) with type inference.
  */
+function scoreStructuralGain(before: string, after: string): number {
+  const beforeLoops = (before.match(/\bwhile\s+true\s+do\b/gi) || []).length;
+  const afterLoops = (after.match(/\bwhile\s+true\s+do\b/gi) || []).length;
+  const beforeNested = (before.match(/\bif\s+(?:[A-Za-z_]\w*)\s*(?:<|<=|>|>=|==|~=)\s*-?\d+\s+then\s+if\b/gi) || []).length;
+  const afterNested = (after.match(/\bif\s+(?:[A-Za-z_]\w*)\s*(?:<|<=|>|>=|==|~=)\s*-?\d+\s+then\s+if\b/gi) || []).length;
+  const base = Math.max(1, beforeLoops + beforeNested);
+  return ((beforeLoops - afterLoops) + (beforeNested - afterNested)) / base;
+}
+
 export async function runMultiPass(
   base: DeobfuscateResult,
   ctx: DeobfuscateContext,
@@ -112,6 +123,43 @@ export async function runMultiPass(
           (candidate.length >= current.length || preservesTail(current, candidate))) {
         current = candidate;
         foldNotes = [...foldNotes, ...xorDec.notes, ...encodedTables.notes, ...offsetTable.notes, ...cacheAccess.notes, ...envAlias.notes, ...alias.notes, ...table.notes];
+      }
+    } catch {
+      // best-effort
+    }
+
+    // Step A1b.3 (v6.1): universal dispatcher flattening. This runs for
+    // every engine family, not just WeAreDevs/Luast. It handles direct and
+    // affine integer state registers and converts deep comparison trees into
+    // flat exact-state arms while preserving cycles.
+    try {
+      const flat = flattenStateDispatchers(current, { maxLoops: 240, maxStates: 192, maxOutput: Math.max(500_000, current.length * 2) });
+      if (flat.changed > 0) {
+        const q = cachedScore(flat.result);
+        const beforeFlat = cachedScore(current);
+        const metricGain = scoreStructuralGain(current, flat.result);
+        if (q.balanced && (q.score >= beforeFlat.score - 0.08 || metricGain >= 0.03)) {
+          current = flat.result;
+          foldNotes = [...foldNotes, ...flat.notes];
+        }
+      }
+    } catch {
+      // best-effort; never make a structural pass fatal.
+    }
+
+    // Step A1b.4 (v6.0): function-level VM dispatcher recovery.
+    // Specifically handles `state = CONSTANT - state` followed by a nested
+    // numeric comparison tree. The pass only inlines acyclic, fully-proven
+    // state transitions; cyclic/ambiguous dispatchers are preserved.
+    try {
+      const fl = recoverFunctionLevelVm(current, { maxFunctions: 96, maxStates: 128, maxOutput: 140_000 });
+      if (fl.changed > 0) {
+        const q = cachedScore(fl.result);
+        const beforeFl = cachedScore(current);
+        if (q.balanced && (q.score >= beforeFl.score - 0.06 || fl.functions >= 1)) {
+          current = fl.result;
+          foldNotes = [...foldNotes, ...fl.notes];
+        }
       }
     } catch {
       // best-effort

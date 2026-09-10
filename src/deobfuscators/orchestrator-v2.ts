@@ -36,12 +36,13 @@ export function runX10Pipeline(ir: any[]): X10Result {
   const region = structureCFG(blocks);
   const structured = emitStructured(region, blocks);
 
+  const structuralScore = scoreStructuredSource(structured);
   return {
     source: structured,
     antiTamper,
     lifetimes,
     structured,
-    quality: 97
+    quality: structuralScore
   };
 }
 
@@ -50,3 +51,12 @@ export function runX10WithLift(op: number, vip: number, cols: Map<string, number
 }
 
 export { getMnemonic, liftInstruction };
+
+function scoreStructuredSource(source: string): number {
+  const length = Math.max(1, source.length);
+  const nested = (source.match(/\bif\s+[^\n]+\s+then\s+if\b/gi) || []).length;
+  const loops = (source.match(/\bwhile\s+true\s+do\b/gi) || []).length;
+  const cryptic = (source.match(/\b(?:tbl|num|fn|var)\d+\b/g) || []).length;
+  const density = Math.max(0, 1 - (nested * 120 + loops * 30 + cryptic * 2) / length);
+  return Math.round(Math.max(0, Math.min(100, density * 100)));
+}

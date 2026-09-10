@@ -441,86 +441,81 @@ export function inlineNumericCacheAccessors(src: string): StaticResolveResult {
 /** Normalize local aliases of standard pure functions before constant-folding. */
 export function normalizeStdlibAliases(src: string): StaticResolveResult {
   const sig = sigTokens(src);
-  const aliases = new Map<string, string>();
-  const declCount = new Map<string, number>();
-  const allowed = new Set([
-    "string.char", "string.byte", "string.sub", "string.rep", "string.reverse",
-    "string.lower", "string.upper", "string.len", "math.floor", "math.ceil",
-    "math.abs", "math.max", "math.min", "table.concat", "table.insert",
-    "bit32", "bit",
+  const raw = new Map<string, string>();
+  const counts = new Map<string, number>();
+  const allowedBase = new Set(["string", "math", "table", "bit32", "bit", "tonumber", "tostring"]);
+  const allowedMembers = new Set([
+    "string.char", "string.byte", "string.sub", "string.rep", "string.reverse", "string.lower", "string.upper", "string.len",
+    "math.floor", "math.ceil", "math.abs", "math.max", "math.min", "table.concat", "table.insert",
     "bit32.bxor", "bit32.band", "bit32.bor", "bit32.bnot", "bit32.lshift", "bit32.rshift",
-    "tonumber", "tostring",
+    "bit.bxor", "bit.band", "bit.bor", "bit.bnot", "bit.lshift", "bit.rshift", "tonumber", "tostring",
   ]);
-
-  for (let i = 0; i + 4 < sig.length; i++) {
+  for (let i = 0; i + 3 < sig.length; i++) {
     if (sig[i].text !== "local" || sig[i + 1]?.kind !== "identifier" || sig[i + 2]?.text !== "=") continue;
     const alias = sig[i + 1].text;
     const a = sig[i + 3];
-    let target = "";
+    let target: string | null = null;
     if (a?.kind === "identifier" && sig[i + 4]?.text === "." && sig[i + 5]?.kind === "identifier") {
       target = `${a.text}.${sig[i + 5].text}`;
-    } else if (a?.kind === "identifier" && sig[i + 4]?.text === "[") {
-      const member = sig[i + 5];
-      if ((member?.kind === "string" || member?.kind === "longstring") && sig[i + 6]?.text === "]") {
-        target = `${a.text}.${member.value ?? ""}`;
-      }
+    } else if (a?.kind === "identifier" && sig[i + 4]?.text === "[" && (sig[i + 5]?.kind === "string" || sig[i + 5]?.kind === "longstring") && sig[i + 6]?.text === "]") {
+      target = `${a.text}.${String(sig[i + 5].value ?? "")}`;
     } else if (a?.kind === "identifier") {
       target = a.text;
     }
-    if (a?.kind === "identifier" && sig[i + 4]?.text === "or" && sig[i + 5]?.kind === "identifier" &&
-        ((a.text === "bit32" && sig[i + 5].text === "bit") || (a.text === "bit" && sig[i + 5].text === "bit32"))) {
-      target = "bit32";
-    }
-    if (allowed.has(target)) {
-      declCount.set(alias, (declCount.get(alias) ?? 0) + 1);
-      aliases.set(alias, target);
+    if (!target) continue;
+    // `bit32 or bit` style fallback is represented as a normal identifier in
+    // many minifiers; only record an explicit member or known global root.
+    if (allowedBase.has(target) || allowedMembers.has(target) || /^[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)?$/.test(target)) {
+      raw.set(alias, target);
+      counts.set(alias, (counts.get(alias) ?? 0) + 1);
     }
   }
-  // Resolve multi-hop alias chains such as
-  // `local a = bit32; local b = a; local bx = b["bxor"]`.
-  // Obfuscators commonly add several alias layers, so keep resolving to a
-  // fixed point with a strict depth cap. Cycles are rejected rather than
-  // executing or guessing through them.
-  const resolveAlias = (name: string, seen = new Set<string>(), depth = 0): string | null => {
-    if (depth > 8 || seen.has(name)) return null;
-    const target = aliases.get(name);
+  const resolve = (name: string, seen = new Set<string>(), depth = 0): string | null => {
+    if (depth > 12 || seen.has(name)) return null;
+    const target = raw.get(name);
     if (!target) return null;
-    const dot = target.indexOf(".");
-    if (dot <= 0) return allowed.has(target) ? target : (aliases.has(target) ? resolveAlias(target, new Set([...seen, name]), depth + 1) : null);
-    const base = target.slice(0, dot);
-    const member = target.slice(dot + 1);
-    const baseTarget = allowed.has(base) ? base : resolveAlias(base, new Set([...seen, name]), depth + 1);
-    if (!baseTarget) return null;
-    const resolved = `${baseTarget}.${member}`;
-    return allowed.has(resolved) ? resolved : null;
+    if (allowedMembers.has(target) || allowedBase.has(target)) return target;
+    if (target.includes(".")) {
+      const dot = target.indexOf(".");
+      const base = target.slice(0, dot);
+      const member = target.slice(dot + 1);
+      const rb = allowedBase.has(base) ? base : resolve(base, new Set([...seen, name]), depth + 1);
+      const combined = rb ? `${rb}.${member}` : null;
+      return combined && allowedMembers.has(combined) ? combined : null;
+    }
+    return resolve(target, new Set([...seen, name]), depth + 1);
   };
-
-  for (const name of [...aliases.keys()]) {
-    const resolved = resolveAlias(name);
-    if (resolved) aliases.set(name, resolved);
-    else aliases.delete(name);
+  const aliases = new Map<string, string>();
+  for (const name of raw.keys()) {
+    const r = resolve(name);
+    if (r && (counts.get(name) ?? 0) === 1) aliases.set(name, r);
   }
-  for (const [name, count] of declCount) if (count !== 1) aliases.delete(name);
-
   if (!aliases.size) return { result: src, changed: 0, notes: [] };
-
   const edits: Array<{ start: number; end: number; text: string }> = [];
+  // Canonicalise immutable alias declarations too. This makes multi-hop chains
+  // converge visibly (e.g. `local c=b` -> `local c=bit32`) before call sites
+  // are rewritten. Reassignable locals are left untouched.
+  for (let i = 0; i + 3 < sig.length; i++) {
+    if (sig[i].text !== "local" || sig[i + 1]?.kind !== "identifier" || sig[i + 2]?.text !== "=") continue;
+    const name = sig[i + 1].text;
+    const target = aliases.get(name);
+    if (!target) continue;
+    let rhsEnd = i + 4;
+    if (sig[i + 4]?.text === "." && sig[i + 5]?.kind === "identifier") rhsEnd = i + 6;
+    else if (sig[i + 4]?.text === "[" && sig[i + 6]?.text === "]") rhsEnd = i + 7;
+    const laterWrite = sig.slice(rhsEnd).some((t, k) => t.kind === "identifier" && t.text === name && sig[rhsEnd + k + 1]?.text === "=");
+    const original = src.slice(sig[i + 3].start, sig[rhsEnd - 1].end);
+    if (!laterWrite && original !== target) edits.push({ start: sig[i + 3].start, end: sig[rhsEnd - 1].end, text: target });
+  }
   for (let i = 0; i + 1 < sig.length; i++) {
     const t = sig[i];
-    const next = sig[i + 1];
-    const target = t.kind === "identifier" ? aliases.get(t.text) : undefined;
-    if (!target || next.text !== "(") continue;
-    // Don't rewrite the declaration itself (`local char = string.char`).
-    if (i >= 2 && sig[i - 2].text === "local" && sig[i + 1].text !== "(") continue;
+    if (t.kind !== "identifier") continue;
+    const target = aliases.get(t.text);
+    if (!target || sig[i + 1]?.text !== "(") continue;
+    if (sig[i - 1]?.text === "local") continue;
     edits.push({ start: t.start, end: t.end, text: target });
   }
-
-  if (!edits.length) return { result: src, changed: 0, notes: [] };
-  return {
-    result: applyEdits(src, edits),
-    changed: edits.length,
-    notes: [`Expanded ${edits.length} standard-library alias call(s).`],
-  };
+  return edits.length ? { result: applyEdits(src, edits), changed: edits.length, notes: [`Expanded/canonicalized ${edits.length} standard-library alias reference(s).`] } : { result: src, changed: 0, notes: [] };
 }
 
 /**
