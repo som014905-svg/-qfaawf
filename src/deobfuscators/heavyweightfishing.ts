@@ -259,6 +259,10 @@ export class HeavyWeightFishingDeobfuscator implements Deobfuscator {
     notes.push(`Decoded ${readable}/${entries.length} target strings as readable text.`);
     confidence += Math.min(0.12, readable / Math.max(entries.length, 1) * 0.12);
 
+    const decodedTable = `local O = {\n${entries
+      .map((e) => `  ${reencodeLuaString(e.decoded ?? "", '"')}`)
+      .join(",\n")}\n}`;
+
     artifacts.push(
       `-- HeavyWeightFishing specialized string table\n` +
       `-- source profile: WeAreDevs v1.0.0 / Ouroboros heavyweightfishing.lua\n` +
@@ -301,6 +305,20 @@ export class HeavyWeightFishingDeobfuscator implements Deobfuscator {
       work = applyEdits(work, callEdits);
       notes.push(`Inlined ${decodedCalls} literal B(...) lookups using the recovered shuffled table.`);
       confidence += Math.min(0.12, decodedCalls / 2000 * 0.12);
+    }
+
+    // The table/accessor/shuffle/decoder prefix is only a runtime bootstrap.
+    // Keeping it makes the result look unchanged and can decode the already
+    // recovered strings a second time. Replace the whole prefix with the
+    // final table while preserving the VM body that consumes it.
+    const tableStart = work.search(/local\s+O\s*=\s*\{/);
+    const prefixAfterTable = tableStart < 0 ? "" : work.slice(tableStart);
+    const vmOffset = prefixAfterTable.search(/\breturn\s*\(\s*function/);
+    const vmStart = vmOffset < 0 || tableStart < 0 ? -1 : tableStart + vmOffset;
+    if (tableStart >= 0 && vmStart > tableStart) {
+      work = work.slice(0, tableStart) + decodedTable + "\n    " + work.slice(vmStart);
+      notes.push("Replaced the encoded O-table and runtime string-decoder bootstrap with the recovered table.");
+      confidence += 0.08;
     }
 
     // Apply the generic static resolvers after the specialized string table.

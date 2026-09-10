@@ -1,4 +1,6 @@
 # Luau Deobfuscation Engine
+update:5.8.0
+fix các lớp còn lại đã cải thiện tốt hơn nhưng vẫn còn mã hóa và đọc khó hiểu.
 
 > Lưu ý pháp lý: Công cụ này chỉ dành cho học tập, phân tích bảo mật và audit code. Không sử dụng cho hành vi trái pháp luật, vượt quyền, đánh cắp mã nguồn hoặc phá cơ chế bảo vệ. Người sử dụng tự chịu trách nhiệm với input, output và kết quả.
 
