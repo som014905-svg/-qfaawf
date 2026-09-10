@@ -20,6 +20,9 @@ import {
 import { evalExprFromTokens } from "../utils/const-eval";
 import { foldConstants } from "../passes/constant-fold";
 import { inlineOffsetTableLookups, inlineNumericCacheAccessors } from "../passes/static-resolve";
+import { analyzeBinaryTreeDispatch } from "../passes/binary-tree-dispatch";
+import { abstractExecuteLua } from "../vm/abstract-interpreter";
+import { buildDispatcherGraph } from "../vm/dispatcher-graph";
 
 interface Entry {
   raw: string;
@@ -345,6 +348,22 @@ export class HeavyWeightFishingDeobfuscator implements Deobfuscator {
       log(`heavyweightfishing: conservative cleanup skipped (${e instanceof Error ? e.message : String(e)})`);
     }
 
+    // v5.9 structural analysis: record dispatcher/abstract-interpreter facts
+    // as artifacts, without executing Roblox, network, or dynamic code.
+    try {
+      const dispatch = analyzeBinaryTreeDispatch(work, 96);
+      if (dispatch.length) {
+        notes.push(`Detected ${dispatch.length} nested numeric dispatcher candidate(s) for v5.9 structural recovery.`);
+        artifacts.push(`-- v5.9 binary-dispatch analysis\n${JSON.stringify(dispatch, null, 2)}\n`);
+        artifacts.push(`-- v5.9 dispatcher graph summary\n${JSON.stringify(buildDispatcherGraph(work, 96), null, 2)}\n`);
+      }
+      const abs = abstractExecuteLua(work, 6000);
+      notes.push(...abs.notes);
+      artifacts.push(`-- v5.9 bounded abstract-execution summary\n${JSON.stringify(abs.state, null, 2)}\n`);
+    } catch (e: unknown) {
+      log(`heavyweightfishing: v5.9 analysis skipped (${e instanceof Error ? e.message : String(e)})`);
+    }
+
     try {
       work = beautifyLua(work);
     } catch {
@@ -353,7 +372,7 @@ export class HeavyWeightFishingDeobfuscator implements Deobfuscator {
 
     if (looksLikeLuaSource(work)) confidence += 0.05;
     notes.push(
-      "VM dispatcher and anti-tamper semantics are intentionally preserved; this profile performs deterministic static recovery only."
+      "VM dispatcher and anti-tamper semantics are preserved unless a v5.9 rewrite is proven safe; this profile performs deterministic static recovery plus bounded abstract analysis only."
     );
 
     return {

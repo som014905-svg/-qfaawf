@@ -1,4 +1,5 @@
 import { tokenize, LuaToken } from './lua-utils';
+import { measureDispatcherResidue, DispatcherMetrics } from './dispatcher-metrics';
 
 export interface SourceQuality {
   bytes: number;
@@ -106,6 +107,10 @@ export interface DetailedQuality {
   readabilityScore: number;
   recoveryScore: number;
   residualObfuscationScore: number;
+  dispatcherResidue: number;
+  aliasResidue: number;
+  numericStateResidue: number;
+  semanticApiRecovery: number;
   notes: string[];
 }
 
@@ -179,6 +184,12 @@ export function scoreOutputDetailed(inp: DetailedQualityInput): DetailedQuality 
   if (base.stringLiterals > 5) recoveryScore += 0.1;
   recoveryScore = clamp01(recoveryScore);
 
+  // v5.9 structural residue metrics — specifically target nested numeric
+  // decision trees and opaque temporary aliases common to VM-obfuscated Luau.
+  const metrics: DispatcherMetrics = measureDispatcherResidue(inp.source);
+  if (metrics.dispatcherResidue < 0.7) notes.push(`numeric dispatcher residue ${(metrics.dispatcherResidue * 100).toFixed(0)}%`);
+  if (metrics.aliasResidue < 0.7) notes.push(`opaque alias residue ${(metrics.aliasResidue * 100).toFixed(0)}%`);
+
   // residual obfuscation
   let residualMarkers = 0;
   for (const t of tokens) {
@@ -193,9 +204,12 @@ export function scoreOutputDetailed(inp: DetailedQualityInput): DetailedQuality 
   if (residualMarkers > 50) notes.push(`${residualMarkers} residual VM markers`);
 
   const score = clamp01(
-    syntaxScore * 0.45 + readabilityScore * 0.2 + recoveryScore * 0.2 + residualObfuscationScore * 0.15
+    syntaxScore * 0.40 + readabilityScore * 0.18 + recoveryScore * 0.18 + residualObfuscationScore * 0.10 +
+    metrics.dispatcherResidue * 0.06 + metrics.aliasResidue * 0.03 + metrics.numericStateResidue * 0.03 + metrics.semanticApiRecovery * 0.02
   );
-  return { score, syntaxScore, readabilityScore, recoveryScore, residualObfuscationScore, notes };
+  return { score, syntaxScore, readabilityScore, recoveryScore, residualObfuscationScore,
+    dispatcherResidue: metrics.dispatcherResidue, aliasResidue: metrics.aliasResidue,
+    numericStateResidue: metrics.numericStateResidue, semanticApiRecovery: metrics.semanticApiRecovery, notes };
 }
 
 function clamp01(n: number): number {

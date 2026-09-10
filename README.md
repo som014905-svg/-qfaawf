@@ -43,3 +43,8 @@ Chỉ phân tích code mà bạn có quyền xem hoặc được phép kiểm th
 chạy hoặc phát tán payload không rõ nguồn gốc.
 
 {ghi chú của bypass00000:cái này vẫn đang up từ từ nên khi sài có thể gặp lỗi hoặc deobf ko vừa ý bạn nhưng đây beta thui chưa chính thức beta vẫn up từ từ file 5ae248d6527b5c01.deobf.lua là file luarph v15.0 deobf và nó deobf hơi lỏ ヾ(•ω•`)o nếu bạn ko biết sài thì tui lười hd lắm nên tự tìm hiểu đi nha}
+## v5.9.0 — Binary-tree VM recovery
+
+The v5.9 line adds conservative structural recovery for nested numeric VM decision trees commonly emitted by WeAreDevs/HeavyWeightFishing-style protection. The pipeline now includes binary-tree dispatcher analysis, bounded alias propagation, strong-evidence semantic identifier recovery, structural quality metrics, and a bounded abstract interpreter. These features are static-only: they do not execute Roblox APIs, network requests, or dynamically loaded code.
+
+The HeavyWeightFishing profile records dispatcher and abstract-interpreter findings as artifacts so unresolved VM behavior remains inspectable rather than guessed.

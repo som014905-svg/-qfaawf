@@ -303,7 +303,7 @@ export async function runDeobfuscation(
     selectionNote =
       `selected ${w.result.deobfuscator}: quality ${(w.quality.score * 100).toFixed(0)}% ` +
       `(syntax ${(w.quality.syntaxScore * 100).toFixed(0)}%, readability ${(w.quality.readabilityScore * 100).toFixed(0)}%, ` +
-      `recovery ${(w.quality.recoveryScore * 100).toFixed(0)}%, clean ${(w.quality.residualObfuscationScore * 100).toFixed(0)}%)` +
+      `recovery ${(w.quality.recoveryScore * 100).toFixed(0)}%, clean ${(w.quality.residualObfuscationScore * 100).toFixed(0)}%, dispatcher ${(w.quality.dispatcherResidue * 100).toFixed(0)}%, aliases ${(w.quality.aliasResidue * 100).toFixed(0)}%)` +
       (candidates.length > 1 ? ` — beat ${candidates.length - 1} alternative(s)` : "");
     ctx.log(`>>> winner: ${selectionNote}`);
     // v4 safety: if the winner has syntax errors but a lower-ranked candidate

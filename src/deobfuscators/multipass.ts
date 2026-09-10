@@ -8,6 +8,8 @@ import { recoverControlFlow } from '../passes/control-flow';
 import { validateLuaSource } from '../utils/validate';
 import { inlineStaticTables, inlineOffsetTableLookups, inlineNumericCacheAccessors, normalizeStdlibAliases, normalizeEnvStdlibAliases, foldSimpleXorDecoderFunctions, foldEncodedStringTableLiterals } from "../passes/static-resolve";
 import { ModernVMDeobfuscator } from "./modern-vm";
+import { recoverBinaryTreeDispatch } from "../passes/binary-tree-dispatch";
+import { recoverSemanticIdentifiers } from "../passes/semantic-identifiers";
 
 export interface MultiPassOptions {
   maxPasses: number;
@@ -115,6 +117,25 @@ export async function runMultiPass(
       // best-effort
     }
 
+    // Step A1b.5 (v5.9): binary-tree numeric dispatcher analysis/recovery.
+    // This targets nested `if state < number` trees used by WeAreDevs /
+    // HeavyWeightFishing. It is conservative and never executes Lua.
+    try {
+      const bt = recoverBinaryTreeDispatch(current, { maxLeaves: 64, maxRewrites: 2 });
+      if (bt.changed > 0) {
+        const q = cachedScore(bt.result);
+        const beforeBt = cachedScore(current);
+        if (q.balanced && (q.score >= beforeBt.score - 0.02 || bt.flattenedLeaves >= 8)) {
+          current = bt.result;
+          foldNotes = [...foldNotes, ...bt.notes];
+        }
+      } else if (bt.analyses.length) {
+        foldNotes = [...foldNotes, `analyzed ${bt.analyses.length} numeric dispatcher candidate(s) without unsafe rewrite`];
+      }
+    } catch {
+      // best-effort
+    }
+
     // Step A1c (v4): control-flow recovery — unroll provable dispatcher
     // state machines (control-flow flattening). Only accepted when the
     // result still passes static validation.
@@ -125,6 +146,21 @@ export async function runMultiPass(
         if (afterCf.ok) {
           current = cf.result;
           foldNotes = [...foldNotes, ...cf.notes];
+        }
+      }
+    } catch {
+      // best-effort
+    }
+
+    // Step A1d (v5.9): semantic identifier recovery after structural passes.
+    try {
+      const sem = recoverSemanticIdentifiers(current);
+      if (sem.changed > 0) {
+        const q = cachedScore(sem.result);
+        const beforeSem = cachedScore(current);
+        if (q.balanced && q.score >= beforeSem.score - 0.03) {
+          current = sem.result;
+          foldNotes = [...foldNotes, ...sem.notes];
         }
       }
     } catch {

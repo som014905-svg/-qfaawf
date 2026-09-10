@@ -1,6 +1,6 @@
 {
   "name": "luau-deobf-engine",
-  "version": "5.4.0",
+  "version": "5.9.0",
   "description": "Luau/Lua deobfuscation engine with corpus-driven detection, Luraph VM decoding, IronBrew/MoonSec/MoonVeil/Prometheus, modern Clyde/Dava static VM patterns, static cleanup, and regression harnesses. — X10-DEEP",
   "type": "module",
   "private": true,
@@ -13,6 +13,7 @@
     "test:node": "tsx test-samples/run-tests.ts",
     "test:regression": "bun run test-samples/regression.ts",
     "test:static": "tsx test-samples/static-resolve.ts",
+    "test:structural": "tsx test-samples/v590-structural.ts",
     "test:corpus": "bun run test-samples/deobf-batch.ts",
     "test:corpus:detect": "bun run test-samples/detect-batch.ts",
     "corpus:update": "bun run scripts-update-corpus.ts"

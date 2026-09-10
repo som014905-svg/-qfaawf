@@ -35,3 +35,6 @@ bun run test:corpus
 ```
 
 Large or VM-heavy samples can be slow. Use `CORPUS_DIR` to point the harness at a local mirror.
+
+
+v5.9.0 corpus pass: nested numeric dispatcher analysis + regression metadata.
