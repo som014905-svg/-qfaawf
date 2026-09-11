@@ -158,45 +158,102 @@ function gatherNestedCandidate(sig: Tok[], startAt: number, maxLeaves = 96): { n
 }
 
 function flattenSmallTree(src: string, sig: Tok[], node: TreeNode): string | null {
-  if (!node.leaves.length || node.leaves.length > 96) return null;
+  if (!node.leaves.length || node.leaves.length > 256) return null;
   const varName = node.varName;
-  const leaves: Array<{ start:number; end:number; lower:number|null; upper:number|null }> = [];
+  const leaves: Array<{ start:number; end:number; condition: string }> = [];
 
-  const collect = (n: TreeNode, lower: number|null, upper: number|null): boolean => {
-    if (n.op !== "<" || n.varName !== varName) return false;
-    const thenLower = lower;
-    const thenUpper = upper == null ? n.value : Math.min(upper, n.value);
-    const elseLower = lower == null ? n.value : Math.max(lower, n.value);
-    const elseUpper = upper;
+  const collect = (n: TreeNode, path: string[]): boolean => {
+    if (n.varName !== varName) return false;
     const thenIsChild = !!n.thenNode && sig[n.thenStart]?.text === "if" && n.thenNode.end === n.thenEnd - 1;
     const elseIsChild = !!n.elseNode && sig[n.elseStart]?.text === "if" && n.elseNode.end === n.elseEnd - 1;
-    if (thenIsChild) { if (!collect(n.thenNode!, thenLower, thenUpper)) return false; }
-    else leaves.push({ start:n.thenStart, end:n.thenEnd, lower:thenLower, upper:thenUpper });
-    if (elseIsChild) { if (!collect(n.elseNode!, elseLower, elseUpper)) return false; }
-    else leaves.push({ start:n.elseStart, end:n.elseEnd, lower:elseLower, upper:elseUpper });
+    
+    if (thenIsChild) { if (!collect(n.thenNode!, [...path, "T"])) return false; }
+    else leaves.push({ start:n.thenStart, end:n.thenEnd, condition: path.join(",") });
+    
+    if (elseIsChild) { if (!collect(n.elseNode!, [...path, "F"])) return false; }
+    else leaves.push({ start:n.elseStart, end:n.elseEnd, condition: path.join(",") });
+    
     return true;
   };
-  if (!collect(node, null, null)) return null;
-  if (leaves.length < 4 || leaves.length > 96) return null;
-  leaves.sort((a,b) => (a.lower ?? Number.NEGATIVE_INFINITY) - (b.lower ?? Number.NEGATIVE_INFINITY));
-  // Exact partition proof: first interval must start at -inf, adjacent bounds
-  // must meet, and the final interval must end at +inf.
-  if (leaves[0].lower !== null) return null;
-  for (let i=1;i<leaves.length;i++) if (leaves[i].lower !== leaves[i-1].upper) return null;
-  if (leaves[leaves.length-1].upper !== null) return null;
 
-  const lines: string[] = [];
-  for (let i=0;i<leaves.length;i++) {
-    const l=leaves[i];
-    if (i===0) lines.push(`if ${varName} < ${l.upper} then`);
-    else if (i===leaves.length-1) lines.push("else");
-    else lines.push(`elseif ${varName} < ${l.upper} then`);
+  if (!collect(node, [])) return null;
+  if (leaves.length < 4 || leaves.length > 256) return null;
+
+  // To flatten into if/elseif, we need to determine the actual numeric ranges.
+  // Since we already have the tree structure, we can just use the original 
+  // conditions to build the if/elseif chain.
+  const resultLines: string[] = [];
+  const processedLeaves: Array<{start: number, end: number, range: [number|null, number|null]}> = [];
+
+  const resolveRange = (n: TreeNode, lower: number|null, upper: number|null, currentPath: string[]): void => {
+    if (n.op === "<") {
+      // Then: [lower, n.value), Else: [n.value, upper)
+      if (n.thenNode) resolveRange(n.thenNode, lower, n.value, [...currentPath, "T"]);
+      else processedLeaves.push({ start: n.thenStart, end: n.thenEnd, range: [lower, n.value] });
+      
+      if (n.elseNode) resolveRange(n.elseNode, n.value, upper, [...currentPath, "F"]);
+      else processedLeaves.push({ start: n.elseStart, end: n.elseEnd, range: [n.value, upper] });
+    } else if (n.op === "<=") {
+      // Then: [lower, n.value], Else: (n.value, upper)
+      if (n.thenNode) resolveRange(n.thenNode, lower, n.value, [...currentPath, "T"]);
+      else processedLeaves.push({ start: n.thenStart, end: n.thenEnd, range: [lower, n.value] });
+      
+      if (n.elseNode) resolveRange(n.elseNode, n.value, upper, [...currentPath, "F"]);
+      else processedLeaves.push({ start: n.elseStart, end: n.elseEnd, range: [n.value, upper] });
+    } else if (n.op === ">") {
+      // Then: (n.value, upper), Else: [lower, n.value]
+      if (n.thenNode) resolveRange(n.thenNode, n.value, upper, [...currentPath, "T"]);
+      else processedLeaves.push({ start: n.thenStart, end: n.thenEnd, range: [n.value, upper] });
+      
+      if (n.elseNode) resolveRange(n.elseNode, lower, n.value, [...currentPath, "F"]);
+      else processedLeaves.push({ start: n.elseStart, end: n.elseEnd, range: [lower, n.value] });
+    } else if (n.op === ">=") {
+      // Then: [n.value, upper), Else: [lower, n.value]
+      if (n.thenNode) resolveRange(n.thenNode, n.value, upper, [...currentPath, "T"]);
+      else processedLeaves.push({ start: n.thenStart, end: n.thenEnd, range: [n.value, upper] });
+      
+      if (n.elseNode) resolveRange(n.elseNode, lower, n.value, [...currentPath, "F"]);
+      else processedLeaves.push({ start: n.elseStart, end: n.elseEnd, range: [lower, n.value] });
+    } else if (n.op === "==") {
+      // Then: [n.value, n.value], Else: [lower, n.value) U (n.value, upper)
+      // Equality is tricky for simple if/elseif chains, but we can still represent it.
+      if (n.thenNode) resolveRange(n.thenNode, n.value, n.value, [...currentPath, "T"]);
+      else processedLeaves.push({ start: n.thenStart, end: n.thenEnd, range: [n.value, n.value] });
+      
+      if (n.elseNode) resolveRange(n.elseNode, lower, upper, [...currentPath, "F"]);
+      else processedLeaves.push({ start: n.elseStart, end: n.elseEnd, range: [lower, upper] });
+    }
+  };
+
+  resolveRange(node, null, null, []);
+  processedLeaves.sort((a, b) => (a.range[0] ?? -Infinity) - (b.range[0] ?? -Infinity));
+
+  for (let i = 0; i < processedLeaves.length; i++) {
+    const l = processedLeaves[i];
+    const lower = l.range[0];
+    const upper = l.range[1];
+    
+    if (i === 0) {
+      if (lower === null) {
+        if (upper === null) resultLines.push("if true then");
+        else resultLines.push(`if ${varName} < ${upper} then`);
+      } else {
+        resultLines.push(`if ${varName} >= ${lower} then`);
+      }
+    } else {
+      if (lower === null) {
+        resultLines.push(`elseif true then`);
+      } else {
+        resultLines.push(`elseif ${varName} >= ${lower} then`);
+      }
+    }
+    
     const body = src.slice(sig[l.start].start, sig[l.end-1].end).trim();
     if (!body) return null;
-    for (const line of body.split(/\r?\n/)) lines.push(`  ${line}`);
+    for (const line of body.split(/\r?\n/)) resultLines.push(`  ${line}`);
   }
-  lines.push("end");
-  return applyEdits(src, [{ start:sig[node.start].start, end:sig[node.end].end, text:lines.join("\n") }]);
+  resultLines.push("end");
+  return applyEdits(src, [{ start:sig[node.start].start, end:sig[node.end].end, text:resultLines.join("\n") }]);
 }
 
 function maxDepth(n: TreeNode, d = 1): number {

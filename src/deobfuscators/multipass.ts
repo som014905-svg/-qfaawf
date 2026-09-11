@@ -133,12 +133,12 @@ export async function runMultiPass(
     // affine integer state registers and converts deep comparison trees into
     // flat exact-state arms while preserving cycles.
     try {
-      const flat = flattenStateDispatchers(current, { maxLoops: 240, maxStates: 192, maxOutput: Math.max(500_000, current.length * 2) });
+      const flat = flattenStateDispatchers(current, { maxLoops: 500, maxStates: 512, maxOutput: Math.max(1_000_000, current.length * 3) });
       if (flat.changed > 0) {
         const q = cachedScore(flat.result);
         const beforeFlat = cachedScore(current);
         const metricGain = scoreStructuralGain(current, flat.result);
-        if (q.balanced && (q.score >= beforeFlat.score - 0.08 || metricGain >= 0.03)) {
+        if (q.balanced && (q.score >= beforeFlat.score - 0.1 || metricGain >= 0.01)) {
           current = flat.result;
           foldNotes = [...foldNotes, ...flat.notes];
         }
@@ -152,11 +152,11 @@ export async function runMultiPass(
     // numeric comparison tree. The pass only inlines acyclic, fully-proven
     // state transitions; cyclic/ambiguous dispatchers are preserved.
     try {
-      const fl = recoverFunctionLevelVm(current, { maxFunctions: 96, maxStates: 128, maxOutput: 140_000 });
+      const fl = recoverFunctionLevelVm(current, { maxFunctions: 256, maxStates: 256, maxOutput: 500_000 });
       if (fl.changed > 0) {
         const q = cachedScore(fl.result);
         const beforeFl = cachedScore(current);
-        if (q.balanced && (q.score >= beforeFl.score - 0.06 || fl.functions >= 1)) {
+        if (q.balanced && (q.score >= beforeFl.score - 0.1 || fl.functions >= 1)) {
           current = fl.result;
           foldNotes = [...foldNotes, ...fl.notes];
         }
@@ -169,11 +169,11 @@ export async function runMultiPass(
     // This targets nested `if state < number` trees used by WeAreDevs /
     // HeavyWeightFishing. It is conservative and never executes Lua.
     try {
-      const bt = recoverBinaryTreeDispatch(current, { maxLeaves: 64, maxRewrites: 2 });
+      const bt = recoverBinaryTreeDispatch(current, { maxLeaves: 256, maxRewrites: 5 });
       if (bt.changed > 0) {
         const q = cachedScore(bt.result);
         const beforeBt = cachedScore(current);
-        if (q.balanced && (q.score >= beforeBt.score - 0.02 || bt.flattenedLeaves >= 8)) {
+        if (q.balanced && (q.score >= beforeBt.score - 0.05 || bt.flattenedLeaves >= 4)) {
           current = bt.result;
           foldNotes = [...foldNotes, ...bt.notes];
         }
