@@ -16,6 +16,7 @@ import { scoreOutputDetailed, DetailedQuality } from "../utils/quality";
 import { classifyEngineError, EngineErrorKind } from "../utils/error-types";
 import { GenericDeobfuscator } from "./generic";
 import { LuraphDeobfuscator } from "./luraph";
+import { LuastDeobfuscator } from "./luast";
 import { LuraphVMDeobfuscator } from "./luraph-vm";
 import { LuraphVMDecoder } from "./luraph-vm-decode";
 import { MoonVeilDeobfuscator } from "./moonveil";
@@ -30,6 +31,8 @@ import { TagTableDeobfuscator } from "./tagtable";
 import { HeavyWeightFishingDeobfuscator } from "./heavyweightfishing";
 import { ModernVMDeobfuscator } from "./modern-vm";
 import { HerculesDeobfuscator } from "./hercules";
+import { IronveilDeobfuscator } from "./ironveil";
+import { LuaObfuscatorChaoticDeobfuscator } from "./luaobfuscator-chaotic";
 import { runMultiPass } from "./multipass";
 import { scoreLuaSource } from "../utils/quality";
 import { validateLuaSource, summarizeIssues, ValidationResult } from "../utils/validate";
@@ -83,6 +86,7 @@ export interface OrchestratorReport {
 }
 
 const ALL_DEOBFUSCATORS: Deobfuscator[] = [
+  new LuastDeobfuscator(),
   new LuraphDeobfuscator(),
   new LuraphVMDeobfuscator(),
   new LuraphVMDecoder(),
@@ -98,6 +102,8 @@ const ALL_DEOBFUSCATORS: Deobfuscator[] = [
   new HeavyWeightFishingDeobfuscator(),
   new ModernVMDeobfuscator(),
   new HerculesDeobfuscator(),
+  new IronveilDeobfuscator(),
+  new LuaObfuscatorChaoticDeobfuscator(),
   new GenericDeobfuscator(),
 ];
 
@@ -215,7 +221,9 @@ export async function runDeobfuscation(
     quality: DetailedQuality;
     rank: number;
   }
-  const inputBytes = Buffer.byteLength(ctx.input, "utf8");
+  // ctx.input is a latin1-mapped byte string (1 JS char = 1 original byte, see
+  // cli.ts/fetcher.ts), so its own .length already is the exact byte count.
+  const inputBytes = ctx.input.length;
   const rankCandidate = (result: DeobfuscateResult): Candidate => {
     let syntaxOk = true;
     let syntaxErrors = 0;

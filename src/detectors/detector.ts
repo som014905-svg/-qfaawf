@@ -1227,6 +1227,8 @@ export type ObfuscatorFamily =
   | "tagtable_vm"
   | "modern_vm"
   | "hercules"
+  | "ironveil"
+  | "luaobfuscator_com"
   | "generic";
 
 export function familyOf(id: string): ObfuscatorFamily {
@@ -1243,10 +1245,14 @@ export function familyOf(id: string): ObfuscatorFamily {
     case "ironbrew1":
     case "ironboobs":
     case "ib2_fork":
-    case "ironveil":
     case "fuscator77": // 77fuscator is an IronBrew2 fork
     case "67fuscator":
       return "ironbrew";
+    // Ironveil V1 is its own from-scratch salted/permuted bytecode VM, NOT
+    // the IronBrew2 layout — the IB2 engine cannot parse it. It has a
+    // dedicated static deobfuscator (see deobfuscators/ironveil.ts).
+    case "ironveil":
+      return "ironveil";
     // IronBrew3 is a from-scratch VM, NOT the IronBrew2 layout — the IB2
     // engine cannot parse it, so it falls through to the generic pipeline.
     case "ironbrew3":
@@ -1276,7 +1282,7 @@ export function familyOf(id: string): ObfuscatorFamily {
     case "astrotect":
       return "astrotect";
     case "luaobfuscator_com":
-      return "luaxor";
+      return "luaobfuscator_com";
     case "tagtable_vm":
       return "tagtable_vm";
     default:

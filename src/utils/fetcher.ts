@@ -145,7 +145,7 @@ export async function fetchFromUrl(rawUrl: string): Promise<FetchedInput> {
     // Unwrap a markdown code fence if the whole payload is fenced.
     text = unwrapCodeFence(text);
 
-    const bytes = Buffer.byteLength(text);
+    const bytes = text.length;
     if (bytes > MAX_BYTES) {
       throw new Error(`File too large: ${(bytes / 1024 / 1024).toFixed(2)} MB (max 4 MB)`);
     }
@@ -164,7 +164,15 @@ export async function fetchFromUrl(rawUrl: string): Promise<FetchedInput> {
 }
 
 async function readTextWithLimit(res: Response, maxBytes: number): Promise<string> {
-  if (!res.body) return res.text();
+  // latin1, not utf8: fetched Lua source is a byte stream (obfuscated string
+  // tables routinely contain raw non-ASCII bytes), and utf8 decoding would
+  // silently merge/replace those bytes with the wrong Unicode codepoints
+  // before any deobfuscation pass ever sees the content.
+  if (!res.body) {
+    const ab = await res.arrayBuffer();
+    if (ab.byteLength > maxBytes) throw new Error("RESPONSE_TOO_LARGE");
+    return Buffer.from(ab).toString("latin1");
+  }
   const reader = res.body.getReader();
   const chunks: Uint8Array[] = [];
   let total = 0;
@@ -184,7 +192,7 @@ async function readTextWithLimit(res: Response, maxBytes: number): Promise<strin
     reader.releaseLock();
   }
   const buf = Buffer.concat(chunks.map((c) => Buffer.from(c)));
-  return buf.toString("utf8");
+  return buf.toString("latin1");
 }
 
 function urlFromPath(url: string): string {

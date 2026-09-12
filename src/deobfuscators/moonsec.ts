@@ -31,6 +31,7 @@ import {
   type ConstValue,
 } from "../utils/const-eval";
 import { foldConstEvalNoise, encodeLuaString } from "../passes/constant-fold";
+import { liftCustomVm } from "../vm/static-opcode-lifter";
 
 interface VmTableEval {
   /** integer key → evaluated value */
@@ -258,6 +259,19 @@ export class MoonSecDeobfuscator implements Deobfuscator {
       }
     } catch {
       /* best-effort */
+    }
+
+    // Conservative VM lift: only known opcode-handler shapes are rewritten.
+    try {
+      log("moonsec: attempting conservative opcode-handler lift...");
+      const lifted = liftCustomVm(work, "MoonSec");
+      notes.push(...lifted.notes);
+      if (lifted.changed) {
+        work = lifted.output;
+        confidence = Math.min(0.9, confidence + Math.min(0.12, lifted.recovered / 120));
+      }
+    } catch (e) {
+      notes.push(`MoonSec VM lift skipped: ${e instanceof Error ? e.message : String(e)}`);
     }
 
     // Rename obfuscated identifiers

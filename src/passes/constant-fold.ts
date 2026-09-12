@@ -947,9 +947,12 @@ function decodeShortString(text: string): string | null {
 
 /** Re-encode a string as a safe Lua short literal (double-quoted) if it is
  *  mostly printable; otherwise as a long-bracket string.
- *  v4 byte-safety: characters above 0x7F are emitted as UTF-8 byte escapes
- *  so the literal's Lua byte-length is identical to the original value
- *  regardless of the output file's encoding. */
+ *  Byte-safety: the whole pipeline treats strings as latin1-mapped byte
+ *  arrays (1 JS char = 1 raw Lua byte, see cli.ts/utils/fetcher.ts), so a
+ *  char code in 0-255 is emitted as a single `\ddd` byte escape. Only a
+ *  genuine >0xFF codepoint (which should no longer arise now that Luau
+ *  `\u{}` escapes are pre-expanded to UTF-8 bytes at parse time — see
+ *  utils/lua-utils.ts#utf8Encode) falls back to UTF-8 byte expansion. */
 export function encodeLuaString(s: string): string {
   if (s.includes("\x00") || s.includes("\x1bLuaP")) {
     let level = 0;
@@ -965,10 +968,11 @@ export function encodeLuaString(s: string): string {
     else if (ch === "\r") out += "\\r";
     else if (ch === "\t") out += "\\t";
     else if (code < 32 || code === 127) out += `\\${code}`;
-    else if (code > 0x7f) {
-      // non-ASCII -> UTF-8 bytes as \ddd escapes (keeps Lua #length identical)
+    else if (code > 0xff) {
+      // Defensive fallback only: a real multi-byte codepoint slipped through.
       for (const b of Buffer.from(ch, "utf8")) out += `\\${b}`;
-    } else out += ch;
+    } else if (code > 0x7f) out += `\\${code}`;
+    else out += ch;
   }
   out += '"';
   return out;

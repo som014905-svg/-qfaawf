@@ -140,6 +140,242 @@ export function inlineStaticTables(src: string): StaticResolveResult {
   };
 }
 
+
+/**
+ * Inline scalar lookups from the Luast/VM "object table" pattern:
+ *
+ *   local akR = {}
+ *   akR[128] = { "foo", 123, function() ... end, ... }
+ *   print(akR[128][1], akR[128][2])
+ *
+ * Luast v1.x commonly stores strings, numbers, booleans and helper functions
+ * in one large table under an outer numeric key.  The table itself may be
+ * mutated at a small number of indices (often an anti-tamper/random slot),
+ * so this pass computes a per-index write set and only substitutes immutable
+ * scalar entries.  Nested functions/tables are parsed structurally and never
+ * executed.
+ */
+export function inlineIndexedObjectTableLookups(src: string): StaticResolveResult {
+  const sig = sigTokens(src);
+  if (!sig.length) return { result: src, changed: 0, notes: [] };
+
+  interface Slot { outer: string; key: number; value: Scalar; start: number; end: number; }
+  const slots = new Map<string, Map<number, Slot>>();
+  const writes = new Map<string, Set<number>>();
+  const declCount = new Map<string, number>();
+
+  const tokenDepthMatch = (openIndex: number, open: string, close: string): number => {
+    let d = 0;
+    for (let i = openIndex; i < sig.length; i++) {
+      if (sig[i].text === open) d++;
+      else if (sig[i].text === close) {
+        d--;
+        if (d === 0) return i;
+      }
+    }
+    return -1;
+  };
+
+  const isScalarExpr = (a: number, b: number): Scalar | null => {
+    if (b !== a + 1) return null;
+    return scalar(sig[a]);
+  };
+
+  const addWrite = (outer: string, key: number) => {
+    let set = writes.get(outer);
+    if (!set) { set = new Set(); writes.set(outer, set); }
+    set.add(key);
+  };
+
+  // Find direct assignments of the form `local T = {}; T[K] = {...}`.
+  // The first empty-table declaration is optional; any identifier may be used.
+  for (let i = 0; i + 2 < sig.length; i++) {
+    if (sig[i].text === "local" && sig[i + 1]?.kind === "identifier" && sig[i + 2]?.text === "=") {
+      declCount.set(sig[i + 1].text, (declCount.get(sig[i + 1].text) ?? 0) + 1);
+    }
+  }
+
+  for (let i = 0; i + 6 < sig.length; i++) {
+    // T [ OUTER ] = { ... }
+    if (sig[i].kind !== "identifier" || sig[i + 1]?.text !== "[" ||
+        sig[i + 3]?.text !== "]" || sig[i + 4]?.text !== "=" || sig[i + 5]?.text !== "{") continue;
+
+    const outerName = sig[i].text;
+    const outerKeyTok = sig[i + 2];
+    if (outerKeyTok?.kind !== "number") continue;
+    const outerKey = Number(outerKeyTok.text.replaceAll("_", ""));
+    if (!Number.isSafeInteger(outerKey)) continue;
+
+    const close = tokenDepthMatch(i + 5, "{", "}");
+    if (close < 0) continue;
+
+    let idx = 1;
+    let j = i + 6;
+    const map = new Map<number, Slot>();
+    let entryStart = j;
+    let depthParen = 0, depthBracket = 0, depthBrace = 0;
+    const flushEntry = (endExclusive: number) => {
+      while (entryStart < endExclusive && (sig[entryStart].text === "," || sig[entryStart].text === ";")) entryStart++;
+      let a = entryStart, b = endExclusive;
+      while (a < b && (sig[a].text === "," || sig[a].text === ";")) a++;
+      while (b > a && (sig[b - 1].text === "," || sig[b - 1].text === ";")) b--;
+      const value = isScalarExpr(a, b);
+      if (value) {
+        map.set(idx, { outer: outerName, key: idx, value, start: sig[a].start, end: sig[b - 1].end });
+      }
+      idx++;
+      entryStart = endExclusive + 1;
+    };
+
+    for (; j < close; j++) {
+      const t = sig[j].text;
+      if (t === "(") depthParen++;
+      else if (t === ")" && depthParen > 0) depthParen--;
+      else if (t === "[") depthBracket++;
+      else if (t === "]" && depthBracket > 0) depthBracket--;
+      else if (t === "{") depthBrace++;
+      else if (t === "}" && depthBrace > 0) depthBrace--;
+      else if ((t === "," || t === ";") && depthParen === 0 && depthBracket === 0 && depthBrace === 0) {
+        flushEntry(j);
+      }
+    }
+    // Last entry, if non-empty.
+    if (entryStart < close) {
+      const oldIdx = idx;
+      flushEntry(close);
+      // `flushEntry` increments idx; no action needed.
+      void oldIdx;
+    }
+    if (map.size >= 4) {
+      let byOuter = slots.get(outerName);
+      if (!byOuter) { byOuter = new Map(); slots.set(outerName, byOuter); }
+      for (const [k, v] of map) byOuter.set(k, v);
+    }
+  }
+
+  if (!slots.size) return { result: src, changed: 0, notes: [] };
+
+  // Any later assignment `T[OUTER][SLOT] = ...` invalidates just that slot.
+  for (let i = 0; i + 5 < sig.length; i++) {
+    if (sig[i].kind !== "identifier" || sig[i + 1]?.text !== "[" ||
+        sig[i + 3]?.text !== "]" || sig[i + 4]?.text !== "[" ) continue;
+    const outerName = sig[i].text;
+    if (!slots.has(outerName)) continue;
+    const outerTok = sig[i + 2];
+    if (outerTok?.kind !== "number") continue;
+    const keyTok = sig[i + 5];
+    if (keyTok?.kind !== "number" || sig[i + 6]?.text !== "]") continue;
+    const slot = Number(keyTok.text.replaceAll("_", ""));
+    if (!Number.isSafeInteger(slot)) continue;
+    if (sig[i + 7]?.text === "=") addWrite(outerName, slot);
+  }
+
+  const edits: Array<{ start: number; end: number; text: string }> = [];
+  let changed = 0;
+  for (let i = 0; i + 6 < sig.length; i++) {
+    if (sig[i].kind !== "identifier" || sig[i + 1]?.text !== "[" ||
+        sig[i + 3]?.text !== "]" || sig[i + 4]?.text !== "[" ||
+        sig[i + 6]?.text !== "]") continue;
+    const outerName = sig[i].text;
+    const byOuter = slots.get(outerName);
+    if (!byOuter) continue;
+    const outerTok = sig[i + 2];
+    const keyTok = sig[i + 5];
+    if (outerTok.kind !== "number" || keyTok.kind !== "number") continue;
+    const outer = Number(outerTok.text.replaceAll("_", ""));
+    const key = Number(keyTok.text.replaceAll("_", ""));
+    if (!Number.isSafeInteger(outer) || !Number.isSafeInteger(key)) continue;
+    const writesForOuter = writes.get(outerName);
+    if (writesForOuter?.has(key)) continue;
+    const slot = byOuter.get(key);
+    if (!slot) continue;
+    // Do not replace the table definition's own scalar entries.
+    if (sig[i].start >= slot.start && sig[i].start < slot.end) continue;
+    edits.push({ start: sig[i].start, end: sig[i + 6].end, text: slot.value.text });
+    changed++;
+    i += 6;
+  }
+
+  // Resolve common local aliases to the same object table, e.g.
+  //   local am2 = akR[128]
+  //   print(am2[1371])
+  // We scope the alias to its containing Lua block so repeated short names
+  // in different functions do not collide globally.
+  let aliasEdits = 0;
+  const blockStack: number[] = [];
+  const blockAt = new Array<number>(sig.length).fill(-1);
+  const blockEnds: number[] = [];
+  for (let i = 0; i < sig.length; i++) {
+    const t = sig[i].text;
+    const opens = t === "function" || t === "if" || t === "for" || t === "while" || t === "do" || t === "repeat";
+    if (opens) blockStack.push(i);
+    blockAt[i] = blockStack.length;
+    if (t === "end") {
+      const opener = blockStack.pop();
+      if (opener !== undefined) blockEnds[opener] = i;
+      blockAt[i] = blockStack.length;
+    }
+  }
+
+  const directScalars = new Map<string, Map<number, string>>();
+  for (const [outerName, byOuter] of slots) {
+    const writesForOuter = writes.get(outerName);
+    const m = new Map<number, string>();
+    for (const [k, slot] of byOuter) if (!writesForOuter?.has(k)) m.set(k, slot.value.text);
+    directScalars.set(outerName, m);
+  }
+
+  // Track aliases declared with `local A = T[K]`, but only substitute uses
+  // in the lexical containing block.
+  for (let i = 0; i + 4 < sig.length; i++) {
+    if (sig[i].text !== "local" || sig[i + 1]?.kind !== "identifier" || sig[i + 2]?.text !== "=" ||
+        sig[i + 3]?.kind !== "identifier" || sig[i + 4]?.text !== "[") continue;
+    const alias = sig[i + 1].text;
+    const outerName = sig[i + 3].text;
+    const byOuter = directScalars.get(outerName);
+    if (!byOuter || sig[i + 5]?.kind !== "number" || sig[i + 6]?.text !== "]") continue;
+    const outerKey = Number(sig[i + 5].text.replaceAll("_", ""));
+    // The outer key is intentionally not used as a table slot here: we only
+    // create aliases for the common `local alias = T[128]` form, and the
+    // current object table map already corresponds to that single populated
+    // outer slot.
+    if (!Number.isSafeInteger(outerKey) || !byOuter.size) continue;
+
+    let blockEnd = sig.length;
+    const depth = blockAt[i];
+    for (let j = i + 1; j < sig.length; j++) {
+      if (sig[j].text === "end" && blockAt[j] < depth) { blockEnd = j; break; }
+    }
+    // Reject aliases that are reassigned inside their containing block.
+    let reassigned = false;
+    for (let j = i + 7; j < blockEnd; j++) {
+      if (sig[j].kind === "identifier" && sig[j].text === alias && sig[j + 1]?.text === "=") {
+        reassigned = true; break;
+      }
+    }
+    if (reassigned) continue;
+
+    for (let j = i + 7; j + 2 < blockEnd; j++) {
+      if (sig[j].kind !== "identifier" || sig[j].text !== alias || sig[j + 1]?.text !== "[" ||
+          sig[j + 2]?.kind !== "number" || sig[j + 3]?.text !== "]") continue;
+      const slot = Number(sig[j + 2].text.replaceAll("_", ""));
+      const text = byOuter.get(slot);
+      if (text == null) continue;
+      aliasEdits++;
+      edits.push({ start: sig[j].start, end: sig[j + 3].end, text });
+      j += 3;
+    }
+  }
+
+  if (!edits.length) return { result: src, changed: 0, notes: [] };
+  const result = applyEdits(src, edits);
+  return {
+    result,
+    changed: changed + aliasEdits,
+    notes: [`Inlined ${changed + aliasEdits} immutable Luast indexed-table lookup(s) (${changed} direct, ${aliasEdits} local-alias).`],
+  };
+}
+
 /**
  * Inline the common WeAreDevs-style numeric string-table accessor without
  * executing Lua. Typical shape:

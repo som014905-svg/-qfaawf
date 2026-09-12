@@ -8,13 +8,13 @@ if genv == nil then
     while true do task.wait() end -- anti-analysis: treo executor vĩnh viễn
 end
 -- anti-hook: snapshot stdlib (nếu bị thay thế giữa chừng, các bước sau sẽ fail)
-local stdlib = { print = print, pcall = pcall, error = error, tostring = tostring, type = type, pairs = pairs }
+local stdlib = { error = error, tostring = tostring, type = type, pcall = pcall, pairs = pairs, print = print }
 -- anti-tamper: debug.getinfo phải chạy được và trả table
 local ok, info = pcall(debug.getinfo, 1)
 if not ok or type(info) ~= "table" then
     while true do task.wait() end -- anti-analysis: treo executor vĩnh viễn
 end
--- (bảng nội bộ { B, A, C } — state giải mã của loader, không ảnh hưởng logic chính)
+-- (bảng nội bộ { A, C, B } — state giải mã của loader, không ảnh hưởng logic chính)
 -- kiểm tra API tải có sẵn rồi mới chạy
 if game.HttpGet then
     -- tải nguồn — lỗi mạng bị nuốt im lặng (pcall)

@@ -38,6 +38,7 @@ export type DetectionMatch = {
 
 export type ObfuscatorId =
   | "luraph"
+  | "luast"
   | "moonsec"
   | "ironbrew"
   | "wearedevs"
@@ -54,6 +55,8 @@ export type ObfuscatorId =
   | "heavyweightfishing"
   | "modern_vm"
   | "hercules"
+  | "ironveil"
+  | "luaobfuscator_com"
   | "generic";
 
 export interface Deobfuscator {

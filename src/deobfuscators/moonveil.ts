@@ -10,11 +10,12 @@
 
 import { Deobfuscator, DeobfuscateContext, DeobfuscateResult, DetectionMatch } from "../types";
 import { iterStringLiterals, looksLikeLuaSource, beautifyLua, renameObfuscatedIdentifiers } from "../utils/lua-utils";
+import { liftCustomVm } from "../vm/static-opcode-lifter";
 
 export class MoonVeilDeobfuscator implements Deobfuscator {
   id = "moonveil" as const;
   name = "MoonVeil Deobfuscator";
-  description = "Heuristic recovery for MoonVeil v1.4.x: extracts bytecode, embedded strings, and beautifies the loader. (Full devirtualisation needs luau-vmp-deobf.)";
+  description = "Heuristic recovery for MoonVeil v1.4.x: extracts bytecode, embedded strings, and beautifies the loader. (adds a conservative opcode-handler lift when the dispatcher semantics are statically provable.)";
 
   detect(input: string): DetectionMatch | null {
     if (/MoonVeil\s*v?1\./i.test(input)) {
@@ -90,7 +91,20 @@ export class MoonVeilDeobfuscator implements Deobfuscator {
       confidence += 0.05;
     }
 
-    notes.push("Full MoonVeil VM devirtualisation requires luau-vmp-deobf (Python).");
+    // Conservative opcode-handler lift. It only rewrites handlers whose
+    // semantics can be recognized statically; unknown opcodes remain in the
+    // original output rather than being guessed.
+    try {
+      log("moonveil: attempting conservative opcode-by-opcode VM lift...");
+      const lifted = liftCustomVm(output, "MoonVeil");
+      notes.push(...lifted.notes);
+      if (lifted.changed && lifted.recovered >= 2) {
+        artifacts.push(lifted.output);
+        notes.push(`Conservative VM lift recovered ${lifted.recovered} instruction(s).`);
+      }
+    } catch (e) {
+      notes.push(`VM lift skipped: ${e instanceof Error ? e.message : String(e)}`);
+    }
 
     return {
       success: true,

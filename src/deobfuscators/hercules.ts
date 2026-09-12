@@ -28,6 +28,7 @@ import { Deobfuscator, DeobfuscateContext, DeobfuscateResult } from "../types";
 import { beautifyLua, renameObfuscatedIdentifiers, reencodeLuaString } from "../utils/lua-utils";
 import { foldConstants } from "../passes/constant-fold";
 import { validateLuaSource } from "../utils/validate";
+import { liftCustomVm } from "../vm/static-opcode-lifter";
 
 const IDENT = "[A-Za-z_][A-Za-z0-9_]*";
 
@@ -53,11 +54,18 @@ function hasCaesarIife(input: string): boolean {
   return /\(\s*function\s*\([^)]{1,30}\)[^)]{0,3000}?string\s*\.\s*byte[^)]{0,3000}?%\s*256[^)]{0,3000}?end\s*\)\s*\(/.test(input);
 }
 
+function hasHerculesVmV3(input: string): boolean {
+  const vm = /(?:while\s+true\s+do|repeat[\s\S]{0,600}?until)[\s\S]{0,5000}?(?:opcode|op)\s*(?:==|~=|<=|>=)[^\n]{0,120}/i.test(input);
+  const bytecode = /\\b(?:local\\s+)?[A-Za-z_]\\w*\\s*=\\s*\\{(?:\\s*-?\\d+\\s*,){6,}/.test(input);
+  return vm && bytecode;
+}
+
 export function detectHercules(input: string): boolean {
   // Banner patterns (highest confidence)
   if (/--\s*\[\s*Obfuscated\s+by\s+Hercules/i.test(input)) return true;
   if (/hercules-obfuscator\.xyz/i.test(input)) return true;
   if (/hercules\s+obfuscator\b/i.test(input)) return true;
+  if (hasHerculesVmV3(input)) return true;
 
   // Structural: dead blocks + glob aliases is a very strong signal
   const deadBlocks = countDeadBlocks(input);
@@ -401,8 +409,9 @@ export class HerculesDeobfuscator implements Deobfuscator {
     const deadBlocks = countDeadBlocks(input);
     const globAlias = hasGlobAliases(input);
     const caesar = hasCaesarIife(input);
+    const vmV3 = hasHerculesVmV3(input);
 
-    let confidence = 0.65;
+    let confidence = vmV3 ? 0.9 : 0.65;
     if (hasBanner) confidence = 0.96;
     else if (deadBlocks >= 5 && globAlias) confidence = 0.91;
     else if (deadBlocks >= 3 && (globAlias || caesar)) confidence = 0.85;
@@ -413,6 +422,7 @@ export class HerculesDeobfuscator implements Deobfuscator {
       deadBlocks > 0 ? `${deadBlocks} dead-code block(s)` : null,
       globAlias ? "glob stdlib aliases" : null,
       caesar ? "Caesar IIFE" : null,
+      vmV3 ? "v3 VM/bytecode dispatcher" : null,
     ].filter(Boolean).join(", ");
 
     return {
@@ -481,7 +491,22 @@ export class HerculesDeobfuscator implements Deobfuscator {
       }
     } catch { /* best-effort */ }
 
-    // Pass 7: beautify
+    // Pass 7: Hercules v3 custom VM lift (strictly conservative).
+    if (hasHerculesVmV3(work)) {
+      try {
+        ctx.log("hercules: attempting v3 opcode-by-opcode static lift...");
+        const lifted = liftCustomVm(work, "Hercules v3");
+        notes.push(...lifted.notes);
+        if (lifted.changed) {
+          work = lifted.output;
+          changed += lifted.recovered;
+        }
+      } catch (e) {
+        notes.push(`Hercules v3 VM lift skipped: ${e instanceof Error ? e.message : String(e)}`);
+      }
+    }
+
+    // Pass 8: beautify
     try {
       work = beautifyLua(work);
     } catch { /* keep unformatted */ }

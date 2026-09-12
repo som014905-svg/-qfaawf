@@ -76,13 +76,44 @@ function findLongBracketClose(src: string, openIdx: number, level: number): numb
   return src.indexOf(needle, from);
 }
 
-/** UTF-8 encode a single Unicode codepoint (for Luau `\u{XXXX}` escapes). */
+/**
+ * UTF-8 encode a single Unicode codepoint (for Luau `\u{XXXX}` escapes),
+ * returning the resulting bytes as a latin1-mapped string (one JS char per
+ * raw byte) — the same "1 char = 1 byte" convention every other string in
+ * this pipeline uses. Returning a real multi-byte JS/Unicode character here
+ * (e.g. via String.fromCodePoint) would be indistinguishable downstream from
+ * a single raw byte in the same numeric range, corrupting byte-length and
+ * re-escaping logic.
+ */
 function utf8Encode(code: number): string {
-  try {
-    return String.fromCodePoint(code);
-  } catch {
-    return String.fromCharCode(code & 0xff);
+  if (!Number.isFinite(code) || code < 0) return "";
+  if (code <= 0x7f) return String.fromCharCode(code);
+  const bytes: number[] = [];
+  if (code <= 0x7ff) {
+    bytes.push(0xc0 | (code >> 6), 0x80 | (code & 0x3f));
+  } else if (code <= 0xffff) {
+    bytes.push(0xe0 | (code >> 12), 0x80 | ((code >> 6) & 0x3f), 0x80 | (code & 0x3f));
+  } else if (code <= 0x1fffff) {
+    bytes.push(0xf0 | (code >> 18), 0x80 | ((code >> 12) & 0x3f), 0x80 | ((code >> 6) & 0x3f), 0x80 | (code & 0x3f));
+  } else if (code <= 0x3ffffff) {
+    bytes.push(
+      0xf8 | (code >> 24),
+      0x80 | ((code >> 18) & 0x3f),
+      0x80 | ((code >> 12) & 0x3f),
+      0x80 | ((code >> 6) & 0x3f),
+      0x80 | (code & 0x3f)
+    );
+  } else {
+    bytes.push(
+      0xfc | (code >> 30),
+      0x80 | ((code >> 24) & 0x3f),
+      0x80 | ((code >> 18) & 0x3f),
+      0x80 | ((code >> 12) & 0x3f),
+      0x80 | ((code >> 6) & 0x3f),
+      0x80 | (code & 0x3f)
+    );
   }
+  return String.fromCharCode(...bytes);
 }
 
 function resolveStringEscape(src: string, i: number): { value: string; consumed: number } {
@@ -363,7 +394,10 @@ export function tryBase64Decode(s: string): string | null {
     const pad = cleaned.length % 4;
     const padded = pad ? cleaned + "=".repeat(4 - pad) : cleaned;
     const bin = Buffer.from(padded, "base64");
-    return bin.toString("utf8");
+    // latin1, not utf8: the decoded payload is frequently raw/encrypted
+    // binary rather than valid UTF-8 text, and utf8 would silently mangle
+    // (or \uFFFD-replace) any byte sequence that isn't well-formed UTF-8.
+    return bin.toString("latin1");
   } catch {
     return null;
   }
@@ -373,14 +407,17 @@ export function tryBase64Decode(s: string): string | null {
 export function xorDecode(data: string, key: string | number): string {
   const keyBytes = typeof key === "number"
     ? [key & 0xff]
-    : Array.from(Buffer.from(key, "utf8"));
+    : Array.from(Buffer.from(key, "latin1"));
   if (keyBytes.length === 0) return data;
   const buf = Buffer.from(data, "binary");
   const out = Buffer.alloc(buf.length);
   for (let i = 0; i < buf.length; i++) {
     out[i] = buf[i] ^ keyBytes[i % keyBytes.length];
   }
-  return out.toString("utf8");
+  // latin1: XOR'd bytes are not guaranteed to be valid UTF-8 (and often are
+  // still-encrypted intermediate bytes), so preserve them 1:1 instead of
+  // risking utf8 corruption.
+  return out.toString("latin1");
 }
 
 /** Detect if a string is "mostly printable" Lua/Luau source. */
@@ -1241,7 +1278,7 @@ export function bruteForceXorDecode(
       for (let i = 0; i < buf.length; i++) {
         out[i] = buf[i] ^ keyBytes[i % keyLen];
       }
-      const dec = out.toString("utf8");
+      const dec = out.toString("latin1");
       const score = scorer(dec);
       if (!best || score > best.score) {
         const keyStr = String.fromCharCode(...keyBytes);

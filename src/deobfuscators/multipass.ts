@@ -6,7 +6,7 @@ import { foldConstants } from '../passes/constant-fold';
 import { renameCrypticLocals, tokenize } from '../utils/lua-utils';
 import { recoverControlFlow } from '../passes/control-flow';
 import { validateLuaSource } from '../utils/validate';
-import { inlineStaticTables, inlineOffsetTableLookups, inlineNumericCacheAccessors, normalizeStdlibAliases, normalizeEnvStdlibAliases, foldSimpleXorDecoderFunctions, foldEncodedStringTableLiterals } from "../passes/static-resolve";
+import { inlineStaticTables, inlineIndexedObjectTableLookups, inlineOffsetTableLookups, inlineNumericCacheAccessors, normalizeStdlibAliases, normalizeEnvStdlibAliases, foldSimpleXorDecoderFunctions, foldEncodedStringTableLiterals } from "../passes/static-resolve";
 import { ModernVMDeobfuscator } from "./modern-vm";
 import { recoverBinaryTreeDispatch } from "../passes/binary-tree-dispatch";
 import { recoverSemanticIdentifiers } from "../passes/semantic-identifiers";
@@ -114,15 +114,16 @@ export async function runMultiPass(
       const encodedTables = foldEncodedStringTableLiterals(xorDec.result);
       const offsetTable = inlineOffsetTableLookups(encodedTables.result);
       const cacheAccess = inlineNumericCacheAccessors(offsetTable.result);
-      const table = inlineStaticTables(cacheAccess.result);
+      const indexed = inlineIndexedObjectTableLookups(cacheAccess.result);
+      const table = inlineStaticTables(indexed.result);
       const candidate = table.result;
       const q = cachedScore(candidate);
       const beforeQ = cachedScore(current);
-      const changed = xorDec.changed + encodedTables.changed + offsetTable.changed + cacheAccess.changed + envAlias.changed + alias.changed + table.changed;
+      const changed = xorDec.changed + encodedTables.changed + offsetTable.changed + cacheAccess.changed + indexed.changed + envAlias.changed + alias.changed + table.changed;
       if (changed > 0 && q.balanced && q.score >= beforeQ.score - 0.02 &&
           (candidate.length >= current.length || preservesTail(current, candidate))) {
         current = candidate;
-        foldNotes = [...foldNotes, ...xorDec.notes, ...encodedTables.notes, ...offsetTable.notes, ...cacheAccess.notes, ...envAlias.notes, ...alias.notes, ...table.notes];
+        foldNotes = [...foldNotes, ...xorDec.notes, ...encodedTables.notes, ...offsetTable.notes, ...cacheAccess.notes, ...indexed.notes, ...envAlias.notes, ...alias.notes, ...table.notes];
       }
     } catch {
       // best-effort

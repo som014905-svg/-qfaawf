@@ -539,7 +539,7 @@ export class LuraphVMDecoder implements Deobfuscator {
 
     if (process.env.LURAPH_VM_DEBUG_CHUNK) {
       try {
-        (await import("node:fs")).writeFileSync(process.env.LURAPH_VM_DEBUG_CHUNK, patched);
+        (await import("node:fs")).writeFileSync(process.env.LURAPH_VM_DEBUG_CHUNK, patched, "latin1");
         log(`luraph-vm: debug chunk written (${patched.length} chars)`);
       } catch { /* ignore */ }
     }

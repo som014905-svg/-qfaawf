@@ -32,104 +32,103 @@ return (function (...)
         end, function (num1, tbl2, tbl3, fn45)
           local fn13, fn14, fn15, tbl11, tbl12, tbl13, fn16, fn17, tbl14, tbl15, fn18, tbl6, fn19, fn20, fn21, fn22, fn23, fn24, tbl16, tbl17, n, value2, fn25, fn26, tbl18, fn27, tbl4, tbl19, tbl20, tbl21, fn28, tbl8, value3, tbl22, tbl23, tbl24, tbl25, tbl26, num3, fn29, tbl27, tbl28, fn30, tbl29, fn31, tbl30, fn32, tbl9, num4, fn33, tbl31, tbl32, tbl33, tbl34, fn34, tbl35, num5, tbl36, fn35, tbl37, tbl38, tbl39, fn36, tbl40, fn37, tbl41, fn38, fn39, fn40, tbl42, tbl43, num6, tbl44, tbl45, tbl46, fn41, tbl47, tbl5, fn42, value4, tbl48, tbl49, tbl50, tbl51, tbl52, tbl7, tbl53, fn43
           while num1 do
-            if num1 < 7426636 then
-              if num1 < 3625580 then
+            if num1 < 3625580 then
   if num1 < 2099062 then
     if num1 < 30719 then
       tbl9 = num1 fn21 = "x\1611\185\242\220\239\218\381\8482\216\184" tbl39 = "_G" tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] tbl43 = 32358950058716 tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] num1 = tbl22 and 14946634 tbl8 = tbl22
-    elseif num1 < 33176 then
+    elseif num1 >= 30719 then
       num1 = true tbl10[tbl3[3]] = num1 tbl39 = 9410687488286 tbl6 = tbl10[tbl7] tbl8 = tbl10[tbl3[1]] tbl41 = "\202^\252B\255\8482$\30" tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1 = 15840442 tbl4 = tbl6[tbl5] tbl10[tbl3[4]] = tbl4 tbl40 = 12316889978471 tbl39 = "\185Z\231\165~\214\194\0" tbl5 = tbl10[tbl3[5]] tbl30 = 18172221759758 tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl30 = "Tc\162]\250o\177" tbl6 = tbl5[tbl8] tbl10[tbl3[6]] = tbl6 tbl8 = tbl10[tbl7] tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl9 = fn10(7135625, {tbl7, tbl3[1];
                                         tbl3[2];
                                         tbl3[3]}) tbl8 = "Connect" tbl8 = tbl5[tbl8] tbl8 = tbl8(tbl5, tbl9)
-    elseif num1 < 56382 then
+    elseif num1 >= 33176 then
       tbl22 = 5490031905276 tbl7 = "task" tbl9 = "\2557\233\179\188" tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = tbl10[tbl3[3]] tbl4 = num1(tbl7) num1 = tbl1["MIwejjpFdQVQX"] tbl4 = {}
-    elseif num1 < 107764 then
+    elseif num1 >= 56382 then
       num1 = 5459455
-    elseif num1 < 246803 then
+    elseif num1 >= 107764 then
       num1 = 11443333 tbl41 = tbl8
-    elseif num1 < 272489 then
+    elseif num1 >= 246803 then
       num1 = tbl10[tbl3[1]] tbl4 = "Stop" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 3516329
-    elseif num1 < 344249 then
+    elseif num1 >= 272489 then
       num1 = tbl10[tbl3[1]] tbl22 = "\21}MD\223\\" tbl5 = tbl10[tbl3[2]] tbl30 = "zb\8220\8225\192" tbl41 = 1235776520767 tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl4 = tbl5[tbl9] tbl9 = "math" tbl8 = tbl1[tbl9] tbl22 = tbl10[tbl3[2]] tbl40 = 19815900734475 tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl22 = 10 tbl5 = tbl8[tbl9] tbl9 = 0 tbl8 = tbl5(tbl6, tbl9, tbl22) num1[tbl4] = tbl8 num1 = 7187496
-    elseif num1 < 371866 then
+    elseif num1 >= 344249 then
       num1 = tbl4 and 3302866
-    elseif num1 < 420579 then
+    elseif num1 >= 371866 then
       tbl8 = nil num1 = 2703041 tbl6 = nil tbl5 = nil tbl9 = nil
-    elseif num1 < 449588 then
+    elseif num1 >= 420579 then
       num1 = tbl4 and 16467291
-    elseif num1 < 482105 then
+    elseif num1 >= 449588 then
       num1 = tbl10[tbl3[1]] tbl5 = num1 tbl7 = tbl2[1] tbl6 = tbl2[2] num1 = tbl5[tbl6] num1 = num1 and 5393693
-    elseif num1 < 510882 then
+    elseif num1 >= 482105 then
       tbl4 = "_G" tbl9 = "\225\189\182/\189\240\169\215" tbl22 = 8630453817266 tbl7 = tbl2[1] num1 = tbl1[tbl4] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 num1[tbl4] = tbl6 num1 = tbl7 and 8091050
-    elseif num1 < 514481 then
+    elseif num1 >= 510882 then
       tbl6 = tbl10[tbl3[2]] tbl22 = 20140712584354 tbl9 = "\252'\219\18" tbl43 = 11428706473161 tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] num1 = tbl7[tbl4] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl22 = "\169\245y\201\8218\196 \244\176429" tbl41 = 9780980502986 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl8 = tbl10[tbl3[2]] fn21 = "m\234A\2S\8216[\8217\231\168\1690K\170K\253#\175" tbl9 = tbl10[tbl3[3]] tbl4 = "gsub" tbl41 = "\8222\173" tbl39 = 8890075238443 tbl22 = tbl9(tbl41, tbl39) tbl39 = "_G" tbl4 = num1[tbl4] tbl5 = tbl8[tbl22] tbl4 = tbl4(num1, tbl6, tbl5) tbl6 = tbl4 tbl4 = tbl10[tbl3[4]] num1 = tbl4[tbl6] tbl4 = tbl10[tbl3[5]] tbl5 = num1 num1 = tbl4[tbl6] tbl8 = num1 num1 = false tbl41 = tbl1[tbl39] tbl9 = num1 tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] num1 = tbl22 and 8720940 tbl4 = tbl22
-    elseif num1 < 689004 then
+    elseif num1 >= 514481 then
       tbl39 = "\3\8218\193\197\27\244" tbl8 = "_G" tbl30 = 20918621103628 tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl39 = 18007915716801 num1 = 15714760 tbl6 = tbl5[tbl8] tbl8 = tbl10[tbl3[1]] tbl41 = "" tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6 ~= tbl5 tbl4 = tbl7
-    elseif num1 < 742719 then
+    elseif num1 >= 689004 then
       num1 = true tbl9 = num1 num1 = 15645302
-    elseif num1 < 804997 then
+    elseif num1 >= 742719 then
       tbl30 = 5737634237039 fn21 = "N\1\174(\8226\24\193" tbl6 = "game" tbl4 = "JSONDecode" num1 = tbl10[tbl3[1]] tbl7 = tbl1[tbl6] tbl39 = "\21xr\8230\218\217\248\255\191-f\8221V\2x\219,?\32\212l\r\8216\184\8211'T\178\376\208\2075{" tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl43 = 1434523517596 tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl4 = num1[tbl4] tbl39 = "game" tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl25 = "\210/,\157\211~27\168L~\29\19)\207}n\247R\r1P\8216(E\165\8249z)\216+\196m\254\15P\208Ga" tbl22 = tbl41[tbl39] fn21 = 1483231920818 tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22..tbl41 tbl5 = tbl8..tbl9 tbl8 = "HttpGet" tbl8 = tbl7[tbl8] tbl30 = "-\178\8\30" tbl6 = {tbl8(tbl7, tbl5)} tbl40 = 175246917713 tbl4 = tbl4(num1, fn44(tbl6)) tbl7 = tbl4 tbl4 = "pairs" num1 = tbl1[tbl4] tbl22 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl8 = tbl7[tbl9] tbl9 = {num1(tbl8)} tbl6 = tbl9[2] tbl5 = tbl9[3] num1 = 9061804 tbl4 = tbl9[1] tbl8 = tbl4
-    elseif num1 < 809507 then
+    elseif num1 >= 804997 then
       num1 = tbl1["Lrs4zO4HfwHY"] tbl4 = {}
-    elseif num1 < 822612 then
+    elseif num1 >= 809507 then
       num5 = 1 num6 = num1 num4 = n[num5] num5 = false fn35 = num4 == num5 fn14 = fn35 num1 = fn35 and 3017132
-    elseif num1 < 856259 then
+    elseif num1 >= 822612 then
       tbl7 = tbl2 tbl5 = "string" num1 = true tbl6 = fn52() tbl8 = fn52() tbl9 = fn52() tbl10[tbl6] = num1 tbl4 = tbl1[tbl5] tbl5 = "gmatch" num1 = tbl4[tbl5] tbl5 = fn52() tbl10[tbl5] = num1 num1 = fn49(15200663, {}) tbl39 = fn46(8524832, {tbl9}) tbl10[tbl8] = num1 num1 = false tbl10[tbl9] = num1 tbl41 = "pcall" tbl22 = tbl1[tbl41] tbl41 = tbl22(tbl39) num1 = tbl41 and 15669927 tbl4 = tbl41
-    elseif num1 < 902286 then
+    elseif num1 >= 856259 then
       tbl4 = "_G" tbl22 = 976434135494 num1 = tbl1[tbl4] tbl6 = tbl10[tbl3[2]] tbl9 = "\254Fd\162\338\168V" tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 num1[tbl4] = tbl6 tbl7 = nil num1 = tbl1["s15FJpVleyP5QA"] tbl4 = {}
-    elseif num1 < 977552 then
+    elseif num1 >= 902286 then
       num1 = tbl10[tbl3[2]] tbl4 = num1() num1 = 3615624
-    elseif num1 < 991820 then
+    elseif num1 >= 977552 then
       tbl7 = nil num1 = 8206270 tbl10[tbl3[5]] = tbl4
-    elseif num1 < 1028459 then
+    elseif num1 >= 991820 then
       tbl7 = "task" tbl4 = tbl1[tbl7] tbl22 = 29510206748077 tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl9 = "\244-U9" tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = 2 tbl4 = num1(tbl7) num1 = 10357465
-    elseif num1 < 1044409 then
+    elseif num1 >= 1028459 then
       tbl8 = 1 tbl9 = 2 tbl6 = tbl10[tbl3[1]] tbl5 = tbl6(tbl8, tbl9) tbl6 = 1 tbl7 = tbl5 == tbl6 num1 = tbl7 and 1320366 tbl4 = tbl7
-    elseif num1 < 1213749 then
+    elseif num1 >= 1044409 then
       tbl8 = tbl6 tbl41 = 0 tbl22 = "GetRankInGroup" tbl22 = tbl9[tbl22] tbl22 = tbl22(tbl9, tbl41) tbl41 = 100 num1 = tbl22 > tbl41 num1 = num1 and 10843988
-    elseif num1 < 1302571 then
+    elseif num1 >= 1213749 then
       tbl7 = tbl10[tbl3[6]] tbl39 = 35041515143101 num1 = 5371901 tbl8 = tbl10[tbl3[3]] tbl41 = ")\224[\27:\8212" tbl9 = tbl10[tbl3[4]] tbl22 = tbl9(tbl41, tbl39) tbl6 = "FindFirstChild" tbl6 = tbl7[tbl6] tbl5 = tbl8[tbl22] tbl6 = tbl6(tbl7, tbl5) tbl4 = tbl6
-    elseif num1 < 1324525 then
+    elseif num1 >= 1302571 then
       num1 = tbl4 and 5815054
-    elseif num1 < 1353828 then
+    elseif num1 >= 1324525 then
       num1 = tbl10[tbl3[1]] tbl7 = -102.2 tbl6 = 60.9 tbl5 = -1578.4 tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["9EJwYnlirZVbE"]
-    elseif num1 < 1367578 then
+    elseif num1 >= 1353828 then
       fn30 = 29085867554024 num3 = "\29\353\202\129\183;+=\197b9\210\190P\179\26\165\127" tbl25 = "_G" tbl40 = tbl1[tbl25] fn21 = tbl10[tbl3[1]] tbl43 = tbl10[tbl3[2]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl30 = tbl40[tbl25] tbl41 = tbl30 num1 = 1390218
-    elseif num1 < 1370762 then
+    elseif num1 >= 1367578 then
       tbl9 = "\223\235\220\184V\207l" tbl6 = tbl10[tbl3[1]] tbl22 = 9259429417175 tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] num1 = "ChangeState" num1 = tbl7[num1] num1 = num1(tbl7, tbl4) num1 = 9751826
-    elseif num1 < 1431055 then
+    elseif num1 >= 1370762 then
       num1 = tbl39 tbl9 = tbl41 num1 = 5383141
-    elseif num1 < 1448797 then
+    elseif num1 >= 1431055 then
       tbl36 = fn12(tbl36) n = nil fn32 = fn12(fn32) fn34 = fn12(fn34) tbl27 = fn12(tbl27) tbl34 = fn12(tbl34) tbl50 = fn12(tbl50) num1 = 7066904
-    elseif num1 < 1476642 then
+    elseif num1 >= 1448797 then
       tbl9 = "\143\157MU\224\199\11?\235" tbl7 = "_G" tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = 15545175104582 tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] num1 = num1 and 8373125
-    elseif num1 < 1541054 then
+    elseif num1 >= 1476642 then
       tbl7 = nil num1 = tbl1["Idq96peL7rWm"] tbl4 = {}
-    elseif num1 < 1589536 then
+    elseif num1 >= 1541054 then
       num1 = 6683176 tbl9 = nil tbl22 = nil
-    elseif num1 < 1631142 then
+    elseif num1 >= 1589536 then
       tbl4 = {} num1 = tbl1["tpvu2lazLJrU"] tbl7 = nil
-    elseif num1 < 1645877 then
+    elseif num1 >= 1631142 then
       tbl4 = "pcall" tbl41 = "!q\193" tbl7 = fn48(5579391, {tbl3[3], tbl3[1], tbl3[2]}) num1 = tbl1[tbl4] tbl4 = num1(tbl7) tbl4 = "game" num1 = tbl1[tbl4] tbl4 = "GetService" tbl9 = "\199\228\165wo\30\4=\2\247\8240" tbl4 = num1[tbl4] tbl22 = 28326665532294 tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl39 = 3811978135279 tbl8 = tbl5(tbl9, tbl22) tbl5 = "Vector2" tbl7 = tbl6[tbl8] tbl4 = tbl4(num1, tbl7) tbl6 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] num1 = "ClickButton2" tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] num1 = tbl4[num1] tbl6 = {tbl7()} num1 = num1(tbl4, fn44(tbl6)) num1 = 12395051
-    elseif num1 < 1677231 then
+    elseif num1 >= 1645877 then
       tbl45 = "\183!Z\144\244\216" tbl40 = "game" num1 = tbl10[tbl3[4]] tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl41 = "TeleportToPlaceInstance" num3 = 27320076267953 tbl41 = num1[tbl41] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl9 = nil num3 = 23432930831007 tbl45 = "\199C" tbl39 = tbl30[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl30 = tbl22[tbl40] tbl41 = tbl41(num1, tbl39, tbl30) tbl22 = nil num1 = 5384254
-    elseif num1 < 1680573 then
+    elseif num1 >= 1677231 then
       num1 = tbl4 and 33087
-    elseif num1 < 1692826 then
+    elseif num1 >= 1680573 then
       tbl22 = true tbl9 = tbl22 num1 = 15645302
-    elseif num1 < 1718269 then
+    elseif num1 >= 1692826 then
       num1 = tbl10[tbl3[1]] tbl43 = ":P\194" tbl30 = "TweenInfo" tbl4 = "Create" tbl4 = num1[tbl4] tbl22 = tbl10[tbl3[2]] tbl45 = 27080747184450 tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[3]] tbl25 = tbl10[tbl3[4]] tbl9 = tbl7 fn30 = "\732\143\8250" fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl45 = 6470911347653 tbl12 = 33343041272998 tbl30 = .1 tbl39 = tbl41(tbl30) tbl43 = "l\208\402U" tbl40 = tbl10[tbl3[3]] tbl25 = tbl10[tbl3[4]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] fn21 = "UDim2" tbl25 = tbl1[fn21] tbl43 = tbl10[tbl3[3]] tbl45 = tbl10[tbl3[4]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] tbl43 = 100 tbl45 = 1 tbl40 = tbl25[fn21] fn21 = tbl9 / tbl43 num3 = 0 tbl43 = 0 tbl25 = tbl40(fn21, tbl43, tbl45, num3) tbl41 = {[tbl30] = tbl25} tbl4 = tbl4(num1, tbl22, tbl39, tbl41) num1 = "Play" num1 = tbl4[num1] num1 = num1(tbl4) tbl4 = 60 num1 = tbl9 == tbl4 num1 = num1 and 9488368
-    elseif num1 < 1829195 then
+    elseif num1 >= 1718269 then
       tbl6 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl41 = "\198\243\8222h\24\232\236mN" tbl39 = 33980317121999 tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl41 = 4431440840719 tbl5 = tbl10[tbl3[2]] tbl22 = "\382\0\8249\8217\8230\241P" tbl39 = 1398206300811 tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl6 = tbl10[tbl3[2]] tbl9 = "\8364\231\8\0\217/d" tbl22 = 8926019211324 tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl8 = tbl10[tbl3[2]] tbl7 = num1 tbl41 = "^\8221a\381\19\227\170" tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl5] tbl4 = tbl6 num1 = tbl6 and 8076645
-    elseif num1 < 1894426 then
+    elseif num1 >= 1829195 then
       num1 = tbl5 num1 = tbl6 and 16181281 tbl4 = tbl6
-    elseif num1 < 1938671 then
+    elseif num1 >= 1894426 then
       num3 = "|\8221\710P\251\179\172\163" tbl39 = "\205M\382\12/\170\162\381" tbl30 = 25137996066233 tbl4 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) num1 = tbl4[tbl41] tbl12 = 15167024765846 fn21 = 7810438155829 tbl41 = "Vector3" tbl25 = "\212\710\18" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl43 = "8\185%sa\171\19>" tbl40 = tbl30(tbl25, fn21) tbl45 = 5627714832956 tbl41 = tbl39[tbl40] tbl4 = tbl22[tbl41] tbl40 = tbl10[tbl3[1]] tbl25 = tbl10[tbl3[2]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl39 = tbl6[tbl30] tbl40 = tbl10[tbl3[1]] fn30 = 7450513280397 tbl25 = tbl10[tbl3[2]] tbl45 = 28695731582002 tbl43 = "\172" fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl39 = 0 fn21 = tbl10[tbl3[1]] tbl43 = tbl10[tbl3[2]] tbl45 = tbl43(num3, fn30) num3 = "/" fn30 = 33148237200459 tbl25 = fn21[tbl45] tbl40 = tbl6[tbl25] fn21 = tbl10[tbl3[1]] tbl43 = tbl10[tbl3[2]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl30 = tbl40[tbl25] tbl22 = tbl4(tbl41, tbl39, tbl30) tbl30 = 1822761812816 fn30 = "Z\218Z\174$\732Gz" tbl6[num1] = tbl22 tbl4 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl39 = "\353\8220\179w\203\23" tbl41 = tbl22(tbl39, tbl30) num1 = tbl4[tbl41] tbl43 = "\204\186n\1702\222EK" fn21 = 16709942713957 tbl25 = "\225\201\168" tbl41 = "CFrame" tbl31 = "\233\205\184\167" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl45 = 2007260365734 tbl41 = tbl39[tbl40] tbl21 = 23080792369659 tbl4 = tbl22[tbl41] tbl40 = tbl10[tbl3[1]] tbl25 = tbl10[tbl3[2]] fn21 = tbl25(tbl43, tbl45) tbl45 = 13942436567388 tbl30 = tbl40[fn21] tbl43 = "51" tbl39 = tbl6[tbl30] tbl40 = tbl10[tbl3[1]] tbl25 = tbl10[tbl3[2]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl43 = tbl10[tbl3[1]] tbl45 = tbl10[tbl3[2]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] tbl25 = tbl9[fn21] tbl43 = tbl10[tbl3[1]] tbl12 = 32172932004485 fn30 = "\190" tbl45 = tbl10[tbl3[2]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] tbl40 = tbl25[fn21] num3 = tbl10[tbl3[1]] fn30 = tbl10[tbl3[2]] tbl12 = fn30(tbl31, tbl21) tbl45 = num3[tbl12] tbl43 = tbl9[tbl45] num3 = tbl10[tbl3[1]] tbl21 = 27163045146984 tbl31 = "C" fn30 = tbl10[tbl3[2]] tbl12 = fn30(tbl31, tbl21) tbl45 = num3[tbl12] fn21 = tbl43[tbl45] tbl43 = 2 tbl25 = fn21 / tbl43 tbl30 = tbl40 + tbl25 tbl40 = 3.2 tbl39 = tbl30 + tbl40 fn21 = tbl10[tbl3[1]] fn30 = 27822886548124 tbl43 = tbl10[tbl3[2]] num3 = "\250\206\1801\188T\11\"" tbl45 = tbl43(num3, fn30) num3 = "$" tbl25 = fn21[tbl45] tbl40 = tbl6[tbl25] fn30 = 7516031946155 fn21 = tbl10[tbl3[1]] tbl43 = tbl10[tbl3[2]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl30 = tbl40[tbl25] tbl22 = tbl4(tbl41, tbl39, tbl30) tbl6[num1] = tbl22 num1 = 16452981
-    elseif num1 < 1975848 then
+    elseif num1 >= 1938671 then
       num1 = tbl10[tbl3[1]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 857101
-    elseif num1 < 2076050 then
+    elseif num1 >= 1975848 then
       tbl40 = "unpack" tbl30 = tbl1[tbl40] tbl4 = tbl30 num1 = 6702580
-    elseif num1 < 2088534 then
+    elseif num1 >= 2076050 then
       fn18 = 6882815102085 num3 = "\129\184},\196WBZcS\213=\224\157\220\187" num1 = tbl30 tbl34 = 22367838955695 tbl40 = "game" tbl21 = 33566136532238 tbl30 = fn52() fn34 = 20442142778671 tbl10[tbl30] = tbl39 tbl39 = tbl1[tbl40] fn21 = tbl10[tbl6] tbl43 = tbl10[tbl8] tbl40 = "GetService" tbl27 = 27621332300350 tbl45 = tbl43(num3, tbl21) fn32 = 22949715716542 tbl21 = "\8221\4&\8226\162\28F\242\231\23\183X\29u\25" tbl25 = fn21[tbl45] tbl40 = tbl39[tbl40] tbl40 = tbl40(tbl39, tbl25) tbl39 = fn52() tbl25 = "game" tbl10[tbl39] = tbl40 tbl40 = tbl1[tbl25] tbl25 = "GetService" tbl25 = tbl40[tbl25] num5 = 3158851651006 tbl43 = tbl10[tbl6] tbl45 = tbl10[tbl8] num3 = tbl45(tbl21, fn34) fn21 = tbl43[num3] tbl50 = 25273452441080 tbl25 = tbl25(tbl40, fn21) fn34 = "\204\163aY\710I\210\8225\2540" tbl4 = {} fn21 = "game" tbl40 = fn52() tbl10[tbl40] = tbl25 tbl25 = tbl1[fn21] fn21 = "GetService" tbl45 = tbl10[tbl6] num3 = tbl10[tbl8] fn21 = tbl25[fn21] tbl21 = num3(fn34, tbl50) tbl43 = tbl45[tbl21] fn21 = fn21(tbl25, tbl43) tbl43 = "game" tbl25 = fn52() tbl50 = "E\242\8249\2\208\203\18;g\8220\8240\207n\202\226\17\18" tbl32 = 18089508577511 tbl10[tbl25] = fn21 fn21 = tbl1[tbl43] tbl43 = "GetService" num3 = tbl10[tbl6] tbl21 = tbl10[tbl8] fn34 = tbl21(tbl50, tbl34) tbl5 = nil tbl43 = fn21[tbl43] tbl45 = num3[fn34] tbl43 = tbl43(fn21, tbl45) fn21 = fn52() n = 2217531180040 tbl10[fn21] = tbl43 tbl45 = "game" tbl43 = tbl1[tbl45] tbl45 = "GetService" tbl21 = tbl10[tbl6] fn35 = 31110286571670 tbl45 = tbl43[tbl45] tbl34 = "H\187\178;\237\175A\201.vM" fn34 = tbl10[tbl8] tbl50 = fn34(tbl34, fn32) fn32 = "\144sJ?4\225\193S$[~A" num3 = tbl21[tbl50] tbl45 = tbl45(tbl43, num3) fn40 = 34797814005579 tbl43 = fn52() tbl10[tbl43] = tbl45 num3 = "game" tbl45 = tbl1[num3] fn34 = tbl10[tbl6] tbl50 = tbl10[tbl8] tbl34 = tbl50(fn32, tbl27) tbl21 = fn34[tbl34] num3 = "GetService" num3 = tbl45[num3] num3 = num3(tbl45, tbl21) tbl45 = fn52() num4 = 7552451775932 tbl10[tbl45] = num3 tbl27 = "\710\241\1614\28" tbl21 = "game" num3 = tbl1[tbl21] tbl50 = tbl10[tbl6] tbl34 = tbl10[tbl8] fn32 = tbl34(tbl27, n) fn34 = tbl50[fn32] tbl21 = "GetService" n = "L\129\212\191\184\8222\185m\173\8225\\\163\219P\216\242\165\1779" tbl21 = num3[tbl21] tbl21 = tbl21(num3, fn34) fn34 = "game" tbl28 = 2347207771205 num3 = tbl1[fn34] tbl34 = tbl10[tbl6] fn32 = tbl10[tbl8] tbl27 = fn32(n, fn35) fn34 = "GetService" fn34 = num3[fn34] tbl50 = tbl34[tbl27] fn35 = "E%\8\8216c\173\225\26@\227{\247\19h\160\339\196\22\184" fn34 = fn34(num3, tbl50) num3 = fn52() tbl10[num3] = fn34 tbl50 = "game" fn34 = tbl1[tbl50] fn32 = tbl10[tbl6] tbl27 = tbl10[tbl8] tbl50 = "GetService" tbl50 = fn34[tbl50] n = tbl27(fn35, num4) tbl34 = fn32[n] tbl50 = tbl50(fn34, tbl34) fn34 = "GetClientId" fn34 = tbl50[fn34] fn34 = fn34(tbl50) tbl50 = fn52() tbl10[tbl50] = fn34 tbl27 = tbl10[tbl6] n = tbl10[tbl8] tbl18 = 5794724907658 fn34 = fn49(9171564, {tbl6;
                                         tbl8, tbl43}) tbl38 = 16638014201411 num4 = "\18\30\253\240Dn\8240@\t\178\1\168\200\5\353" fn35 = n(num4, num5) fn32 = tbl27[fn35] tbl27 = .1 tbl34 = fn34(fn32, tbl27) fn32 = fn52() tbl10[fn32] = tbl34 num5 = "\732\237\169\243da" tbl51 = 16634774052418 tbl34 = tbl10[fn32] n = tbl10[tbl6] fn35 = tbl10[tbl8] num4 = fn35(num5, tbl38) tbl38 = 19532833268615 tbl27 = n[num4] n = true tbl34[tbl27] = n n = tbl10[tbl6] num5 = "\239\229\3@\231\254\248J\224q" fn35 = tbl10[tbl8] num4 = fn35(num5, tbl38) fn38 = 887735255453 tbl27 = n[num4] num1 = tbl1["sWttZIWqWaH0dZ"] n = 1.4 tbl34 = fn34(tbl27, n) tbl27 = fn52() tbl10[tbl27] = tbl34 fn35 = tbl10[tbl6] tbl38 = "\225\218\193\8218:\23\196\8\2395\178\141\240\n\129" num4 = tbl10[tbl8] num5 = num4(tbl38, tbl32) tbl32 = "\243\17c\163\163e\207\183f\8222>\15!'\217" n = fn35[num5] fn35 = .95 tbl34 = fn34(n, fn35) tbl37 = "\241@\6t\8212\216e\5G\200\216K" n = fn52() tbl10[n] = tbl34 num4 = tbl10[tbl6] num5 = tbl10[tbl8] tbl38 = num5(tbl32, tbl28) fn35 = num4[tbl38] num4 = 1.4 tbl34 = fn34(fn35, num4) fn35 = fn52() tbl28 = ",\225w\219#,R1\239\199" tbl10[fn35] = tbl34 num5 = tbl10[tbl6] tbl38 = tbl10[tbl8] tbl32 = tbl38(tbl28, fn38) num4 = num5[tbl32] num5 = 3 fn38 = "{\204m\8240\178?`\248GS\223\7\8218\213" tbl34 = fn34(num4, num5) num4 = fn52() tbl10[num4] = tbl34 tbl38 = tbl10[tbl6] tbl32 = tbl10[tbl8] tbl28 = tbl32(fn38, fn40) num5 = tbl38[tbl28] tbl38 = 1.8 tbl34 = fn34(num5, tbl38) num5 = fn52() tbl10[num5] = tbl34 tbl32 = tbl10[tbl6] tbl28 = tbl10[tbl8] fn40 = "?:\2197\219\2450uS\250" fn38 = tbl28(fn40, tbl18) tbl38 = tbl32[fn38] tbl18 = "D\25\248\195Z\175Q\219\193R\127\182V\402" tbl32 = 6 tbl34 = fn34(tbl38, tbl32) tbl38 = fn52() tbl10[tbl38] = tbl34 tbl28 = tbl10[tbl6] fn38 = tbl10[tbl8] tbl42 = 30166567384799 fn40 = fn38(tbl18, fn18) tbl32 = tbl28[fn40] tbl28 = 3.1 tbl34 = fn34(tbl32, tbl28) tbl32 = fn52() fn18 = "\28?K\221\229m\5\8224:z$\352\4Dg" tbl10[tbl32] = tbl34 fn38 = tbl10[tbl6] fn40 = tbl10[tbl8] tbl18 = fn40(fn18, tbl51) tbl28 = fn38[tbl18] fn38 = 3.6 tbl18 = tbl10[tbl6] fn18 = tbl10[tbl8] tbl51 = fn18(tbl37, tbl42) fn40 = tbl18[tbl51] tbl34 = fn34(tbl28, fn38, fn40) tbl28 = fn52() tbl10[tbl28] = tbl34 fn38 = fn10(14264512, {tbl45;
                                         tbl6;
@@ -147,102 +146,102 @@ return (function (...)
                                         num3;
                                         tbl25, tbl9, tbl45;
                                         tbl39}) tbl30 = fn12(tbl30) num4 = fn12(num4) tbl50 = fn12(tbl50) fn38 = fn12(fn38) fn32 = fn12(fn32) tbl39 = fn12(tbl39) tbl34 = fn12(tbl34) tbl38 = fn12(tbl38) tbl40 = fn12(tbl40) tbl43 = fn12(tbl43) tbl32 = fn12(tbl32) tbl45 = fn12(tbl45) tbl27 = fn12(tbl27) num3 = fn12(num3) tbl21 = nil fn35 = fn12(fn35) fn21 = fn12(fn21) tbl41 = fn12(tbl41) n = fn12(n) tbl28 = fn12(tbl28) num5 = fn12(num5) tbl9 = fn12(tbl9) fn34 = nil tbl25 = fn12(tbl25) tbl22 = fn12(tbl22) tbl6 = fn12(tbl6) tbl8 = fn12(tbl8) fn18 = fn40(tbl18) tbl18 = nil fn40 = nil
-    elseif num1 < 2096590 then
+    elseif num1 >= 2088534 then
       tbl22 = "\26s\221L?\6\7t" tbl41 = 25964871692 num3 = 25256440245744 tbl25 = 3155553420733 tbl5 = tbl10[tbl3[1]] tbl7 = tbl2[1] tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl40 = "\29" tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl6 = tbl10[tbl3[3]] tbl41 = "\17\162m" tbl5 = "UDim2" num1 = tbl4 - tbl6 tbl4 = tbl1[tbl5] tbl6 = num1 tbl8 = tbl10[tbl3[1]] tbl39 = 29125462815994 tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1 = tbl4[tbl5] tbl9 = tbl10[tbl3[4]] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl30 = tbl39(tbl40, tbl25) tbl40 = 20095805662349 tbl22 = tbl41[tbl30] tbl30 = "G\194E|\205" tbl8 = tbl9[tbl22] tbl43 = 20317532300533 tbl22 = tbl10[tbl3[1]] fn21 = "\253" tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl41 = tbl10[tbl3[4]] tbl30 = tbl10[tbl3[1]] tbl40 = tbl10[tbl3[2]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl43 = 23512304872132 tbl22 = tbl41[tbl39] tbl39 = tbl10[tbl3[1]] tbl25 = "L\215\177\1\227\208" tbl30 = tbl10[tbl3[2]] fn21 = 14262723631601 tbl40 = tbl30(tbl25, fn21) tbl25 = "{" tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl39 = tbl10[tbl3[1]] fn21 = 813358694778 tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl22 = tbl6[tbl41] tbl45 = "R" tbl8 = tbl9 + tbl22 tbl41 = tbl10[tbl3[4]] tbl30 = tbl10[tbl3[1]] fn21 = "\191" tbl40 = tbl10[tbl3[2]] tbl25 = tbl40(fn21, tbl43) fn21 = 15106593627002 tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl7 = nil tbl25 = "\196\8217W\8226\8217" tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl30 = tbl10[tbl3[4]] tbl25 = tbl10[tbl3[1]] fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl43 = "\7%\250\33a" tbl39 = tbl30[tbl40] tbl40 = tbl10[tbl3[1]] tbl45 = 22123281786941 tbl25 = tbl10[tbl3[2]] fn21 = tbl25(tbl43, tbl45) tbl43 = "]" tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl40 = tbl10[tbl3[1]] tbl25 = tbl10[tbl3[2]] tbl45 = 21232338495135 fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] fn21 = 29032270869711 tbl39 = tbl6[tbl30] tbl22 = tbl41 + tbl39 tbl4 = num1(tbl5, tbl8, tbl9, tbl22) num1 = tbl10[tbl3[5]] tbl25 = "E\24x" tbl8 = tbl10[tbl3[6]] tbl6 = nil tbl41 = "TweenInfo" tbl22 = tbl1[tbl41] tbl5 = tbl4 tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl4 = "Create" tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[7]] tbl22 = tbl9(tbl41) tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl25 = "\15\212\205\251\216\8221\8250\8249" fn21 = 29737148446231 tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = {[tbl41] = tbl5} tbl4 = num1[tbl4] tbl5 = nil tbl4 = tbl4(num1, tbl8, tbl22, tbl9) num1 = "Play" num1 = tbl4[num1] num1 = num1(tbl4) num1 = tbl1["CGuhnCJQv7Swq"] tbl4 = {}
-    else
+    elseif num1 >= 2096590 then
       tbl39 = tbl10[tbl3[2]] fn21 = 7156235701508 tbl25 = "\210'\8221zC\0\732\2" tbl30 = tbl10[tbl3[3]] tbl9 = tbl5 tbl40 = tbl30(tbl25, fn21) num1 = "IsA" tbl41 = tbl39[tbl40] num1 = tbl22[num1] num1 = num1(tbl22, tbl41) num1 = num1 and 3404667
     end
-  elseif num1 < 2177768 then
+  elseif num1 >= 2099062 then
     tbl7 = tbl4 num1 = tbl7 and 1367753
-  elseif num1 < 2245060 then
+  elseif num1 >= 2177768 then
     tbl4 = "Play" num1 = tbl10[tbl3[1]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 4626195
-  elseif num1 < 2248404 then
+  elseif num1 >= 2245060 then
     tbl31 = "tostring" fn34 = "l1" num1 = tbl1[tbl31] tbl21 = tbl1[fn34] tbl31 = num1(tbl21) num1 = "l2" tbl1[num1] = tbl31 num1 = 2988398
-  elseif num1 < 2250155 then
+  elseif num1 >= 2248404 then
     tbl6 = tbl10[tbl7] tbl8 = tbl10[tbl3[1]] tbl41 = "9.f\237\186\219e" tbl9 = tbl10[tbl3[2]] tbl39 = 7668816825843 tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl4 = tbl6[tbl5] num1 = not tbl4 num1 = num1 and 2751324
-  elseif num1 < 2272998 then
+  elseif num1 >= 2250155 then
     num1 = {} tbl39 = "string" tbl9 = 35184372088832 tbl10[tbl3[2]] = num1 tbl4 = tbl10[tbl3[3]] tbl40 = 1 tbl41 = 255 tbl8 = tbl4 tbl4 = tbl6 % tbl9 tbl10[tbl3[4]] = tbl4 tbl22 = tbl6 % tbl41 tbl41 = 2 tbl9 = tbl22 + tbl41 tbl10[tbl3[5]] = tbl9 tbl25 = tbl40 tbl40 = 0 tbl41 = tbl1[tbl39] tbl39 = "len" tbl22 = tbl41[tbl39] tbl39 = 1 tbl41 = tbl22(tbl7) tbl22 = "" tbl5[tbl6] = tbl22 fn21 = tbl25 < tbl40 tbl40 = tbl39 - tbl25 tbl22 = 123 num1 = 13173327 tbl30 = tbl41
-  elseif num1 < 2293508 then
+  elseif num1 >= 2272998 then
     tbl4 = "pcall" num1 = tbl1[tbl4] tbl7 = fn47(5178472, {tbl3[3];
                                     tbl3[1], tbl3[2]}) tbl4 = num1(tbl7) num1 = 9396748
-  elseif num1 < 2479773 then
+  elseif num1 >= 2293508 then
     tbl5 = "game" tbl39 = 19790911775743 num1 = tbl10[tbl3[1]] tbl6 = tbl1[tbl5] tbl30 = 22608788957472 tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "aM&\8212\n\177\206" tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl8 = "game" tbl4 = "TeleportToPlaceInstance" tbl4 = num1[tbl4] tbl39 = "8hm\200q" tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl4 = tbl4(num1, tbl7, tbl6) num1 = tbl1["Dc4F6HJRvqnrg"] tbl4 = {}
-  elseif num1 < 2496046 then
+  elseif num1 >= 2479773 then
     num1 = tbl4 and 6938091
-  elseif num1 < 2548470 then
+  elseif num1 >= 2496046 then
     num1 = 15528799 tbl5 = nil
-  elseif num1 < 2571679 then
+  elseif num1 >= 2548470 then
     num1 = tbl1["WtoyJ3v1ZI8eWp"] tbl4 = {} tbl7 = nil
-  elseif num1 < 2575234 then
+  elseif num1 >= 2571679 then
     tbl7 = "_G" tbl22 = 23367665904257 tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl9 = "\168\201\162`\402S\11" tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] num1 = num1 and 8302345
-  elseif num1 < 2673309 then
+  elseif num1 >= 2575234 then
     num1 = tbl4 and 512070
-  elseif num1 < 2675550 then
+  elseif num1 >= 2673309 then
     tbl5 = tbl10[tbl3[2]] tbl41 = 18658994102768 tbl22 = "\246(\192:\8224\177\206\175`,@U\129\186\8240" tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl7[tbl6] tbl6 = "Connect" tbl5 = tbl10[tbl3[5]] tbl6 = num1[tbl6] tbl6 = tbl6(num1, tbl5) num1 = 4919113
-  elseif num1 < 2722204 then
+  elseif num1 >= 2675550 then
     tbl4 = {} tbl7 = nil num1 = tbl1["hMFwpLivu5JB31"]
-  elseif num1 < 2752168 then
+  elseif num1 >= 2722204 then
     num1 = tbl10[tbl3[4]] tbl4 = num1() tbl6 = fn46(13767064, {tbl3[5], tbl3[1];
                                     tbl3[2]}) tbl4 = "pcall" num1 = tbl1[tbl4] tbl4 = num1(tbl6) num1 = 0 tbl6 = num1 num1 = 3863470
-  elseif num1 < 2768573 then
+  elseif num1 >= 2752168 then
     num1 = 3277639
-  elseif num1 < 2829303 then
+  elseif num1 >= 2768573 then
     tbl39 = "_G" tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] fn21 = "X\167\184}+j\219h\8250\202\16\172\243$\732D\181\181" tbl40 = tbl10[tbl3[3]] tbl43 = 26115485233024 tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] num1 = 14946634 tbl22 = tbl41[tbl39] tbl8 = tbl22
-  elseif num1 < 2838067 then
+  elseif num1 >= 2829303 then
     num1 = tbl4 and 700416
-  elseif num1 < 2961490 then
+  elseif num1 >= 2838067 then
     tbl5 = tbl10[tbl3[6]] tbl6 = tbl5 == tbl7 tbl4 = tbl6 num1 = 986405
-  elseif num1 < 3009941 then
+  elseif num1 >= 2961490 then
     num1 = 12213649
-  elseif num1 < 3017997 then
+  elseif num1 >= 3009941 then
     num5 = 2 num4 = n[num5] num5 = tbl10[tbl27] fn35 = num4 == num5 fn14 = fn35 num1 = 4912487
-  elseif num1 < 3056150 then
+  elseif num1 >= 3017997 then
     tbl6 = tbl10[tbl3[2]] tbl5 = 121 tbl7 = tbl6 * tbl5 tbl6 = 5995079846631 tbl4 = tbl7 + tbl6 tbl6 = 1 tbl7 = 35184372088832 num1 = tbl4 % tbl7 tbl10[tbl3[2]] = num1 tbl7 = tbl10[tbl3[3]] tbl4 = tbl7 ~= tbl6 num1 = 11398709
-  elseif num1 < 3116670 then
+  elseif num1 >= 3056150 then
     num1 = true num1 = num1 and 13616439
-  elseif num1 < 3123576 then
+  elseif num1 >= 3116670 then
     tbl4 = tbl7 num1 = tbl6 num1 = 16438857
-  elseif num1 < 3136972 then
+  elseif num1 >= 3123576 then
     tbl7 = tbl2[1] tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl39 = "\211\202\27\189\164G\193\8\183\3762\237c" tbl30 = 774190580072 tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl25 = "\381\217\8212 \27\2191f\0B\242J\247" fn21 = 32454959348489 tbl5 = tbl7[tbl8] tbl41 = "Enum" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl25 = 14574375377538 tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl40 = "Jp\217\233\210|\8225\211\201\215\235\199x" tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl5 == tbl8 tbl4 = tbl6 num1 = tbl6 and 422965
-  elseif num1 < 3210861 then
+  elseif num1 >= 3136972 then
     tbl30 = true tbl39 = "SendKeyEvent" tbl31 = 32463435496204 tbl43 = "Enum" tbl41 = tbl10[tbl3[6]] tbl12 = "\242\218\141i\"7J" fn21 = tbl1[tbl43] tbl45 = tbl10[tbl3[2]] num3 = tbl10[tbl3[3]] fn30 = num3(tbl12, tbl31) tbl39 = tbl41[tbl39] tbl43 = tbl45[fn30] tbl25 = fn21[tbl43] tbl43 = tbl10[tbl3[2]] tbl45 = tbl10[tbl3[3]] tbl12 = 19078991061684 fn30 = "_!" num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] tbl43 = "game" tbl40 = tbl25[fn21] fn21 = tbl1[tbl43] tbl12 = "\188\222\224\25\222>\245" tbl25 = false tbl39 = tbl39(tbl41, tbl30, tbl40, tbl25, fn21) tbl30 = "task" num1 = 385108 tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl45 = 4753666820261 tbl25 = tbl10[tbl3[3]] tbl43 = "o\6\232u" fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl43 = "Enum" tbl41 = tbl39[tbl30] tbl30 = .05 tbl31 = 9619354292607 tbl39 = tbl41(tbl30) tbl41 = tbl10[tbl3[6]] fn21 = tbl1[tbl43] tbl30 = false tbl45 = tbl10[tbl3[2]] num3 = tbl10[tbl3[3]] fn30 = num3(tbl12, tbl31) tbl43 = tbl45[fn30] tbl25 = fn21[tbl43] tbl43 = tbl10[tbl3[2]] fn30 = "\235\250\198" tbl12 = 11707245008203 tbl45 = tbl10[tbl3[3]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] tbl40 = tbl25[fn21] tbl43 = "game" tbl25 = false tbl39 = "SendKeyEvent" fn21 = tbl1[tbl43] tbl39 = tbl41[tbl39] tbl39 = tbl39(tbl41, tbl30, tbl40, tbl25, fn21) tbl45 = 3808272418541 tbl30 = "task" tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl43 = "\182\180\227C" tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl30 = 0.5 tbl39 = tbl41(tbl30)
-  elseif num1 < 3277062 then
+  elseif num1 >= 3210861 then
     tbl4 = tbl6 num1 = tbl5 num1 = 7462204
-  elseif num1 < 3302100 then
+  elseif num1 >= 3277062 then
     num1 = true num1 = num1 and 6730575
-  elseif num1 < 3316188 then
+  elseif num1 >= 3302100 then
     num1 = tbl10[tbl3[3]] tbl4 = num1(tbl7) num1 = 6985983
-  elseif num1 < 3357649 then
+  elseif num1 >= 3316188 then
     tbl41 = tbl10[tbl7] tbl30 = tbl10[tbl3[1]] fn21 = "-\170\27\n%\8249]" tbl43 = 15906659933423 tbl40 = tbl10[tbl3[2]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl9 = not tbl22 tbl5 = tbl9 num1 = 6703006
-  elseif num1 < 3374702 then
+  elseif num1 >= 3357649 then
     tbl39 = "\168F\180\210:\12\28Y\8226" tbl6 = tbl2[2] tbl5 = tbl2[3] tbl4 = tbl10[tbl3[1]] tbl30 = 3856980641540 tbl9 = tbl10[tbl3[2]] tbl7 = tbl2[1] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] num1 = tbl4[tbl8] num1 = num1 and 6570451
-  elseif num1 < 3398564 then
+  elseif num1 >= 3374702 then
     tbl7 = tbl10[tbl3[1]] tbl4 = # tbl7 tbl7 = 0 num1 = tbl4 == tbl7 num1 = num1 and 3035552
-  elseif num1 < 3406356 then
+  elseif num1 >= 3398564 then
     tbl41 = tbl10[tbl3[2]] tbl40 = ">'#%X\157|C\200 " tbl39 = tbl10[tbl3[3]] tbl25 = 8713314062297 tbl30 = tbl39(tbl40, tbl25) num1 = tbl41[tbl30] tbl41 = false tbl22[num1] = tbl41 num1 = 1588601
-  elseif num1 < 3419359 then
+  elseif num1 >= 3406356 then
     tbl4 = "_G" tbl7 = tbl2[1] num1 = tbl1[tbl4] tbl9 = "C\180\210W\11\226\8230\219\5:G\402\191\186)j\7\r" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = 29193005135130 tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 num1[tbl4] = tbl6 num1 = tbl7 and 3687666
-  elseif num1 < 3437988 then
+  elseif num1 >= 3419359 then
     tbl39 = "_G" tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] tbl43 = 6776823352403 tbl40 = tbl10[tbl3[3]] fn21 = "\157\203\12<\31\8212s\249\218L(" tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] num1 = tbl22 and 1680831
-  elseif num1 < 3442299 then
+  elseif num1 >= 3437988 then
     tbl4 = 1 tbl7 = 100 tbl6 = tbl7 tbl7 = 1 tbl5 = tbl7 tbl7 = 0 num1 = 7488383 tbl8 = tbl5 < tbl7 tbl7 = tbl4 - tbl5
-  elseif num1 < 3451275 then
+  elseif num1 >= 3442299 then
     tbl4 = "Destroy" num1 = tbl10[tbl3[1]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 3617850
-  elseif num1 < 3479232 then
+  elseif num1 >= 3451275 then
     tbl40 = "YH\176~\732\0\8220\239\8225|\402\218" tbl5 = num1 tbl22 = "_G" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[1]] tbl25 = 9730750730675 tbl39 = tbl10[tbl3[2]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl8 num1 = tbl8 and 5346630
-  elseif num1 < 3480431 then
+  elseif num1 >= 3479232 then
     fn21 = "\141h3\185\25zA\376\245\"o\190" tbl9 = num1 tbl43 = 10885587194828 tbl39 = "_G" tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[1]] tbl40 = tbl10[tbl3[2]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl8 = tbl22 num1 = tbl22 and 4293338
-  elseif num1 < 3510559 then
+  elseif num1 >= 3480431 then
     tbl5, tbl22 = tbl8(tbl6, tbl5) num1 = tbl5 and 6555426
-  elseif num1 < 3515713 then
+  elseif num1 >= 3510559 then
     tbl6 = num1 tbl8 = "request" tbl5 = tbl1[tbl8] num1 = tbl5 and 6842619 tbl7 = tbl5
-  elseif num1 < 3516632 then
+  elseif num1 >= 3515713 then
     num1 = tbl1["JjnszxLDIQO7O"] tbl4 = {} tbl7 = nil
-  elseif num1 < 3517724 then
+  elseif num1 >= 3516632 then
     fn21 = 30834326648854 tbl41 = "game" tbl25 = "QY\338a\199\199\228" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl40 = "@\163-U\24w)\338\232\8250\246" tbl41 = tbl10[tbl3[1]] tbl25 = 19619611681712 tbl39 = tbl10[tbl3[2]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl22 = tbl10[tbl3[1]] tbl30 = "\186j\14W\8220c\241Wh" tbl40 = 33203775519845 tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl22 = tbl10[tbl3[1]] tbl40 = 27431326347749 tbl30 = "S\252\203\180\220\20\169$q\376\239\0E\22xm" tbl41 = tbl10[tbl3[2]] num1 = 3118410 tbl39 = tbl41(tbl30, tbl40) tbl8 = "FindFirstChild" tbl8 = tbl5[tbl8] tbl9 = tbl22[tbl39] tbl8 = tbl8(tbl5, tbl9) tbl7 = tbl8
-  elseif num1 < 3546251 then
+  elseif num1 >= 3517724 then
     num1 = tbl10[tbl3[2]] tbl4 = "Toggle" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 8480933
-  elseif num1 < 3590432 then
+  elseif num1 >= 3546251 then
     fn21 = tbl10[tbl3[2]] tbl31 = 14364774193697 tbl43 = tbl10[tbl3[3]] num3 = "^$\237\198" fn30 = 3414542124598 tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] num1 = tbl30[tbl25] tbl45 = tbl10[tbl3[2]] num3 = tbl10[tbl3[3]] tbl21 = 26037897490268 tbl12 = "\167\242E@\8216" fn30 = num3(tbl12, tbl31) tbl43 = tbl45[fn30] tbl14 = 4717604194452 tbl31 = "\213Gk\8221\19\246\235U\214$`Xz" fn34 = 20398375396634 num3 = tbl10[tbl3[2]] fn30 = tbl10[tbl3[3]] tbl12 = fn30(tbl31, tbl21) tbl45 = num3[tbl12] fn30 = tbl10[tbl3[2]] tbl12 = tbl10[tbl3[3]] tbl25 = "Section" tbl21 = "\195\211>\164LW" tbl31 = tbl12(tbl21, fn34) num3 = fn30[tbl31] fn28 = "\175_\166\218\232\382\222\177 \208fX\255\191\11\182 \22\28" fn30 = true fn21 = {[tbl43] = tbl45, [num3] = fn30} tbl21 = 9518528827728 tbl25 = num1[tbl25] tbl31 = 16342786825658 tbl12 = "\210\230!\182\193" tbl25 = tbl25(num1, fn21) tbl45 = tbl10[tbl3[2]] num3 = tbl10[tbl3[3]] fn30 = num3(tbl12, tbl31) tbl31 = "q\216\12\8217)\2\237\214\184=`\242r" tbl8 = nil tbl43 = tbl45[fn30] num3 = tbl10[tbl3[2]] fn30 = tbl10[tbl3[3]] tbl12 = fn30(tbl31, tbl21) tbl45 = num3[tbl12] tbl21 = "Ec\210\236QJ\"W" fn30 = tbl10[tbl3[2]] tbl12 = tbl10[tbl3[3]] tbl18 = "<\1904Z\181\197.\732~\241\376\18\127\172_\198" num1 = "Toggle" fn34 = 10772241322904 num1 = tbl25[num1] tbl31 = tbl12(tbl21, fn34) value2 = 33161215556689 tbl21 = 4230077482929 num3 = fn30[tbl31] tbl31 = 1165223330334 fn30 = fn50(488189, {tbl3[2];
                                     tbl3[3], tbl3[11]}) fn34 = 22692127598918 fn21 = {[tbl43] = tbl45, [num3] = fn30} num1 = num1(tbl25, fn21) tbl45 = tbl10[tbl3[2]] tbl12 = "C\183\215\223!" num3 = tbl10[tbl3[3]] fn30 = num3(tbl12, tbl31) tbl31 = "\232I\246`\160\195\8249\255\8364\174\233\8249\164\8250" tbl43 = tbl45[fn30] num3 = tbl10[tbl3[2]] fn30 = tbl10[tbl3[3]] tbl12 = fn30(tbl31, tbl21) tbl45 = num3[tbl12] fn30 = tbl10[tbl3[2]] fn16 = "\163\353]\161`\222\382\17ep\20:\227\247\129<" num1 = "Toggle" tbl34 = 10212032123539 tbl12 = tbl10[tbl3[3]] fn32 = 24683403439334 tbl21 = "9C\7\8482\402)\25\206" tbl31 = tbl12(tbl21, fn34) num3 = fn30[tbl31] fn30 = fn48(11235108, {tbl3[2], tbl3[3];
                                     tbl3[12]}) num1 = tbl25[num1] fn21 = {[tbl43] = tbl45;
@@ -333,43 +332,43 @@ return (function (...)
                                     num4}) tbl38 = tbl38(num1, tbl32) tbl38 = tbl10[tbl3[22]] tbl28 = tbl10[tbl3[2]] fn38 = tbl10[tbl3[3]] fn40 = fn38(tbl18, fn18) tbl32 = tbl28[fn40] tbl18 = "L[\179\382\215F\196\216AwIx\129\127s\176x" num1 = tbl38[tbl32] tbl38 = "Connect" tbl32 = fn48(13454887, {num4, fn35, num5}) tbl38 = num1[tbl38] tbl38 = tbl38(num1, tbl32) tbl38 = tbl10[fn32] fn18 = 11529210270968 fn35 = fn12(fn35) tbl28 = tbl10[tbl3[2]] fn38 = tbl10[tbl3[3]] fn32 = fn12(fn32) fn40 = fn38(tbl18, fn18) num4 = fn12(num4) tbl32 = tbl28[fn40] num1 = tbl38[tbl32] tbl32 = fn47(9863960, {tbl3[17], tbl6, tbl3[2], tbl3[3];
                                     tbl3[4];
                                     tbl3[5]}) tbl38 = "Connect" fn14 = fn12(fn14) tbl6 = fn12(tbl6) num5 = fn12(num5) tbl38 = num1[tbl38] tbl38 = tbl38(num1, tbl32) num1 = tbl1["hZk1zO0juTTz"] n = fn12(n)
-  elseif num1 < 3617690 then
+  elseif num1 >= 3590432 then
     num1 = tbl1["Xq9dake5UPvhFk"] tbl4 = {}
-  elseif num1 < 3621295 then
+  elseif num1 >= 3617690 then
     num1 = tbl10[tbl3[2]] num1 = num1 and 968035
-  else
+  elseif num1 >= 3621295 then
     tbl22 = nil tbl9 = nil num1 = 9061804
   end
-elseif num1 < 5693174 then
+elseif num1 >= 3625580 then
   if num1 < 3625772 then
     tbl7 = tbl10[tbl3[5]] tbl8 = tbl10[tbl3[3]] tbl41 = "\376x\193\r;p" tbl39 = 21709319825277 tbl9 = tbl10[tbl3[4]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl6 = "FindFirstChild" tbl6 = tbl7[tbl6] tbl6 = tbl6(tbl7, tbl5) tbl4 = tbl6 num1 = tbl6 and 5371901
-  elseif num1 < 3660152 then
+  elseif num1 >= 3625772 then
     tbl4 = "_G" num1 = tbl1[tbl4] tbl6 = tbl10[tbl3[1]] tbl9 = "\200q\r<\157\230!:\174\177\241" tbl5 = tbl10[tbl3[2]] tbl22 = 18120437260533 tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = false num1[tbl4] = tbl6 tbl4 = "Play" num1 = tbl10[tbl3[3]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 1479649
-  elseif num1 < 3678856 then
+  elseif num1 >= 3660152 then
     tbl22 = 34238977703495 tbl9 = "V\2265\22" tbl7 = "task" tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl41 = "1T8\16\141n9\208\8226" tbl39 = 14762670430938 tbl7 = .1 tbl4 = num1(tbl7) tbl6 = tbl10[tbl3[3]] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl41 = 14415031360056 tbl22 = "\8226c\249H#@\246" tbl39 = "\224\8216\195\205g\19\163??\338:" tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl22 = 28394780734374 tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl9 = "r\1\8\25w\29\239" tbl6 = tbl10[tbl3[1]] tbl30 = 24341285678150 tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl8 = "_G" tbl7 = fn52() tbl10[tbl7] = num1 tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl4 = tbl6 num1 = tbl6 and 5128182
-  elseif num1 < 3696096 then
+  elseif num1 >= 3678856 then
     tbl4 = "_G" num1 = tbl1[tbl4] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = 3902262527769 tbl9 = "j\4\29\231F\141h\238\127\8225" tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = false tbl9 = "\3\176\"\166\8250\221\209\165\201\29fU" num1[tbl4] = tbl6 tbl4 = "_G" tbl22 = 7441290972553 num1 = tbl1[tbl4] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = false num1[tbl4] = tbl6 num1 = tbl10[tbl3[3]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 1609143
-  elseif num1 < 3792746 then
+  elseif num1 >= 3696096 then
     tbl4 = "pairs" num1 = tbl1[tbl4] tbl41 = "GetChildren" tbl41 = tbl5[tbl41] tbl22 = {tbl41(tbl5)} tbl41 = {num1(fn44(tbl22))} tbl4 = tbl41[1] tbl9 = tbl41[3] tbl8 = tbl41[2] tbl22 = tbl4 num1 = 5343417
-  elseif num1 < 3799792 then
+  elseif num1 >= 3792746 then
     tbl7 = tbl2[1] tbl4 = "_G" num1 = tbl1[tbl4] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = 9639968690568 tbl9 = "\352$\245\252\r\166" tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 tbl7 = nil num1[tbl4] = tbl6 tbl4 = {} num1 = tbl1["JS6LFYH95sTkHT"]
-  elseif num1 < 3941911 then
+  elseif num1 >= 3799792 then
     tbl8 = 7.5 tbl5 = tbl6 < tbl8 num1 = tbl5 and 10907942 tbl4 = tbl5
-  elseif num1 < 4007152 then
+  elseif num1 >= 3941911 then
     tbl43 = "\196\195\241m\230W" tbl40 = tbl10[tbl3[1]] tbl41 = tbl9 num3 = 25673538711219 tbl25 = tbl10[tbl3[2]] num1 = "WaitForChild" tbl45 = 22638596417837 num1 = tbl7[num1] fn21 = tbl25(tbl43, tbl45) tbl45 = "@uGF\221\163\203]\8240\177" tbl30 = tbl40[fn21] num1 = num1(tbl7, tbl30) tbl25 = tbl10[tbl3[1]] fn21 = tbl10[tbl3[2]] tbl30 = "WaitForChild" tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl30 = num1[tbl30] tbl30 = tbl30(num1, tbl40) fn30 = 31368838265103 num3 = "\12\188\207\23" fn21 = tbl10[tbl3[1]] tbl43 = tbl10[tbl3[2]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] num3 = 12137627768340 tbl41 = nil tbl40 = tbl39[tbl25] num1 = "FireServer" num1 = tbl30[num1] tbl45 = "\20\216i\166" num1 = num1(tbl30, tbl40) tbl40 = "task" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[1]] tbl39 = nil fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] num1 = tbl30[tbl40] tbl40 = .2 tbl30 = num1(tbl40) num1 = 5343417
-  elseif num1 < 4056218 then
+  elseif num1 >= 4007152 then
     tbl5 = "table" tbl6 = tbl1[tbl5] tbl5 = "remove" tbl7 = tbl6[tbl5] tbl5 = tbl10[tbl3[1]] num1 = tbl1["MoUCkJCX3SFQt"] tbl6 = {tbl7(tbl5)} tbl4 = {fn44(tbl6)}
-  elseif num1 < 4094802 then
+  elseif num1 >= 4056218 then
     tbl4 = "Destroy" num1 = tbl10[tbl3[2]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = tbl1["Zt6sOaHxzEsXU"] tbl4 = {}
-  elseif num1 < 4104468 then
+  elseif num1 >= 4094802 then
     num1 = 7410641 tbl45 = num3 tbl50 = tbl45 tbl43[tbl45] = tbl50 tbl45 = nil
-  elseif num1 < 4284703 then
+  elseif num1 >= 4104468 then
     num1 = tbl4 and 13463387
-  elseif num1 < 4346044 then
+  elseif num1 >= 4284703 then
     tbl6 = tbl8 num1 = tbl9 num1 = 1881042
-  elseif num1 < 4401973 then
+  elseif num1 >= 4346044 then
     num1 = tbl10[tbl3[1]] tbl7 = 67.43 tbl5 = -1296.41 tbl6 = 5 tbl4 = num1(tbl7, tbl6, tbl5) num1 = tbl1["F6IKOoZbTuuz"] tbl4 = {}
-  elseif num1 < 4480388 then
+  elseif num1 >= 4401973 then
     tbl4 = "Play" tbl39 = 11242999534707 tbl45 = 19290742579990 num1 = tbl10[tbl3[1]] tbl6 = "game" tbl4 = num1[tbl4] tbl30 = 16292535295394 tbl4 = tbl4(num1) tbl4 = "loadstring" tbl41 = "BW\179\241\22\8225~\2\7q\8217\240\236\2\141\\\161\8230\217x\20-\8211t:\166bU!\230\r/\191\171Om\223\"\164\27\182\16\199\161\8249\245\382 &.+\8225b%l\1979RS\15\222\8364\8364\2179\8222\237,\205\2392\18\211\8220,\177" num1 = tbl1[tbl4] tbl7 = tbl1[tbl6] tbl12 = 17348553367438 tbl40 = "\25\8230\214\7\160" tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl25 = 1978816807833 tbl22 = tbl9(tbl41, tbl39) tbl41 = 26812001136837 tbl5 = tbl8[tbl22] tbl8 = "HttpGet" tbl8 = tbl7[tbl8] tbl6 = {tbl8(tbl7, tbl5)} fn21 = 6643357486101 tbl4 = num1(fn44(tbl6)) num1 = tbl4() tbl5 = tbl10[tbl3[2]] tbl22 = "@>I\215" tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl7 = num1 num1 = "CreateWindow" tbl6 = tbl5[tbl9] tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl43 = 27036585996589 tbl39 = "\t\339F\167\24D\163" tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl9 = true tbl41 = tbl10[tbl3[2]] fn30 = 31943112948250 tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl25 = "T\249\382\251\220\8224U\165G\352\710" tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] fn21 = "\8212\n)\217\188\247\250#" tbl25 = tbl40(fn21, tbl43) tbl40 = 17063562026761 tbl39 = tbl30[tbl25] tbl30 = fn47(13932322, {}) tbl5 = {[tbl8] = tbl9, [tbl22] = tbl41, [tbl39] = tbl30} tbl39 = "+I\178\235&" tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl30 = 21594164094791 tbl41 = tbl22(tbl39, tbl30) fn35 = 26638312206452 fn32 = 15061200280421 tbl25 = 11098191123503 tbl8 = tbl9[tbl41] tbl21 = 13814508230944 tbl22 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl30 = "\8n\353\353\207}*\198\251>>" tbl39 = tbl41(tbl30, tbl40) tbl40 = " Zi}" tbl9 = tbl22[tbl39] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl30 = "UDim2" tbl34 = 30678943954893 tbl43 = "\8249L\30\236\209J\376,\238\144" tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) num3 = 31464352414011 tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl40 = 445 tbl30 = 545 tbl39 = tbl41(tbl30, tbl40) tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] fn21 = "<T\222\8220\230" tbl43 = 21213122602646 tbl25 = tbl40(fn21, tbl43) tbl41 = tbl30[tbl25] tbl40 = tbl10[tbl3[2]] tbl43 = "p\225\352{" tbl31 = 1708946572059 tbl45 = 29693937595907 num4 = 19507619668859 tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl45 = "\238\25\203\231" tbl43 = fn21(tbl45, num3) num3 = "\199\8221\244I[<\226\236\200\186\176Y\162D\246\8364\227U\195\22|3#\r\208\8230\192" tbl40 = tbl25[tbl43] fn21 = tbl10[tbl3[2]] tbl43 = tbl10[tbl3[3]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl43 = tbl10[tbl3[2]] tbl45 = tbl10[tbl3[3]] fn30 = "\175\220\12d\239\209\23\8217\8216\238" num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] tbl45 = tbl10[tbl3[2]] num3 = tbl10[tbl3[3]] tbl12 = "\209\199\8226d\8217\26\189\8222\8222}H\129\177\245\189\8364\241a\237\8211\28\1/\\\187\24\208m" fn30 = num3(tbl12, tbl31) tbl43 = tbl45[fn30] num3 = tbl10[tbl3[2]] fn34 = 10246420337315 fn30 = tbl10[tbl3[3]] tbl31 = "\241\732h\224\196\14" tbl12 = fn30(tbl31, tbl21) tbl45 = num3[tbl12] tbl21 = "\\\8221dUP\198(\172s\175\194\191{\tN\185\200" fn30 = tbl10[tbl3[2]] tbl12 = tbl10[tbl3[3]] num1 = tbl7[num1] tbl31 = tbl12(tbl21, fn34) num3 = fn30[tbl31] tbl4 = {[tbl6] = tbl5;
                                   [tbl8] = tbl9;
                                   [tbl22] = tbl39, [tbl41] = tbl30, [tbl40] = tbl25;
@@ -386,846 +385,595 @@ elseif num1 < 5693174 then
                                   num3;
                                   fn30;
                                   tbl12} tbl45 = {num1(tbl43)} fn21 = tbl45[3] num1 = 7535927 tbl4 = tbl45[1] tbl25 = tbl45[2] tbl43 = tbl4
-  elseif num1 < 4506927 then
+  elseif num1 >= 4480388 then
     tbl43 = "table" fn21 = tbl1[tbl43] tbl43 = "unpack" num1 = 7497857 tbl25 = fn21[tbl43] tbl30 = tbl25
-  elseif num1 < 4534542 then
+  elseif num1 >= 4506927 then
     num1 = 14746840
-  elseif num1 < 4568300 then
+  elseif num1 >= 4534542 then
     num1 = 2080841 tbl40 = tbl10[tbl22] tbl39 = tbl40
-  elseif num1 < 4607237 then
+  elseif num1 >= 4568300 then
     tbl22 = "\165\8226d\11" num1 = "FindFirstChild" tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl41 = 15981371055377 tbl9 = tbl8(tbl22, tbl41) tbl4 = tbl5[tbl9] tbl5 = true num1 = tbl6[num1] num1 = num1(tbl6, tbl4, tbl5) tbl5 = num1 num1 = tbl5 and 3791480
-  elseif num1 < 4623622 then
+  elseif num1 >= 4607237 then
     num1 = tbl7 tbl10[tbl3[2]] = num1 num1 = tbl1["qM7r3IKfHMibx"] tbl7 = nil tbl4 = {}
-  elseif num1 < 4629206 then
+  elseif num1 >= 4623622 then
     num1 = tbl10[tbl3[2]] num1 = num1 and 9145362
-  elseif num1 < 4660675 then
+  elseif num1 >= 4629206 then
     tbl5 = 1401.47 tbl6 = 9.11 tbl7 = 1259.4 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["g53bJb57qOUw"]
-  elseif num1 < 4683257 then
+  elseif num1 >= 4660675 then
     tbl6 = 177.5 num1 = tbl10[tbl3[1]] tbl7 = -1350.3 tbl5 = 10.2 tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["7RvbpreKjDHWG"]
-  elseif num1 < 4720835 then
+  elseif num1 >= 4683257 then
     tbl5 = tbl5 + tbl9 tbl41 = not tbl22 tbl6 = tbl5 <= tbl8 tbl6 = tbl41 and tbl6 tbl41 = tbl5 >= tbl8 tbl41 = tbl22 and tbl41 tbl6 = tbl41 or tbl6 tbl41 = 14649910 num1 = tbl6 and tbl41 tbl6 = 15262058 num1 = num1 or tbl6
-  elseif num1 < 4740191 then
+  elseif num1 >= 4720835 then
     tbl7 = tbl2[1] num1 = tbl7 and 13026604
-  elseif num1 < 4764894 then
+  elseif num1 >= 4740191 then
     num1 = 12066337
-  elseif num1 < 4806249 then
+  elseif num1 >= 4764894 then
     num1 = tbl4 and 7152747
-  elseif num1 < 4810207 then
+  elseif num1 >= 4806249 then
     tbl6 = 33.999069213867 num1 = tbl10[tbl3[1]] tbl5 = -1198.3585205078 tbl7 = 1226.0625 tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["2XZ3hiabs5pO"]
-  elseif num1 < 4841046 then
+  elseif num1 >= 4810207 then
     tbl4 = "Play" num1 = tbl10[tbl3[1]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = tbl10[tbl3[2]] tbl4 = "Stop" tbl4 = num1[tbl4] tbl4 = tbl4(num1) tbl4 = "Destroy" num1 = tbl10[tbl3[3]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = tbl10[tbl3[4]] tbl4 = "Destroy" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = tbl1["56mAD47Fkq2CS"] tbl4 = {}
-  elseif num1 < 4912586 then
+  elseif num1 >= 4841046 then
     num1 = num6 num1 = 11537665 tbl4 = fn14
-  elseif num1 < 4942730 then
+  elseif num1 >= 4912586 then
     tbl7 = nil tbl4 = {} num1 = tbl1["65XhfqtFzkv3"]
-  elseif num1 < 5014789 then
+  elseif num1 >= 4942730 then
     tbl25 = 13 tbl6 = tbl10[tbl3[3]] tbl5 = 32 tbl7 = tbl6 % tbl5 tbl30 = 2 tbl8 = tbl10[tbl3[4]] tbl41 = tbl10[tbl3[2]] tbl45 = tbl10[tbl3[3]] tbl43 = tbl45 - tbl7 tbl45 = 32 fn21 = tbl43 / tbl45 tbl40 = tbl25 - fn21 tbl39 = tbl30 ^ tbl40 tbl25 = 256 tbl22 = tbl41 / tbl39 tbl9 = tbl8(tbl22) tbl30 = 256 tbl39 = 1 tbl8 = 4294967296 tbl5 = tbl9 % tbl8 tbl9 = 2 tbl8 = tbl9 ^ tbl7 tbl6 = tbl5 / tbl8 num1 = 4007426 tbl8 = tbl10[tbl3[4]] tbl41 = tbl6 % tbl39 tbl39 = 4294967296 tbl22 = tbl41 * tbl39 tbl9 = tbl8(tbl22) tbl8 = tbl10[tbl3[4]] tbl22 = tbl8(tbl6) tbl41 = 65536 tbl5 = tbl9 + tbl22 tbl9 = 65536 tbl8 = tbl5 % tbl9 tbl22 = tbl5 - tbl8 tbl9 = tbl22 / tbl41 tbl41 = 256 tbl22 = tbl8 % tbl41 tbl39 = tbl8 - tbl22 tbl5 = nil tbl7 = nil tbl41 = tbl39 / tbl30 tbl30 = 256 tbl39 = tbl9 % tbl30 tbl40 = tbl9 - tbl39 tbl30 = tbl40 / tbl25 tbl8 = nil tbl6 = nil tbl40 = {tbl22;
                                     tbl41;
                                     tbl39, tbl30} tbl22 = nil tbl9 = nil tbl39 = nil tbl30 = nil tbl10[tbl3[1]] = tbl40 tbl41 = nil
-  elseif num1 < 5068656 then
+  elseif num1 >= 5014789 then
     tbl7 = tbl10[tbl3[4]] tbl39 = 8364940087095 tbl41 = "\211\164\196\6 \252" tbl8 = tbl10[tbl3[2]] num1 = 6920454 tbl6 = "FindFirstChild" tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl6 = tbl7[tbl6] tbl5 = tbl8[tbl22] tbl6 = tbl6(tbl7, tbl5) tbl4 = tbl6
-  elseif num1 < 5117531 then
+  elseif num1 >= 5068656 then
     tbl7 = tbl2[1] num1 = tbl7 and 14414707
-  elseif num1 < 5125875 then
+  elseif num1 >= 5117531 then
     tbl6 = "http_request" tbl7 = tbl1[tbl6] num1 = tbl7 and 11698867 tbl4 = tbl7
-  elseif num1 < 5141948 then
+  elseif num1 >= 5125875 then
     num1 = tbl4 and 2248919
-  elseif num1 < 5241107 then
+  elseif num1 >= 5141948 then
     tbl22 = "\24876\211<\164" tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl41 = 32203053152915 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl9 = "#*\82184\141\219\208\24" tbl22 = 13538938312864 tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl22 = 668654993719 tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl9 = "\144%\24" tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] tbl4 = "FireServer" tbl4 = num1[tbl4] tbl4 = tbl4(num1, tbl7) tbl4 = {} num1 = tbl1["hfSeuE0wNi2yki"]
-  elseif num1 < 5252033 then
+  elseif num1 >= 5241107 then
     tbl4 = "_G" num1 = tbl1[tbl4] tbl6 = tbl10[tbl3[1]] tbl9 = "\28u;\00\255\7x\232\31\8250\8217" tbl22 = 1257916170825 tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = false num1[tbl4] = tbl6 num1 = tbl10[tbl3[3]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 13675762
-  elseif num1 < 5346429 then
+  elseif num1 >= 5252033 then
     tbl9, tbl39 = tbl22(tbl8, tbl9) num1 = tbl9 and 4004775
-  elseif num1 < 5361021 then
+  elseif num1 >= 5346429 then
     tbl4 = tbl6 num1 = tbl5 num1 = 5128182
-  elseif num1 < 5381275 then
+  elseif num1 >= 5361021 then
     tbl7 = tbl4 num1 = tbl7 and 14736177
-  elseif num1 < 5383479 then
+  elseif num1 >= 5381275 then
     tbl5 = tbl9 num1 = tbl22 num1 = tbl9 and 3338721
-  elseif num1 < 5385143 then
+  elseif num1 >= 5383479 then
     tbl4 = {} num1 = tbl1["LkQkZeVDuhgNt"] tbl7 = nil
-  elseif num1 < 5400403 then
+  elseif num1 >= 5385143 then
     num1 = 5762685
-  elseif num1 < 5514462 then
+  elseif num1 >= 5400403 then
     tbl7 = nil num1 = tbl1["Gr1wQgE2x7Rx"] tbl4 = {}
-  elseif num1 < 5585324 then
+  elseif num1 >= 5514462 then
     tbl22 = "\227\251Qf;5" tbl41 = 34425170067102 tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl22 = 23089690307071 tbl9 = "~\220|" tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] tbl9 = "\221>\382\217R\2326\214g\8211\352" num1 = tbl4[tbl7] tbl22 = 3585130088069 tbl6 = tbl10[tbl3[2]] tbl4 = "FireServer" tbl5 = tbl10[tbl3[3]] tbl4 = num1[tbl4] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] tbl4 = tbl4(num1, tbl7) tbl4 = {} num1 = tbl1["ip19goyIApLmhM"]
-  elseif num1 < 5612059 then
+  elseif num1 >= 5585324 then
     tbl39 = 11733196969303 tbl6 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "t\15\248\141&>\192)\248\8211\16\161]\23" tbl22 = tbl9(tbl41, tbl39) tbl39 = 28451264771008 tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl8 = tbl10[tbl3[2]] num1 = 11453701 tbl41 = "a\2362\230\235<p\187" tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl6 = "FindFirstChild" tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl6] tbl6 = tbl6(tbl7, tbl5) tbl4 = tbl6
-  else
+  elseif num1 >= 5612059 then
     num1 = tbl4 and 14976332
+  elseif num1 >= 5693174 then
+    tbl41 = num1 tbl25 = tbl10[tbl3[1]] tbl45 = "\210\18\193\8364" fn21 = tbl10[tbl3[2]] num3 = 5281874889115 tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl30 = tbl9[tbl40] tbl45 = " I\204" num3 = 14517121178216 tbl25 = tbl10[tbl3[1]] fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = tbl30 == tbl40 num1 = tbl39 and 15085228 tbl22 = tbl39
+  elseif num1 >= 5701955 then
+    num6 = tbl10[tbl6] fn14 = num6 num1 = num6 and 10959916
+  elseif num1 >= 5710092 then
+    tbl41 = "game" tbl25 = "z8\\AX\220\219" fn21 = 30165671638750 tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl6 = num1 tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl25 = 9138355802271 tbl40 = "\232R\196\r4\12:\28\25\231\28" tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl40 = 11996020381138 tbl30 = "\8217\242W\190e\192\194\8249{" tbl8 = tbl9[tbl22] tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl7 = tbl5 num1 = tbl5 and 3516823
+  elseif num1 >= 5759467 then
+    num1 = tbl1["vvQSIi58EZu9"] tbl4 = {tbl6}
+  elseif num1 >= 5765193 then
+    tbl4 = "tonumber" tbl8 = "tostring" num1 = tbl1[tbl4] tbl7 = tbl10[tbl3[4]] tbl5 = tbl1[tbl8] tbl39 = "pcall" tbl41 = tbl1[tbl39] tbl30 = fn10(8118303, {}) tbl39 = {tbl41(tbl30)} tbl22 = {fn44(tbl39)} tbl41 = 2 tbl9 = tbl22[tbl41] tbl8 = tbl5(tbl9) tbl5 = ":(%d*):" tbl6 = tbl7(tbl8, tbl5) tbl7 = {tbl6()} tbl4 = num1(fn44(tbl7)) tbl6 = tbl10[tbl3[5]] tbl7 = tbl4 tbl4 = tbl6 num1 = tbl6 and 2885360
+  elseif num1 >= 5829575 then
+    tbl8 = nil tbl9 = nil num1 = 13634983
+  elseif num1 >= 5843817 then
+    num1 = tbl1["TKjUE0BWZprV"] tbl4 = {}
+  elseif num1 >= 5858619 then
+    tbl5 = "game" tbl41 = "\174\23\8249\16j\238I" tbl6 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = 18860409643598 tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl41 = 21109093738085 tbl5 = tbl10[tbl3[1]] tbl22 = "\7^3\15\203\732\185-%\251\144" tbl8 = tbl10[tbl3[2]] tbl39 = 24921071873364 tbl9 = tbl8(tbl22, tbl41) tbl41 = "\186\16\25" tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl6 = tbl10[tbl3[1]] tbl9 = "wY\1745_\219t\225" tbl25 = 30600576448425 tbl22 = 31016456435819 tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl40 = "\221i\194" tbl30 = 8541156413321 tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl22 = 12002703070677 tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl7 = num1 tbl9 = "\235}J\352\227\30\241\242>\191w\218`\26\166\185" tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] num1 = tbl7[tbl4] tbl5 = "Ray" tbl4 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl6 = num1 tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1 = tbl4[tbl5] tbl9 = tbl10[tbl3[1]] tbl39 = "L7y`b\8218\25\237" tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl22 = "Vector3" tbl5 = tbl6[tbl8] tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl22 = 0 tbl41 = -10 tbl39 = 0 tbl9 = {tbl8(tbl22, tbl41, tbl39)} tbl4 = num1(tbl5, fn44(tbl9)) tbl5 = tbl4 tbl9 = {tbl7} tbl4 = "workspace" tbl22 = "FindPartOnRayWithIgnoreList" num1 = tbl1[tbl4] tbl22 = num1[tbl22] tbl22 = {tbl22(num1, tbl5, tbl9)} tbl4 = tbl22[1] tbl8 = tbl22[2] tbl9 = tbl4 tbl4 = tbl9 num1 = tbl9 and 5693476
+  elseif num1 >= 5888069 then
+    tbl12 = tbl25 == fn21 fn30 = tbl12 num1 = 10403048
+  elseif num1 >= 5901913 then
+    tbl10[tbl6] = fn14 tbl38 = 1 num5 = tbl10[tbl34] num4 = num5 + tbl38 fn35 = n[num4] num6 = tbl25 + fn35 fn35 = 256 num1 = num6 % fn35 num4 = tbl10[tbl50] tbl25 = num1 fn35 = fn21 + num4 num1 = 1448629 num4 = 256 num6 = fn35 % num4 fn21 = num6
+  elseif num1 >= 5902674 then
+    tbl4 = 15805823 tbl6 = "RUhW" tbl5 = 13483292 tbl7 = tbl6 ^ tbl5 num1 = tbl4 - tbl7 tbl7 = num1 tbl4 = "ZAyh7UrhPta9u" num1 = tbl4 / tbl7 tbl4 = {num1} num1 = tbl1["V0BwlkDBNqzf"]
+  elseif num1 >= 5932260 then
+    tbl4 = "game" tbl9 = "4\161\r\239\246\8218\240#\172\195G\197\213?\235\191\199" num1 = tbl1[tbl4] tbl6 = tbl10[tbl3[1]] tbl22 = 4618424223846 tbl5 = tbl10[tbl3[2]] tbl4 = "GetService" tbl4 = num1[tbl4] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] tbl4 = tbl4(num1, tbl7) tbl22 = 21076461692502 num1 = "FindFirstChild" tbl6 = tbl10[tbl3[1]] tbl9 = "\0\223\228\4" tbl5 = tbl10[tbl3[2]] tbl7 = tbl4 tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] num1 = tbl7[num1] num1 = num1(tbl7, tbl4) tbl6 = num1 num1 = tbl6 and 4597260
+  elseif num1 >= 6137578 then
+    tbl7 = tbl2[1] num1 = tbl7 and 10383383
+  elseif num1 >= 6269745 then
+    num1 = tbl4 and 13244873
+  elseif num1 >= 6283715 then
+    tbl43 = "gethui" fn21 = tbl1[tbl43] tbl43 = fn21() tbl40 = tbl43 num1 = 11113331
+  elseif num1 >= 6321689 then
+    tbl39 = tbl40 tbl31 = "string" tbl12 = tbl1[tbl31] tbl31 = "byte" fn30 = tbl12[tbl31] tbl12 = fn30(tbl7, tbl39) fn30 = tbl10[tbl3[6]] tbl31 = fn30() num3 = tbl12 + tbl31 tbl45 = num3 + tbl22 num3 = 256 tbl43 = tbl45 % num3 num1 = 13173327 tbl22 = tbl43 tbl31 = 1 num3 = tbl5[tbl6] tbl12 = tbl22 + tbl31 fn30 = tbl8[tbl12] tbl39 = nil tbl45 = num3..fn30 tbl5[tbl6] = tbl45
+  elseif num1 >= 6388453 then
+    tbl7 = nil tbl6 = nil tbl4 = {} num1 = tbl1["soQkK4pXeksvZ8"]
+  elseif num1 >= 6416555 then
+    tbl7 = fn52() fn21 = 34537198665426 tbl10[tbl7] = tbl2[1] tbl30 = "U:'\255\166\235\170\178\189S=c\235" tbl40 = 3073155843479 tbl8 = tbl10[tbl7] tbl25 = "\376\199\237\143\216do2H_\242CU" tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl41 = "Enum" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl25 = 9782875820491 tbl41 = tbl39[tbl40] tbl40 = "Rl\197\127\8D\353D4}\8230:" tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl5 == tbl8 num1 = tbl6 and 1677546 tbl4 = tbl6
+  elseif num1 >= 6508652 then
+    tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl22 = "\8224\223\339\196\192\160\r\227" tbl41 = 17120132800292 tbl30 = 1726672470820 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl22 = "\216F\141" tbl4 = tbl7[tbl6] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl39 = "\237\15\163" tbl41 = 18168487633164 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl22 = 25539358076532 tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl9 = "y\217\4\3\t\19L\188" tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl8 = "UDim2" tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl9 = 0 tbl30 = 26147874500496 tbl6 = tbl5[tbl8] tbl39 = "\164\8220\227" tbl8 = 0.5 tbl41 = 0 tbl22 = 0.5 tbl5 = tbl6(tbl8, tbl9, tbl22, tbl41) num1[tbl4] = tbl5 tbl5 = tbl10[tbl3[2]] tbl41 = 5592904485420 tbl8 = tbl10[tbl3[3]] tbl22 = "\206I\213V\189\172\207\186" tbl9 = tbl8(tbl22, tbl41) tbl22 = "\203L\197" tbl6 = tbl5[tbl9] tbl41 = 27236421022090 tbl4 = tbl7[tbl6] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl22 = 20794896311763 tbl9 = "i1:90" num1 = tbl4[tbl6] tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl8 = "UDim2" tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl8 = 1 tbl9 = 1 tbl41 = 1 tbl22 = 1 tbl5 = tbl6(tbl8, tbl9, tbl22, tbl41) num1[tbl4] = tbl5 num1 = 7898596
+  elseif num1 >= 6554329 then
+    num1 = tbl10[tbl3[5]] tbl9 = tbl5 tbl9 = nil tbl41 = num1(tbl22) tbl22 = nil num1 = 3480503
+  elseif num1 >= 6569833 then
+    tbl25 = 28201231692620 num1 = tbl10[tbl3[4]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) tbl8 = tbl10[tbl3[1]] tbl40 = 9109937131666 tbl30 = "\381\206\186\22\207\201\177\382\8" tbl22 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl4 = tbl8[tbl9] tbl30 = 14865727462154 tbl9 = tbl10[tbl3[2]] tbl40 = "\177K\381" tbl39 = "C\8221\199^\219*\0\190\203\3821\195\235\353\0\161" tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] num1 = tbl4[tbl8] tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "F\8230\5\27\352\232" tbl39 = 6728875183165 tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl22 = "CFrame" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl9 = tbl8(tbl7, tbl6, tbl5) num1[tbl4] = tbl9 num1 = 9177296
+  elseif num1 >= 6655438 then
+    tbl7 = tbl2[1] num1 = tbl7 and 1973276
+  elseif num1 >= 6680539 then
+    tbl5, tbl22 = tbl8(tbl6, tbl5) num1 = tbl5 and 2096690
+  elseif num1 >= 6700355 then
+    tbl40 = 3 tbl25 = 65 tbl30 = fn52() tbl10[tbl30] = tbl4 num1 = tbl10[tbl41] tbl4 = num1(tbl40, tbl25) tbl40 = fn52() tbl43 = "pcall" tbl10[tbl40] = tbl4 num1 = 0 tbl25 = num1 tbl45 = fn10(5908614, {}) num1 = 0 tbl4 = tbl1[tbl43] tbl43 = {tbl4(tbl45)} tbl31 = "tostring" fn21 = num1 num1 = {fn44(tbl43)} tbl4 = 2 tbl43 = num1 num1 = tbl43[tbl4] tbl45 = num1 tbl4 = "tonumber" num1 = tbl1[tbl4] num3 = tbl10[tbl5] tbl12 = tbl1[tbl31] tbl31 = tbl12(tbl45) tbl12 = ":(%d*):" fn30 = num3(tbl31, tbl12) num3 = {fn30()} tbl4 = num1(fn44(num3)) num3 = fn52() tbl10[num3] = tbl4 tbl4 = 1 fn30 = tbl10[tbl40] num1 = 7066904 tbl12 = fn30 fn30 = 1 tbl31 = fn30 fn30 = 0 tbl21 = tbl31 < fn30 fn30 = tbl4 - tbl31
+  elseif num1 >= 6702881 then
+    num1 = tbl8 num1 = 14668004 tbl4 = tbl5
+  elseif num1 >= 6718139 then
+    tbl7 = "_G" tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[1]] tbl9 = "\198\212\254\338\7N\176x" tbl22 = 26122276368260 tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] num1 = num1 and 2278684
+  elseif num1 >= 6825953 then
+    num1 = tbl6 num1 = 11698867 tbl4 = tbl7
+  elseif num1 >= 6850143 then
+    tbl8 = tbl10[tbl7] tbl40 = 20108851078291 tbl22 = tbl10[tbl3[1]] tbl25 = "\15}\1\8221\161\n]\353\232@0k\196" tbl41 = tbl10[tbl3[2]] fn21 = 9780591612362 tbl30 = "1\241\172\8222\215\143P\8217\181'\2\173\185" tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl41 = "Enum" tbl5 = tbl8[tbl9] tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl40 = "\254g\n\201\184" tbl25 = 27730688045681 num1 = 1677546 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl5 == tbl8 tbl4 = tbl6
+  elseif num1 >= 6892860 then
+    tbl8 = nil tbl9 = nil num1 = 9840210 tbl6 = nil tbl5 = nil tbl7 = nil
+  elseif num1 >= 6917043 then
+    tbl7 = tbl4 num1 = tbl7 and 8573470
+  elseif num1 >= 6921392 then
+    tbl41 = tbl5 tbl39 = num1 num1 = tbl5 and 11443333
+  elseif num1 >= 6934222 then
+    tbl6 = tbl10[tbl3[1]] tbl41 = "\233u`\253\23\338\254\8225v" tbl8 = tbl10[tbl3[2]] tbl39 = 27842780230309 tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl41 = 3563388536443 tbl5 = tbl8[tbl22] tbl4 = tbl6[tbl5] tbl22 = "\31\240\27\229\194l\22\31\29{\26" tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl9 = "\1784\t\236\8217\12\206^" tbl25 = "\16\213\30\8217\157\172\236[\201" num1 = tbl4[tbl6] tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl22 = 31927570922003 fn21 = 5464003742192 tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl22 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl40 = "?\11\170\188\161\184+_" tbl41 = tbl10[tbl3[2]] tbl25 = 987666792907 tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl30 = "\163\339\177\209\27=\8226\28\163\181\27\238\11" tbl8 = tbl9[tbl22] tbl22 = tbl10[tbl3[2]] tbl40 = 11116817667128 tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl8 = tbl10[tbl3[5]] tbl6 = tbl5 * tbl8 num1[tbl4] = tbl6 num1 = 15068901
+  elseif num1 >= 6938138 then
+    num1 = 4293338 tbl39 = "_G" fn21 = "\732\207O\183\8249\7\252\16\241\253_G\175\157\168\4\8\211" tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[1]] tbl40 = tbl10[tbl3[2]] tbl43 = 24862191725881 tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl8 = tbl22
+  elseif num1 >= 6940007 then
+    tbl41 = "math" tbl22 = tbl4 tbl4 = tbl1[tbl41] tbl41 = "random" num1 = tbl4[tbl41] tbl39 = "table" tbl41 = fn52() tbl10[tbl41] = num1 tbl4 = tbl1[tbl39] tbl39 = "concat" num1 = tbl4[tbl39] tbl40 = num1 tbl39 = num1 fn21 = "table" tbl25 = tbl1[fn21] tbl30 = tbl25 num1 = tbl25 and 4487229
+  elseif num1 >= 6979743 then
+    tbl6 = tbl10[tbl3[3]] tbl5 = 1 tbl7 = tbl6 ~= tbl5 num1 = tbl7 and 4998978
+  elseif num1 >= 6982335 then
+    num1 = tbl1["9WvnFkmAjgiW9"] tbl7 = nil tbl4 = {}
+  elseif num1 >= 7046611 then
+    fn34 = not tbl21 fn30 = fn30 + tbl31 tbl4 = fn30 <= tbl12 tbl4 = fn34 and tbl4 fn34 = fn30 >= tbl12 fn34 = tbl21 and fn34 tbl4 = fn34 or tbl4 fn34 = 9880338 num1 = tbl4 and fn34 tbl4 = 9723093 num1 = num1 or tbl4
+  elseif num1 >= 7072070 then
+    num3 = # tbl43 tbl21 = 0 tbl45 = num3 == tbl21 num1 = tbl45 and 16632314
+  elseif num1 >= 7130477 then
+    num1 = tbl1["rsMuun4jBzEcE"] tbl4 = {}
+  elseif num1 >= 7134104 then
+    tbl39 = "Ql7xx\31\27i\187:\170I\162\254" tbl41 = 15422466628621 tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl22 = "p\206 7\8240+\14X\8\83647\29\2378" tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl8 = "Enum" tbl4 = tbl7[tbl6] tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl30 = 28571112272888 tbl41 = tbl22(tbl39, tbl30) tbl39 = 10845528478650 tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl41 = "\24\196\203" tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] num1 = tbl4 == tbl7 num1 = num1 and 15667812
+  elseif num1 >= 7138312 then
+    num1 = 9667905
+  elseif num1 >= 7144686 then
+    tbl39 = tbl10[tbl3[1]] fn21 = 5449426438633 tbl30 = tbl10[tbl3[2]] tbl25 = "x \31d\27\8gS" tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl22 = tbl6[tbl41] tbl39 = tbl10[tbl3[1]] tbl25 = "\732" tbl30 = tbl10[tbl3[2]] fn21 = 32370555648737 tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl4 = tbl22[tbl41] tbl22 = 0 num1 = tbl4 < tbl22 num1 = num1 and 1907866
+  elseif num1 >= 7163755 then
+    num1 = tbl1["kEYrDNcWyOE2eo"] tbl7 = nil tbl6 = nil tbl4 = {}
+  elseif num1 >= 7187536 then
+    tbl7 = fn48(1732706, {tbl3[1];
+                                      tbl3[2];
+                                      tbl3[3];
+                                      tbl3[4], tbl3[5], tbl3[6]}) tbl4 = "pcall" num1 = tbl1[tbl4] tbl4 = num1(tbl7) tbl4 = {} num1 = tbl1["gfwov6Oyj39Hq"]
+  elseif num1 >= 7234200 then
+    tbl7 = nil num1 = tbl1["rBiKtiO1Zbbb"] tbl4 = {}
+  elseif num1 >= 7364107 then
+    tbl7 = tbl2[1] num1 = tbl10[tbl3[1]] tbl9 = "\238\251\8211\144\8225\24\204" tbl6 = tbl10[tbl3[2]] tbl22 = 31515673885011 tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 tbl7 = nil num1[tbl4] = tbl6 num1 = tbl1["ECrtzRDhw4eW"] tbl4 = {}
+  elseif num1 >= 7389691 then
+    tbl50 = not tbl36 num3 = num3 + fn34 tbl45 = num3 <= tbl21 tbl45 = tbl50 and tbl45 tbl50 = num3 >= tbl21 tbl50 = tbl36 and tbl50 tbl45 = tbl50 or tbl45 tbl50 = 4097161 num1 = tbl45 and tbl50 tbl45 = 10258900 num1 = num1 or tbl45
+  elseif num1 >= 7418129 then
+    tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl7 = tbl6 == tbl5 tbl4 = tbl7 num1 = 1320366
   end
-elseif num1 < 5701955 then
-  tbl41 = num1 tbl25 = tbl10[tbl3[1]] tbl45 = "\210\18\193\8364" fn21 = tbl10[tbl3[2]] num3 = 5281874889115 tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl30 = tbl9[tbl40] tbl45 = " I\204" num3 = 14517121178216 tbl25 = tbl10[tbl3[1]] fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = tbl30 == tbl40 num1 = tbl39 and 15085228 tbl22 = tbl39
-elseif num1 < 5710092 then
-  num6 = tbl10[tbl6] fn14 = num6 num1 = num6 and 10959916
-elseif num1 < 5759467 then
-  tbl41 = "game" tbl25 = "z8\\AX\220\219" fn21 = 30165671638750 tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl6 = num1 tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl25 = 9138355802271 tbl40 = "\232R\196\r4\12:\28\25\231\28" tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl40 = 11996020381138 tbl30 = "\8217\242W\190e\192\194\8249{" tbl8 = tbl9[tbl22] tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl7 = tbl5 num1 = tbl5 and 3516823
-elseif num1 < 5765193 then
-  num1 = tbl1["vvQSIi58EZu9"] tbl4 = {tbl6}
-elseif num1 < 5829575 then
-  tbl4 = "tonumber" tbl8 = "tostring" num1 = tbl1[tbl4] tbl7 = tbl10[tbl3[4]] tbl5 = tbl1[tbl8] tbl39 = "pcall" tbl41 = tbl1[tbl39] tbl30 = fn10(8118303, {}) tbl39 = {tbl41(tbl30)} tbl22 = {fn44(tbl39)} tbl41 = 2 tbl9 = tbl22[tbl41] tbl8 = tbl5(tbl9) tbl5 = ":(%d*):" tbl6 = tbl7(tbl8, tbl5) tbl7 = {tbl6()} tbl4 = num1(fn44(tbl7)) tbl6 = tbl10[tbl3[5]] tbl7 = tbl4 tbl4 = tbl6 num1 = tbl6 and 2885360
-elseif num1 < 5843817 then
-  tbl8 = nil tbl9 = nil num1 = 13634983
-elseif num1 < 5858619 then
-  num1 = tbl1["TKjUE0BWZprV"] tbl4 = {}
-elseif num1 < 5888069 then
-  tbl5 = "game" tbl41 = "\174\23\8249\16j\238I" tbl6 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = 18860409643598 tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl41 = 21109093738085 tbl5 = tbl10[tbl3[1]] tbl22 = "\7^3\15\203\732\185-%\251\144" tbl8 = tbl10[tbl3[2]] tbl39 = 24921071873364 tbl9 = tbl8(tbl22, tbl41) tbl41 = "\186\16\25" tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl6 = tbl10[tbl3[1]] tbl9 = "wY\1745_\219t\225" tbl25 = 30600576448425 tbl22 = 31016456435819 tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl40 = "\221i\194" tbl30 = 8541156413321 tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl22 = 12002703070677 tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl7 = num1 tbl9 = "\235}J\352\227\30\241\242>\191w\218`\26\166\185" tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] num1 = tbl7[tbl4] tbl5 = "Ray" tbl4 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl6 = num1 tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1 = tbl4[tbl5] tbl9 = tbl10[tbl3[1]] tbl39 = "L7y`b\8218\25\237" tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl22 = "Vector3" tbl5 = tbl6[tbl8] tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl22 = 0 tbl41 = -10 tbl39 = 0 tbl9 = {tbl8(tbl22, tbl41, tbl39)} tbl4 = num1(tbl5, fn44(tbl9)) tbl5 = tbl4 tbl9 = {tbl7} tbl4 = "workspace" tbl22 = "FindPartOnRayWithIgnoreList" num1 = tbl1[tbl4] tbl22 = num1[tbl22] tbl22 = {tbl22(num1, tbl5, tbl9)} tbl4 = tbl22[1] tbl8 = tbl22[2] tbl9 = tbl4 tbl4 = tbl9 num1 = tbl9 and 5693476
-elseif num1 < 5901913 then
-  tbl12 = tbl25 == fn21 fn30 = tbl12 num1 = 10403048
-elseif num1 < 5902674 then
-  tbl10[tbl6] = fn14 tbl38 = 1 num5 = tbl10[tbl34] num4 = num5 + tbl38 fn35 = n[num4] num6 = tbl25 + fn35 fn35 = 256 num1 = num6 % fn35 num4 = tbl10[tbl50] tbl25 = num1 fn35 = fn21 + num4 num1 = 1448629 num4 = 256 num6 = fn35 % num4 fn21 = num6
-elseif num1 < 5932260 then
-  tbl4 = 15805823 tbl6 = "RUhW" tbl5 = 13483292 tbl7 = tbl6 ^ tbl5 num1 = tbl4 - tbl7 tbl7 = num1 tbl4 = "ZAyh7UrhPta9u" num1 = tbl4 / tbl7 tbl4 = {num1} num1 = tbl1["V0BwlkDBNqzf"]
-elseif num1 < 6137578 then
-  tbl4 = "game" tbl9 = "4\161\r\239\246\8218\240#\172\195G\197\213?\235\191\199" num1 = tbl1[tbl4] tbl6 = tbl10[tbl3[1]] tbl22 = 4618424223846 tbl5 = tbl10[tbl3[2]] tbl4 = "GetService" tbl4 = num1[tbl4] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] tbl4 = tbl4(num1, tbl7) tbl22 = 21076461692502 num1 = "FindFirstChild" tbl6 = tbl10[tbl3[1]] tbl9 = "\0\223\228\4" tbl5 = tbl10[tbl3[2]] tbl7 = tbl4 tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] num1 = tbl7[num1] num1 = num1(tbl7, tbl4) tbl6 = num1 num1 = tbl6 and 4597260
-elseif num1 < 6269745 then
-  tbl7 = tbl2[1] num1 = tbl7 and 10383383
-elseif num1 < 6283715 then
-  num1 = tbl4 and 13244873
-elseif num1 < 6321689 then
-  tbl43 = "gethui" fn21 = tbl1[tbl43] tbl43 = fn21() tbl40 = tbl43 num1 = 11113331
-elseif num1 < 6388453 then
-  tbl39 = tbl40 tbl31 = "string" tbl12 = tbl1[tbl31] tbl31 = "byte" fn30 = tbl12[tbl31] tbl12 = fn30(tbl7, tbl39) fn30 = tbl10[tbl3[6]] tbl31 = fn30() num3 = tbl12 + tbl31 tbl45 = num3 + tbl22 num3 = 256 tbl43 = tbl45 % num3 num1 = 13173327 tbl22 = tbl43 tbl31 = 1 num3 = tbl5[tbl6] tbl12 = tbl22 + tbl31 fn30 = tbl8[tbl12] tbl39 = nil tbl45 = num3..fn30 tbl5[tbl6] = tbl45
-elseif num1 < 6416555 then
-  tbl7 = nil tbl6 = nil tbl4 = {} num1 = tbl1["soQkK4pXeksvZ8"]
-elseif num1 < 6508652 then
-  tbl7 = fn52() fn21 = 34537198665426 tbl10[tbl7] = tbl2[1] tbl30 = "U:'\255\166\235\170\178\189S=c\235" tbl40 = 3073155843479 tbl8 = tbl10[tbl7] tbl25 = "\376\199\237\143\216do2H_\242CU" tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl41 = "Enum" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl25 = 9782875820491 tbl41 = tbl39[tbl40] tbl40 = "Rl\197\127\8D\353D4}\8230:" tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl5 == tbl8 num1 = tbl6 and 1677546 tbl4 = tbl6
-elseif num1 < 6554329 then
-  tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl22 = "\8224\223\339\196\192\160\r\227" tbl41 = 17120132800292 tbl30 = 1726672470820 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl22 = "\216F\141" tbl4 = tbl7[tbl6] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl39 = "\237\15\163" tbl41 = 18168487633164 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl22 = 25539358076532 tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl9 = "y\217\4\3\t\19L\188" tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl8 = "UDim2" tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl9 = 0 tbl30 = 26147874500496 tbl6 = tbl5[tbl8] tbl39 = "\164\8220\227" tbl8 = 0.5 tbl41 = 0 tbl22 = 0.5 tbl5 = tbl6(tbl8, tbl9, tbl22, tbl41) num1[tbl4] = tbl5 tbl5 = tbl10[tbl3[2]] tbl41 = 5592904485420 tbl8 = tbl10[tbl3[3]] tbl22 = "\206I\213V\189\172\207\186" tbl9 = tbl8(tbl22, tbl41) tbl22 = "\203L\197" tbl6 = tbl5[tbl9] tbl41 = 27236421022090 tbl4 = tbl7[tbl6] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl22 = 20794896311763 tbl9 = "i1:90" num1 = tbl4[tbl6] tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl8 = "UDim2" tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl8 = 1 tbl9 = 1 tbl41 = 1 tbl22 = 1 tbl5 = tbl6(tbl8, tbl9, tbl22, tbl41) num1[tbl4] = tbl5 num1 = 7898596
-elseif num1 < 6569833 then
-  num1 = tbl10[tbl3[5]] tbl9 = tbl5 tbl9 = nil tbl41 = num1(tbl22) tbl22 = nil num1 = 3480503
-elseif num1 < 6655438 then
-  tbl25 = 28201231692620 num1 = tbl10[tbl3[4]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) tbl8 = tbl10[tbl3[1]] tbl40 = 9109937131666 tbl30 = "\381\206\186\22\207\201\177\382\8" tbl22 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl4 = tbl8[tbl9] tbl30 = 14865727462154 tbl9 = tbl10[tbl3[2]] tbl40 = "\177K\381" tbl39 = "C\8221\199^\219*\0\190\203\3821\195\235\353\0\161" tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] num1 = tbl4[tbl8] tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "F\8230\5\27\352\232" tbl39 = 6728875183165 tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl22 = "CFrame" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl9 = tbl8(tbl7, tbl6, tbl5) num1[tbl4] = tbl9 num1 = 9177296
-elseif num1 < 6680539 then
-  tbl7 = tbl2[1] num1 = tbl7 and 1973276
-elseif num1 < 6700355 then
-  tbl5, tbl22 = tbl8(tbl6, tbl5) num1 = tbl5 and 2096690
-elseif num1 < 6702881 then
-  tbl40 = 3 tbl25 = 65 tbl30 = fn52() tbl10[tbl30] = tbl4 num1 = tbl10[tbl41] tbl4 = num1(tbl40, tbl25) tbl40 = fn52() tbl43 = "pcall" tbl10[tbl40] = tbl4 num1 = 0 tbl25 = num1 tbl45 = fn10(5908614, {}) num1 = 0 tbl4 = tbl1[tbl43] tbl43 = {tbl4(tbl45)} tbl31 = "tostring" fn21 = num1 num1 = {fn44(tbl43)} tbl4 = 2 tbl43 = num1 num1 = tbl43[tbl4] tbl45 = num1 tbl4 = "tonumber" num1 = tbl1[tbl4] num3 = tbl10[tbl5] tbl12 = tbl1[tbl31] tbl31 = tbl12(tbl45) tbl12 = ":(%d*):" fn30 = num3(tbl31, tbl12) num3 = {fn30()} tbl4 = num1(fn44(num3)) num3 = fn52() tbl10[num3] = tbl4 tbl4 = 1 fn30 = tbl10[tbl40] num1 = 7066904 tbl12 = fn30 fn30 = 1 tbl31 = fn30 fn30 = 0 tbl21 = tbl31 < fn30 fn30 = tbl4 - tbl31
-elseif num1 < 6718139 then
-  num1 = tbl8 num1 = 14668004 tbl4 = tbl5
-elseif num1 < 6825953 then
-  tbl7 = "_G" tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[1]] tbl9 = "\198\212\254\338\7N\176x" tbl22 = 26122276368260 tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] num1 = num1 and 2278684
-elseif num1 < 6850143 then
-  num1 = tbl6 num1 = 11698867 tbl4 = tbl7
-elseif num1 < 6892860 then
-  tbl8 = tbl10[tbl7] tbl40 = 20108851078291 tbl22 = tbl10[tbl3[1]] tbl25 = "\15}\1\8221\161\n]\353\232@0k\196" tbl41 = tbl10[tbl3[2]] fn21 = 9780591612362 tbl30 = "1\241\172\8222\215\143P\8217\181'\2\173\185" tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl41 = "Enum" tbl5 = tbl8[tbl9] tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl40 = "\254g\n\201\184" tbl25 = 27730688045681 num1 = 1677546 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl5 == tbl8 tbl4 = tbl6
-elseif num1 < 6917043 then
-  tbl8 = nil tbl9 = nil num1 = 9840210 tbl6 = nil tbl5 = nil tbl7 = nil
-elseif num1 < 6921392 then
-  tbl7 = tbl4 num1 = tbl7 and 8573470
-elseif num1 < 6934222 then
-  tbl41 = tbl5 tbl39 = num1 num1 = tbl5 and 11443333
-elseif num1 < 6938138 then
-  tbl6 = tbl10[tbl3[1]] tbl41 = "\233u`\253\23\338\254\8225v" tbl8 = tbl10[tbl3[2]] tbl39 = 27842780230309 tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl41 = 3563388536443 tbl5 = tbl8[tbl22] tbl4 = tbl6[tbl5] tbl22 = "\31\240\27\229\194l\22\31\29{\26" tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl9 = "\1784\t\236\8217\12\206^" tbl25 = "\16\213\30\8217\157\172\236[\201" num1 = tbl4[tbl6] tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl22 = 31927570922003 fn21 = 5464003742192 tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl22 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl40 = "?\11\170\188\161\184+_" tbl41 = tbl10[tbl3[2]] tbl25 = 987666792907 tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl30 = "\163\339\177\209\27=\8226\28\163\181\27\238\11" tbl8 = tbl9[tbl22] tbl22 = tbl10[tbl3[2]] tbl40 = 11116817667128 tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl8 = tbl10[tbl3[5]] tbl6 = tbl5 * tbl8 num1[tbl4] = tbl6 num1 = 15068901
-elseif num1 < 6940007 then
-  num1 = 4293338 tbl39 = "_G" fn21 = "\732\207O\183\8249\7\252\16\241\253_G\175\157\168\4\8\211" tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[1]] tbl40 = tbl10[tbl3[2]] tbl43 = 24862191725881 tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl8 = tbl22
-elseif num1 < 6979743 then
-  tbl41 = "math" tbl22 = tbl4 tbl4 = tbl1[tbl41] tbl41 = "random" num1 = tbl4[tbl41] tbl39 = "table" tbl41 = fn52() tbl10[tbl41] = num1 tbl4 = tbl1[tbl39] tbl39 = "concat" num1 = tbl4[tbl39] tbl40 = num1 tbl39 = num1 fn21 = "table" tbl25 = tbl1[fn21] tbl30 = tbl25 num1 = tbl25 and 4487229
-elseif num1 < 6982335 then
-  tbl6 = tbl10[tbl3[3]] tbl5 = 1 tbl7 = tbl6 ~= tbl5 num1 = tbl7 and 4998978
-elseif num1 < 7046611 then
-  num1 = tbl1["9WvnFkmAjgiW9"] tbl7 = nil tbl4 = {}
-elseif num1 < 7072070 then
-  fn34 = not tbl21 fn30 = fn30 + tbl31 tbl4 = fn30 <= tbl12 tbl4 = fn34 and tbl4 fn34 = fn30 >= tbl12 fn34 = tbl21 and fn34 tbl4 = fn34 or tbl4 fn34 = 9880338 num1 = tbl4 and fn34 tbl4 = 9723093 num1 = num1 or tbl4
-elseif num1 < 7130477 then
-  num3 = # tbl43 tbl21 = 0 tbl45 = num3 == tbl21 num1 = tbl45 and 16632314
-elseif num1 < 7134104 then
-  num1 = tbl1["rsMuun4jBzEcE"] tbl4 = {}
-elseif num1 < 7138312 then
-  tbl39 = "Ql7xx\31\27i\187:\170I\162\254" tbl41 = 15422466628621 tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl22 = "p\206 7\8240+\14X\8\83647\29\2378" tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl8 = "Enum" tbl4 = tbl7[tbl6] tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl30 = 28571112272888 tbl41 = tbl22(tbl39, tbl30) tbl39 = 10845528478650 tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl41 = "\24\196\203" tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] num1 = tbl4 == tbl7 num1 = num1 and 15667812
-elseif num1 < 7144686 then
-  num1 = 9667905
-elseif num1 < 7163755 then
-  tbl39 = tbl10[tbl3[1]] fn21 = 5449426438633 tbl30 = tbl10[tbl3[2]] tbl25 = "x \31d\27\8gS" tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl22 = tbl6[tbl41] tbl39 = tbl10[tbl3[1]] tbl25 = "\732" tbl30 = tbl10[tbl3[2]] fn21 = 32370555648737 tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl4 = tbl22[tbl41] tbl22 = 0 num1 = tbl4 < tbl22 num1 = num1 and 1907866
-elseif num1 < 7187536 then
-  num1 = tbl1["kEYrDNcWyOE2eo"] tbl7 = nil tbl6 = nil tbl4 = {}
-elseif num1 < 7234200 then
-  tbl7 = fn48(1732706, {tbl3[1];
-                                    tbl3[2];
-                                    tbl3[3];
-                                    tbl3[4], tbl3[5], tbl3[6]}) tbl4 = "pcall" num1 = tbl1[tbl4] tbl4 = num1(tbl7) tbl4 = {} num1 = tbl1["gfwov6Oyj39Hq"]
-elseif num1 < 7364107 then
-  tbl7 = nil num1 = tbl1["rBiKtiO1Zbbb"] tbl4 = {}
-elseif num1 < 7389691 then
-  tbl7 = tbl2[1] num1 = tbl10[tbl3[1]] tbl9 = "\238\251\8211\144\8225\24\204" tbl6 = tbl10[tbl3[2]] tbl22 = 31515673885011 tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 tbl7 = nil num1[tbl4] = tbl6 num1 = tbl1["ECrtzRDhw4eW"] tbl4 = {}
-elseif num1 < 7418129 then
-  tbl50 = not tbl36 num3 = num3 + fn34 tbl45 = num3 <= tbl21 tbl45 = tbl50 and tbl45 tbl50 = num3 >= tbl21 tbl50 = tbl36 and tbl50 tbl45 = tbl50 or tbl45 tbl50 = 4097161 num1 = tbl45 and tbl50 tbl45 = 10258900 num1 = num1 or tbl45
-else
-  tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl7 = tbl6 == tbl5 tbl4 = tbl7 num1 = 1320366
+elseif num1 >= 7426636 then
+  if num1 < 9504070 then
+    if num1 < 7463765 then
+      num1 = tbl4 and 9153605
+    elseif num1 >= 7463765 then
+      tbl7 = tbl7 + tbl5 tbl9 = not tbl8 tbl4 = tbl7 <= tbl6 tbl4 = tbl9 and tbl4 tbl9 = tbl7 >= tbl6 tbl9 = tbl8 and tbl9 tbl4 = tbl9 or tbl4 tbl9 = 1697641 num1 = tbl4 and tbl9 tbl4 = 9088452 num1 = num1 or tbl4
+    elseif num1 >= 7495948 then
+      num1 = tbl40 num1 = tbl30 and 6702580 tbl4 = tbl30
+    elseif num1 >= 7498274 then
+      tbl21 = # tbl43 tbl50 = 1 num3 = 1 tbl45 = tbl5(num3, tbl21) num1 = 7100071 num3 = tbl22(tbl43, tbl45) tbl21 = tbl10[fn21] tbl36 = num3 - tbl50 fn34 = tbl41(tbl36) tbl21[num3] = fn34 tbl45 = nil num3 = nil
+    elseif num1 >= 7511912 then
+      tbl6 = 9.11 tbl7 = 1442.7 tbl5 = -1484.02 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["utAFVpCYUjDFPw"]
+    elseif num1 >= 7530698 then
+      fn21, num3 = tbl43(tbl25, fn21) num1 = fn21 and 10548707
+    elseif num1 >= 7584358 then
+      tbl41 = tbl10[tbl3[1]] tbl8 = tbl6 tbl25 = 5757711698553 tbl39 = tbl10[tbl3[2]] tbl40 = "HZ\209\228\204\222\251R" tbl30 = tbl39(tbl40, tbl25) num1 = "IsA" tbl22 = tbl41[tbl30] num1 = tbl9[num1] num1 = num1(tbl9, tbl22) num1 = num1 and 14899531
+    elseif num1 >= 7737225 then
+      tbl41 = "\195\213vj\732\25 \253\178" tbl39 = 22089233639470 tbl7 = tbl2[1] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl6 = "IsA" tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl6] tbl6 = tbl6(tbl7, tbl5) tbl4 = tbl6 num1 = tbl6 and 4109513
+    elseif num1 >= 7897497 then
+      tbl6 = tbl10[tbl3[4]] num1 = tbl6 and 15331671 tbl4 = tbl6
+    elseif num1 >= 7915695 then
+      tbl22 = tbl10[tbl3[1]] tbl30 = "\190\8217\15\187\164\129\21\207\1826" tbl8 = "IsA" tbl41 = tbl10[tbl3[2]] tbl40 = 16825354722970 tbl8 = tbl7[tbl8] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl8 = tbl8(tbl7, tbl9) num1 = 12981866 tbl6 = tbl8
+    elseif num1 >= 7920217 then
+      num1 = tbl10[tbl3[1]] tbl5 = -48.39 tbl6 = 9.28 tbl7 = -1202.46 tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["LeB0nJNVVZbyLi"]
+    elseif num1 >= 7938124 then
+      tbl7 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl39 = 24529004637342 tbl9 = tbl10[tbl3[3]] tbl41 = "a\12J\165\243@" tbl6 = "WaitForChild" tbl6 = tbl7[tbl6] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl8 = 5 tbl6 = tbl6(tbl7, tbl5, tbl8) num1 = tbl6 and 6920454 tbl4 = tbl6
+    elseif num1 >= 7999958 then
+      tbl4 = {} num1 = tbl1["TUmm0txwNQvFR"]
+    elseif num1 >= 8070898 then
+      tbl5 = num1 tbl22 = "_G" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl25 = 31751517108673 tbl40 = "\245\253\163M%g<\238\244>\8226" tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl8 num1 = tbl8 and 13479283
+    elseif num1 >= 8086383 then
+      tbl4 = "Play" num1 = tbl10[tbl3[3]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 12215246
+    elseif num1 >= 8097697 then
+      tbl4 = 15481716 tbl5 = 11292888 tbl6 = "KhnzhZG3" tbl7 = tbl6 ^ tbl5 num1 = tbl4 - tbl7 tbl4 = "cdrBq3UA8CITM" tbl7 = num1 num1 = tbl4 / tbl7 tbl4 = {num1} num1 = tbl1["k4oZwItpzt8cvh"]
+    elseif num1 >= 8144566 then
+      tbl5 = 0 tbl7 = "error" num1 = tbl1[tbl7] tbl6 = tbl10[tbl3[8]] tbl7 = num1(tbl6, tbl5) num1 = 16220349
+    elseif num1 >= 8205680 then
+      num1 = tbl10[tbl3[7]] num1 = num1 and 8195153
+    elseif num1 >= 8211928 then
+      tbl30 = "\163\167\213\237S\144z" tbl40 = 11828098258307 tbl5 = num1 tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl8 = "IsA" tbl39 = tbl41(tbl30, tbl40) tbl8 = tbl7[tbl8] tbl9 = tbl22[tbl39] tbl8 = tbl8(tbl7, tbl9) num1 = tbl8 and 12981866 tbl6 = tbl8
+    elseif num1 >= 8231485 then
+      num1 = tbl10[tbl3[1]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 11870760
+    elseif num1 >= 8244684 then
+      num1 = 14097646
+    elseif num1 >= 8297404 then
+      tbl9 = "game" tbl8 = tbl1[tbl9] tbl22 = tbl10[tbl3[1]] tbl30 = "\12;\\\17\229\193%" tbl41 = tbl10[tbl3[2]] tbl40 = 31965284252196 tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl39 = "\251\8482\167\225R\17\8482f\250\189\201" tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl30 = 2361011717195 tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl41 = "e\174j\8225)cRa\208" tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = 8441531289434 tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] num1 = tbl7 and 9391752 tbl4 = tbl7
+    elseif num1 >= 8339106 then
+      tbl9 = nil num1 = 9316761 tbl8 = nil
+    elseif num1 >= 8357988 then
+      tbl4 = "pairs" num1 = tbl1[tbl4] tbl9 = "GetPlayers" tbl5 = tbl10[tbl3[3]] tbl9 = tbl5[tbl9] tbl8 = {tbl9(tbl5)} tbl5 = {num1(fn44(tbl8))} tbl7 = tbl5[2] tbl4 = tbl5[1] num1 = 13634983 tbl6 = tbl5[3] tbl5 = tbl4
+    elseif num1 >= 8373996 then
+      tbl9 = tbl10[tbl3[3]] tbl30 = 27274746196380 tbl5 = "FindFirstChildOfClass" tbl22 = tbl10[tbl3[4]] tbl39 = "gl\16\224" tbl5 = tbl7[tbl5] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] num1 = 9756170 tbl5 = tbl5(tbl7, tbl8) tbl6 = not tbl5 tbl4 = tbl6
+    elseif num1 >= 8389058 then
+      num1 = 12213649
+    elseif num1 >= 8398038 then
+      tbl5 = "_G" tbl39 = 18610771157466 tbl6 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl41 = "\254\12[\248}\8226" tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl4 = tbl7 num1 = tbl7 and 639055
+    elseif num1 >= 8478921 then
+      num1 = 15954276
+    elseif num1 >= 8511335 then
+      num1 = true tbl10[tbl3[1]] = num1 tbl4 = {} num1 = tbl1["bYm5uvHF1TQ5m"]
+    elseif num1 >= 8547959 then
+      tbl4 = "pairs" tbl9 = "GetDescendants" tbl9 = tbl7[tbl9] num1 = tbl1[tbl4] tbl8 = {tbl9(tbl7)} tbl9 = {num1(fn44(tbl8))} tbl5 = tbl9[3] tbl4 = tbl9[1] tbl6 = tbl9[2] num1 = 3480503 tbl8 = tbl4
+    elseif num1 >= 8716128 then
+      num1 = 2832744 tbl4 = tbl5
+    elseif num1 >= 8726980 then
+      tbl4 = {} num1 = tbl1["trq42p9WSUnU1S"]
+    elseif num1 >= 8789615 then
+      tbl4 = "Play" num1 = tbl10[tbl3[1]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 4093937
+    elseif num1 >= 8808769 then
+      num1 = tbl1["qRsM4OEvAkil"] tbl4 = {}
+    elseif num1 >= 8881079 then
+      tbl7 = nil tbl4 = {} num1 = tbl1["3pmsOKJCu19wXZ"]
+    elseif num1 >= 8971772 then
+      num1 = tbl10[tbl3[1]] num1 = num1 and 805532
+    elseif num1 >= 9054471 then
+      num1 = tbl1["LM3Xr1QHVpll"] tbl4 = {}
+    elseif num1 >= 9059511 then
+      tbl5, tbl22 = tbl8(tbl6, tbl5) num1 = tbl5 and 11602020
+    elseif num1 >= 9064016 then
+      tbl39 = "\161\203=\211" tbl6 = 0.5 tbl30 = 23322750691948 num1 = tbl10[tbl3[6]] tbl7 = tbl10[tbl3[7]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl10[tbl3[4]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] fn21 = 23691905903384 tbl41 = "UDim2" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[3]] tbl25 = "\710\201\3" tbl30 = tbl10[tbl3[4]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl39 = 0 tbl30 = 0 tbl40 = 0 tbl41 = 0 tbl22 = tbl9(tbl41, tbl39, tbl30, tbl40) tbl41 = tbl10[tbl3[3]] tbl40 = "\234N.\200\209\244\177\8218\188l\163p\14eb\204nl\7\232\244\226" tbl39 = tbl10[tbl3[4]] tbl25 = 30965102524499 tbl30 = tbl39(tbl40, tbl25) tbl9 = tbl41[tbl30] tbl41 = 1 tbl5 = {[tbl8] = tbl22, [tbl9] = tbl41} tbl4 = num1(tbl7, tbl6, tbl5) tbl22 = 35030666641336 tbl7 = "task" tbl9 = "\176Z\235\199" tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[3]] tbl5 = tbl10[tbl3[4]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = 0.5 tbl4 = num1(tbl7) tbl4 = "Destroy" num1 = tbl10[tbl3[8]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) tbl4 = {} num1 = tbl1["UyebzhAvscbpII"]
+    elseif num1 >= 9122877 then
+      tbl4 = tbl10[tbl3[2]] tbl6 = tbl10[tbl3[3]] tbl5 = tbl10[tbl3[4]] tbl9 = "\255\402\381\210d\27" tbl22 = 31992652446257 tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] num1 = num1 and 3517732
+    elseif num1 >= 9146963 then
+      tbl39 = 19811606422537 tbl6 = tbl10[tbl3[3]] tbl41 = "\338\143y\186\211!" tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl41 = 26260398026692 tbl4 = tbl6[tbl5] tbl5 = tbl10[tbl3[1]] tbl22 = "\24\228N?\8221\8216C\141e\219A0\2550\184\5\170\165\212\251\0" tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl4 = "FireServer" tbl41 = "j(\8M9\164" tbl4 = num1[tbl4] tbl4 = tbl4(num1) tbl6 = tbl10[tbl3[3]] tbl8 = tbl10[tbl3[1]] tbl39 = 26412131119115 tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl41 = 16986184376037 tbl4 = tbl6[tbl5] tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl22 = "\191\175\178\141\176\8482\t\247\171\190T\220\8230\253G" tbl9 = tbl8(tbl22, tbl41) tbl39 = "\170\24G\18" tbl30 = 17191511154501 tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl6 = true tbl9 = tbl10[tbl3[1]] tbl4 = "FireServer" tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl4 = num1[tbl4] tbl8 = tbl9[tbl41] tbl5 = tbl7[tbl8] tbl4 = tbl4(num1, tbl6, tbl5) num1 = 15107300
+    elseif num1 >= 9164315 then
+      tbl6 = tbl2[2] tbl5 = tbl2[3] tbl30 = 17245280280414 tbl39 = "$T\193" tbl7 = tbl2[1] tbl8 = "Instance" tbl4 = tbl1[tbl8] tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] num1 = tbl4[tbl8] tbl30 = 34839755407199 tbl39 = "I{g6\165" tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl39 = 693331165506 tbl8 = tbl9[tbl41] tbl4 = num1(tbl8) tbl8 = tbl4 tbl4 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl41 = "s\253#L" tbl22 = tbl9(tbl41, tbl39) num1 = tbl4[tbl22] tbl9 = num1 tbl4 = tbl5 num1 = tbl5 and 12849884
+    elseif num1 >= 9175767 then
+      num1 = tbl1["vi1jahfa74be5O"] tbl4 = {}
+    elseif num1 >= 9175878 then
+      tbl6 = nil tbl5 = nil tbl7 = nil num1 = tbl1["LOBO4jv4Mby5Sl"] tbl4 = {}
+    elseif num1 >= 9222059 then
+      tbl6, tbl9 = tbl5(tbl7, tbl6) num1 = tbl6 and 7727190
+    elseif num1 >= 9320643 then
+      tbl6 = 9.76 tbl5 = -1406.38 tbl7 = -1370.04 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["Y0WlhR2f3I6m"]
+    elseif num1 >= 9390905 then
+      tbl9 = "game" tbl30 = "\170\141]\30#X\24" tbl40 = 3557735515768 tbl8 = tbl1[tbl9] tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl30 = 34824447229784 tbl5 = tbl8[tbl9] tbl9 = tbl10[tbl3[1]] tbl39 = "\19RM O\232J!\8249\8218\25" tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl8 = tbl10[tbl3[1]] tbl39 = 27520522351119 tbl41 = "a\n\8\214TIF\205\169" tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] num1 = 2106394 tbl41 = "\255\0isr\160\22s" tbl39 = 8311402336030 tbl22 = tbl9(tbl41, tbl39) tbl6 = "FindFirstChildOfClass" tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl6] tbl6 = tbl6(tbl7, tbl5) tbl4 = tbl6
+    elseif num1 >= 9393239 then
+      tbl7 = "task" tbl4 = tbl1[tbl7] tbl9 = "\8249H\8222\157" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = 10481255879440 tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = 3 tbl4 = num1(tbl7) num1 = 3277639
+    elseif num1 >= 9398120 then
+      tbl40 = 17872169263234 num1 = tbl10[tbl3[5]] tbl30 = "\188\8240\382\382" tbl25 = 22248597842040 tbl22 = tbl10[tbl3[3]] tbl41 = tbl10[tbl3[4]] tbl39 = tbl41(tbl30, tbl40) tbl4 = tbl22[tbl39] tbl41 = tbl10[tbl3[3]] tbl39 = tbl10[tbl3[4]] tbl40 = "68\194/\382@Q\222\193H\127$\8220\8217qq\8240\190N\220\17\20\231\187\203\163" tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] num1[tbl4] = tbl22 num1 = 12829489
+    end
+  elseif num1 >= 9504070 then
+    tbl7 = fn52() tbl10[tbl7] = tbl2[1] tbl4 = "pcall" tbl6 = fn49(9673241, {tbl3[1], tbl3[2];
+                                      tbl3[3], tbl7}) num1 = tbl1[tbl4] tbl7 = fn12(tbl7) tbl4 = num1(tbl6) tbl4 = {} num1 = tbl1["G9eZ9AerSFxo"]
+  elseif num1 >= 9597618 then
+    num1 = true num1 = num1 and 1449480
+  elseif num1 >= 9670508 then
+    tbl22 = "\193/N\8250(n\212l\8226" tbl41 = 7001204935868 tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl9 = "\8212\8240\169\8225\16\8364\210;" tbl4 = tbl7[tbl6] tbl22 = 25955297455926 tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl9 = 17268330307433 tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = tbl10[tbl3[2]] tbl8 = "\12\8|\222\163\17\179j\189" tbl6 = tbl10[tbl3[3]] tbl5 = tbl6(tbl8, tbl9) tbl4 = tbl7[tbl5] tbl7 = tbl10[tbl3[4]] num1[tbl4] = tbl7 tbl4 = {} num1 = tbl1["zzgPQm7DzuaJV"]
+  elseif num1 >= 9706749 then
+    tbl12 = tbl10[tbl6] fn30 = tbl12 num1 = tbl12 and 5898892
+  elseif num1 >= 9739215 then
+    num1 = 11741395 tbl7 = nil
+  elseif num1 >= 9755106 then
+    num1 = tbl4 and 15298580
+  elseif num1 >= 9776709 then
+    num1 = tbl1["ODUZTXHQeAhaHt"] tbl4 = {}
+  elseif num1 >= 9843578 then
+    tbl4 = "pcall" tbl7 = fn48(11483398, {tbl3[1];
+                                      tbl3[2]}) num1 = tbl1[tbl4] tbl4 = num1(tbl7) num1 = tbl1["mZOAx56SXMwsN"] tbl4 = {}
+  elseif num1 >= 9863354 then
+    num1 = tbl10[tbl3[1]] num1 = num1 and 2242295
+  elseif num1 >= 9878231 then
+    n = 2 tbl36 = "math" tbl32 = 10000 tbl50 = 100 fn34 = fn52() tbl10[fn34] = fn30 tbl4 = tbl1[tbl36] tbl36 = "random" num1 = tbl4[tbl36] tbl34 = 255 tbl36 = 1 tbl4 = num1(tbl36, tbl50) tbl36 = fn52() tbl50 = 0 tbl10[tbl36] = tbl4 num1 = tbl10[tbl41] tbl4 = num1(tbl50, tbl34) tbl50 = fn52() tbl10[tbl50] = tbl4 num1 = tbl10[tbl41] tbl34 = 1 fn32 = tbl10[tbl36] tbl4 = num1(tbl34, fn32) tbl34 = fn52() tbl10[tbl34] = tbl4 tbl4 = tbl10[tbl41] tbl27 = 1 tbl38 = 0 fn32 = tbl4(tbl27, n) tbl4 = 1 num1 = fn32 == tbl4 tbl4 = ":(%d*):" fn32 = fn52() n = ":" tbl10[fn32] = num1 fn35 = "tostring" num1 = "gsub" num6 = tbl1[fn35] num4 = tbl10[tbl41] num5 = {num4(tbl38, tbl32)} fn35 = num6(fn44(num5)) num6 = ":" fn14 = fn35..num6 tbl27 = n..fn14 n = "pcall" num1 = tbl45[num1] num1 = num1(tbl45, tbl4, tbl27) tbl27 = fn52() tbl10[tbl27] = num1 tbl4 = tbl1[n] fn14 = fn48(1041130, {tbl41, fn34;
+                                      tbl40, tbl5;
+                                      tbl6;
+                                      num3;
+                                      fn32;
+                                      tbl27, tbl36, tbl34;
+                                      tbl50;
+                                      tbl30}) n = {tbl4(fn14)} num1 = {fn44(n)} n = num1 num1 = tbl10[fn32] num1 = num1 and 13653748
+  elseif num1 >= 9899121 then
+    num1 = 15684533
+  elseif num1 >= 10049307 then
+    tbl4 = {} num1 = tbl1["RSLMrxAxdgwA"]
+  elseif num1 >= 10130308 then
+    tbl6 = "game" tbl7 = tbl2[1] tbl41 = 7047883918545 tbl4 = tbl1[tbl6] tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl22 = "\4\r\8212\179\8220P\175\252" tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl9 = "\16\25\244p=\228\205Os\175" tbl22 = 12599886141163 tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl22 = 2 tbl8 = tbl7 and tbl22 tbl9 = num1 tbl5 = num1 tbl7 = nil tbl9 = 1 tbl6 = tbl8 or tbl9 num1[tbl4] = tbl6 tbl4 = {} num1 = tbl1["CegYtqoajb0cHo"]
+  elseif num1 >= 10204173 then
+    num1 = 7500330 num3 = # tbl43 tbl21 = 0 tbl45 = num3 == tbl21
+  elseif num1 >= 10264919 then
+    tbl9 = "N\203|\20\162\198\710" tbl22 = 16459210825200 tbl4 = "_G" num1 = tbl1[tbl4] tbl7 = tbl2[1] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 tbl7 = nil num1[tbl4] = tbl6 tbl4 = {} num1 = tbl1["qekL7QE9LGcESC"]
+  elseif num1 >= 10279427 then
+    num1 = tbl4 and 6542467
+  elseif num1 >= 10301464 then
+    num1 = true num1 = num1 and 12393285
+  elseif num1 >= 10362988 then
+    num1 = tbl10[tbl3[1]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 10641935
+  elseif num1 >= 10387729 then
+    tbl10[tbl6] = fn30 num1 = tbl10[tbl6] num1 = num1 and 8275742
+  elseif num1 >= 10458754 then
+    tbl4 = "pcall" num1 = tbl1[tbl4] tbl7 = fn10(16358129, {tbl3[4];
+                                      tbl3[1];
+                                      tbl3[2];
+                                      tbl3[3]}) tbl4 = num1(tbl7) num1 = 1010808
+  elseif num1 >= 10533098 then
+    tbl45 = fn21 num1 = fn52() tbl10[num1] = num3 num3 = num1 tbl36 = "\188\201\253\143\204" tbl31 = tbl10[tbl3[2]] tbl21 = tbl10[tbl3[3]] tbl50 = 15839891168464 fn34 = tbl21(tbl36, tbl50) tbl12 = tbl31[fn34] fn32 = 14073502620057 fn34 = tbl10[tbl3[2]] tbl36 = tbl10[tbl3[3]] tbl34 = "Q \184\197A\223\0P\8216\402\180" tbl50 = tbl36(tbl34, fn32) tbl34 = "\206\251\8240\8364\247\230%!" tbl21 = fn34[tbl50] fn34 = tbl10[num3] tbl31 = tbl21..fn34 fn34 = tbl10[tbl3[2]] num1 = "Toggle" tbl36 = tbl10[tbl3[3]] fn32 = 9848347595241 tbl50 = tbl36(tbl34, fn32) tbl21 = fn34[tbl50] num1 = tbl40[num1] tbl36 = "\200\200\8221\187\8221" fn34 = fn46(15425561, {tbl3[2], tbl3[3];
+                                    num3, tbl3[9]}) tbl45 = nil fn30 = {[tbl12] = tbl31;
+                                  [tbl21] = fn34} tbl12 = "task" num1 = num1(tbl40, fn30) fn30 = tbl1[tbl12] tbl50 = 7424436489601 tbl31 = tbl10[tbl3[2]] tbl21 = tbl10[tbl3[3]] fn34 = tbl21(tbl36, tbl50) tbl12 = tbl31[fn34] num1 = fn30[tbl12] tbl12 = fn48(16476495, {tbl3[2], tbl3[3];
+                                    num3, tbl3[10]}) num3 = fn12(num3) fn30 = num1(tbl12) num1 = 7535927
+  elseif num1 >= 10580368 then
+    num1 = true num1 = 12582487
+  elseif num1 >= 10611918 then
+    tbl4 = "_G" num1 = tbl1[tbl4] tbl9 = "\224\170\242" tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl22 = 8595850317730 tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 tbl7 = nil num1[tbl4] = tbl6 num1 = tbl1["xMPa78TkvIndLh"] tbl4 = {}
+  elseif num1 >= 10700043 then
+    num1 = tbl10[tbl3[4]] fn21 = 5975964764894 tbl22 = "Kick" tbl25 = "h\245\2\191\3J&\3819\225\\t\235\127\192" tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl22 = num1[tbl22] tbl22 = tbl22(num1, tbl41) num1 = 5843165
+  elseif num1 >= 10907747 then
+    tbl30 = "_G" tbl45 = 1881935168364 tbl39 = tbl1[tbl30] tbl8 = num1 tbl40 = tbl10[tbl3[1]] tbl43 = "\164l\21<K\179\202^\206\255j" tbl25 = tbl10[tbl3[2]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl22 = num1 tbl41 = tbl39[tbl30] num1 = tbl41 and 5383141 tbl9 = tbl41
+  elseif num1 >= 10908734 then
+    tbl4 = tbl10[tbl3[2]] tbl9 = "z\174\222\217\184\220\160\8212\220" tbl6 = tbl10[tbl3[3]] tbl5 = tbl10[tbl3[4]] tbl22 = 22515273312500 tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = num1 num1 = tbl7 and 8383637 tbl4 = tbl7
+  elseif num1 >= 10935801 then
+    num1 = 5902492 fn35 = 1 num6 = n[fn35] fn14 = num6
+  elseif num1 >= 10961137 then
+    tbl5 = "pcall" num1 = 4750695 tbl8 = fn10(13456555, {tbl7, tbl3[1], tbl3[2], tbl3[6], tbl3[7];
+                                      tbl3[8]}) tbl4 = tbl1[tbl5] tbl6 = nil tbl5 = tbl4(tbl8)
+  elseif num1 >= 11052743 then
+    num1 = tbl10[tbl41] tbl31 = 1 tbl21 = 6 tbl12 = num1(tbl31, tbl21) num1 = "l2" tbl1[num1] = tbl12 tbl21 = "l2" tbl31 = tbl1[tbl21] tbl21 = 2 num1 = tbl31 > tbl21 num1 = num1 and 2247874
+  elseif num1 >= 11069108 then
+    tbl39 = tbl40 num1 = tbl25 num1 = tbl40 and 2080841
+  elseif num1 >= 11169347 then
+    num1 = 11252416
+  elseif num1 >= 11179077 then
+    tbl22 = 32921093979106 tbl7 = tbl2[1] tbl4 = "_G" num1 = tbl1[tbl4] tbl9 = "\175h\143,Y\8224+5>\165\338\144" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 num1[tbl4] = tbl6 num1 = tbl7 and 3636695
+  elseif num1 >= 11247587 then
+    num1 = true num1 = num1 and 3670598
+  elseif num1 >= 11268805 then
+    num1 = 15645302 tbl4 = true tbl9 = tbl4
+  elseif num1 >= 11347204 then
+    tbl5 = 77 tbl6 = tbl10[tbl3[3]] tbl7 = tbl6 * tbl5 num1 = 6981498 tbl6 = 257 tbl4 = tbl7 % tbl6 tbl10[tbl3[3]] = tbl4
+  elseif num1 >= 11437709 then
+    tbl4 = tbl41 num1 = tbl39 num1 = 15859059
+  elseif num1 >= 11447949 then
+    tbl7 = tbl4 tbl4 = tbl7 num1 = tbl7 and 16207880
+  elseif num1 >= 11463732 then
+    tbl5 = "_G" tbl41 = "\250\24\250" tbl6 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = 33641454157105 tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl4 = tbl7 num1 = tbl7 and 5715882
+  elseif num1 >= 11488195 then
+    num1 = tbl41 and 1651917
+  elseif num1 >= 11507565 then
+    tbl30 = "Oa=\24" tbl40 = 29844986099273 tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl8 = tbl7[tbl9] num1 = 3275861 tbl6 = tbl8
+  elseif num1 >= 11518602 then
+    num1 = 1448629 tbl10[tbl6] = tbl4
+  elseif num1 >= 11551307 then
+    tbl6 = 45.378063201904 tbl5 = 1412.0883789062 tbl7 = 1536.8004150391 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["E2z3tqOztqSkU"]
+  elseif num1 >= 11580429 then
+    fn30 = 5114258737485 num3 = 16627384491582 tbl9 = tbl5 tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl45 = "A\141\382?\18\150" tbl43 = fn21(tbl45, num3) num3 = "k\240\194\8230\164\17\376\205t\205" tbl40 = tbl25[tbl43] tbl30 = tbl22[tbl40] fn21 = tbl10[tbl3[2]] tbl43 = tbl10[tbl3[3]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl40 = tbl22[tbl25] tbl39 = tbl30 < tbl40 num1 = tbl39 and 15353941 tbl41 = tbl39
+  elseif num1 >= 11625689 then
+    tbl31 = 30173752948450 tbl40 = 6810710690915 tbl22 = "\18\168F" tbl5 = tbl10[tbl3[1]] tbl41 = 23229195397696 tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl9 = "_G" tbl30 = "\8\339\239\8226k\r" tbl8 = tbl1[tbl9] fn21 = "\141z\8211\255\230\8218w" tbl22 = tbl10[tbl3[1]] tbl7 = tbl4 tbl12 = "1\251-\24" tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl30 = 33989286788563 tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl39 = "\381\197\8364," tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl45 = "\216wR\8(\141\175\25\184\186H\180\143\219YE\29l0k\243\15|\203f\144\217\17\227\381\20" tbl9 = tbl10[tbl3[3]] tbl30 = tbl10[tbl3[1]] num3 = 32484249402134 tbl43 = 10683419710318 tbl22 = "JSONEncode" tbl40 = tbl10[tbl3[2]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl25 = tbl10[tbl3[1]] tbl22 = tbl9[tbl22] fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] fn21 = tbl10[tbl3[4]] tbl45 = tbl10[tbl3[1]] num3 = tbl10[tbl3[2]] fn30 = num3(tbl12, tbl31) tbl43 = tbl45[fn30] tbl25 = fn21[tbl43] tbl30 = tbl40..tbl25 tbl41 = {[tbl39] = tbl30} tbl22 = tbl22(tbl9, tbl41) fn21 = 6625402391565 tbl40 = "\212\352\240N\8212(" tbl41 = tbl10[tbl3[1]] tbl25 = 22821047478658 tbl39 = tbl10[tbl3[2]] tbl45 = "K\209zD\230\2;+\200\129$\2" num3 = 34977918484383 tbl30 = tbl39(tbl40, tbl25) tbl9 = tbl41[tbl30] tbl25 = "\8221\189Eo" tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) fn21 = "\207}\217!\184D" tbl41 = tbl39[tbl40] tbl43 = 22004551673862 tbl30 = tbl10[tbl3[1]] tbl40 = tbl10[tbl3[2]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl25 = tbl10[tbl3[1]] fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) num3 = "I\31m\240\1983\205\184\160J\27\240-@0[" tbl40 = tbl25[tbl43] fn21 = tbl10[tbl3[1]] fn30 = 22952132422079 tbl43 = tbl10[tbl3[2]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl30 = {[tbl40] = tbl25} tbl4 = {[tbl6] = tbl5, [tbl8] = tbl22, [tbl9] = tbl41;
+                                    [tbl39] = tbl30} num1 = tbl7(tbl4) tbl7 = nil num1 = 9057667
+  elseif num1 >= 11727551 then
+    tbl7 = "_G" tbl4 = tbl1[tbl7] tbl9 = " \228d\6\15\206\402" tbl6 = tbl10[tbl3[1]] tbl22 = 31781371804111 tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] num1 = num1 and 1644147
+  elseif num1 >= 11738202 then
+    num1 = tbl1["YPYPa2g66k6Mot"] tbl4 = {}
+  elseif num1 >= 11748685 then
+    tbl4 = {} num1 = tbl7 tbl7 = nil tbl10[tbl3[2]] = num1 num1 = tbl1["wZVWoZtEMgoD"]
+  elseif num1 >= 11968332 then
+    tbl7 = fn12(tbl7) num1 = 11252416
+  end
+elseif num1 >= 12068113 then
+  if num1 < 12125629 then
+    num1 = 3063483
+  elseif num1 >= 12125629 then
+    num1 = tbl10[tbl3[1]] tbl7 = -32.6 tbl6 = 19.3 tbl5 = 98.6 tbl4 = num1(tbl7, tbl6, tbl5) num1 = tbl1["IFF6zwMjwnVror"] tbl4 = {}
+  elseif num1 >= 12194879 then
+    num1 = true num1 = num1 and 11066902
+  elseif num1 >= 12215228 then
+    num1 = tbl1["lnBndtbpCIHan"] tbl4 = {} tbl7 = nil
+  elseif num1 >= 12216601 then
+    tbl8 = "setfpscap" tbl5 = tbl1[tbl8] num1 = 6278284 tbl4 = tbl5
+  elseif num1 >= 12227633 then
+    tbl30 = 27979277054692 tbl5 = tbl10[tbl3[1]] tbl39 = "\243]V4\141{\219\8364\8" tbl9 = tbl10[tbl3[2]] num1 = 5654974 tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl4 = tbl6
+  elseif num1 >= 12292536 then
+    tbl6 = "_G" tbl7 = tbl1[tbl6] tbl5 = tbl10[tbl3[1]] tbl22 = "?4aO\202R\169k]\353" tbl41 = 2871894541625 tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl7 = tbl10[tbl3[3]] num1 = tbl4[tbl7] num1 = num1 and 10527138
+  elseif num1 >= 12394529 then
+    tbl22 = 12709072082718 tbl7 = "task" tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl9 = "K\243\6\195" tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = 700 tbl4 = num1(tbl7) num1 = 14746840
+  elseif num1 >= 12414316 then
+    num1 = tbl10[tbl3[1]] num1 = num1 and 8793896
+  elseif num1 >= 12458306 then
+    tbl7 = tbl2[1] tbl4 = "_G" tbl22 = 7289465851202 num1 = tbl1[tbl4] tbl9 = " \213\1674i\170\192\196)\28}" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 num1[tbl4] = tbl6 num1 = tbl7 and 5250705
+  elseif num1 >= 12498723 then
+    tbl6 = 5.56 tbl7 = -227.55 tbl5 = 18.23 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["uD8k6H89d8sXv"]
+  elseif num1 >= 12570088 then
+    num1 = fn51(12108459, {tbl8}) tbl12 = {num1()} tbl4 = {fn44(tbl12)} num1 = tbl1["CKaizqXNXhXRrg"]
+  elseif num1 >= 12620150 then
+    tbl5 = 2.97 num1 = tbl10[tbl3[1]] tbl7 = 1270.9 tbl6 = 9.11 tbl4 = num1(tbl7, tbl6, tbl5) num1 = tbl1["ddNWHJGOfP8aw"] tbl4 = {}
+  elseif num1 >= 12717644 then
+    tbl7 = tbl2[1] tbl22 = "_G" tbl9 = tbl1[tbl22] tbl40 = "6xn(\27\180@\r(\201" tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl5 = num1 tbl25 = 25413545258554 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl8 num1 = tbl8 and 1881042
+  elseif num1 >= 12744459 then
+    tbl22 = "task" tbl4 = tbl1[tbl22] tbl41 = tbl10[tbl3[3]] tbl39 = tbl10[tbl3[4]] tbl40 = "u\239A\t" tbl9 = nil tbl25 = 4498424432686 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] num1 = tbl4[tbl22] tbl22 = .04 tbl4 = num1(tbl22) num1 = 7488383
+  elseif num1 >= 12848402 then
+    tbl41 = "\212$\186\8482\167+\194" tbl39 = 2870854190392 num1 = tbl9 tbl8[num1] = tbl4 tbl4 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl30 = "\8249\221\227\195\2030\231XDL\248\8224o" num1 = tbl4[tbl22] tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl40 = 13995110553972 tbl39 = tbl41(tbl30, tbl40) tbl41 = "tostring" tbl9 = tbl22[tbl39] tbl22 = tbl1[tbl41] tbl41 = tbl22(tbl7) tbl4 = tbl9..tbl41 tbl8[num1] = tbl4 tbl39 = 27177129275759 tbl41 = ":+y\206D\253" tbl4 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) num1 = tbl4[tbl22] tbl4 = tbl6 tbl40 = "\144\4+\127\215Sw\184\227\243gM" tbl8[num1] = tbl4 tbl41 = "\243 \209\6\223\204" tbl25 = 15144587795340 tbl4 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = 31049075292282 tbl22 = tbl9(tbl41, tbl39) num1 = tbl4[tbl22] tbl9 = "game" tbl4 = tbl1[tbl9] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl9 = "GetService" tbl9 = tbl4[tbl9] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl9 = tbl9(tbl4, tbl22) tbl4 = {tbl8} tbl8[num1] = tbl9 num1 = tbl1["7Cqk5xtkjlGDZj"]
+  elseif num1 >= 12897042 then
+    tbl4 = tbl6 num1 = tbl5 num1 = 4109513
+  elseif num1 >= 13017714 then
+    tbl4 = "Play" num1 = tbl10[tbl3[1]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 3516329
+  elseif num1 >= 13032931 then
+    tbl39 = num1 num3 = "'Ovl$\179\352\211\14D\8222Q" tbl25 = "_G" tbl40 = tbl1[tbl25] fn21 = tbl10[tbl3[1]] tbl43 = tbl10[tbl3[2]] fn30 = 6988130389174 tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl30 = tbl40[tbl25] num1 = tbl30 and 1390218 tbl41 = tbl30
+  elseif num1 >= 13043947 then
+    tbl7 = tbl2[1] tbl4 = "tonumber" num1 = tbl1[tbl4] tbl4 = num1(tbl7) tbl6 = tbl4 num1 = tbl6 and 340627
+  elseif num1 >= 13117981 then
+    tbl40 = tbl40 + tbl25 tbl43 = not fn21 tbl39 = tbl40 <= tbl30 tbl39 = tbl43 and tbl39 tbl43 = tbl40 >= tbl30 tbl43 = fn21 and tbl43 tbl39 = tbl43 or tbl39 tbl43 = 6361991 num1 = tbl39 and tbl43 tbl39 = 15652594 num1 = num1 or tbl39
+  elseif num1 >= 13173851 then
+    tbl4 = "setfpscap" num1 = tbl1[tbl4] tbl9 = "math" tbl8 = tbl1[tbl9] tbl22 = tbl10[tbl3[1]] tbl40 = 13726623193335 tbl41 = tbl10[tbl3[2]] tbl30 = "\144\213\1\235," tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl22 = 240 tbl9 = 15 tbl8 = {tbl5(tbl6, tbl9, tbl22)} tbl4 = num1(fn44(tbl8)) num1 = 6389048
+  elseif num1 >= 13245149 then
+    num1 = tbl10[tbl3[3]] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl25 = 9325525078262 tbl40 = "r:i\201\23" fn21 = 27015170814243 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl25 = "_h\8249\200^8\24" tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl43 = 12156871005724 tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl30 = tbl10[tbl3[1]] fn21 = "\241H)\232\8222e\234" tbl40 = tbl10[tbl3[2]] tbl8 = "Notify" tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl43 = "\232C\82128\251\200\127\215\167\234\22\24\181\8211P\8216\732/\218q\220(\23'\230\185\r\160\215r\382" tbl40 = tbl10[tbl3[1]] tbl45 = 16326730030514 tbl25 = tbl10[tbl3[2]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl8 = num1[tbl8] num3 = 17786096181338 tbl25 = tbl10[tbl3[1]] fn21 = tbl10[tbl3[2]] tbl45 = "kT\8216C\201\1P\191" tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl25 = 3 tbl9 = {[tbl22] = tbl41, [tbl39] = tbl30, [tbl40] = tbl25} tbl8 = tbl8(num1, tbl9) num1 = 2529856
+  elseif num1 >= 13454703 then
+    tbl5 = tbl10[tbl3[1]] tbl7 = tbl2[1] tbl6 = tbl7 == tbl5 num1 = tbl6 and 15867227 tbl4 = tbl6
+  elseif num1 >= 13456075 then
+    tbl41 = "o\168\19/\7&3)\161G\"L=i" tbl7 = tbl10[tbl3[1]] tbl6 = "FindFirstChild" tbl8 = tbl10[tbl3[2]] tbl39 = 25455579934285 tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl6] tbl6 = tbl6(tbl7, tbl5) num1 = tbl6 and 5587640 tbl4 = tbl6
+  elseif num1 >= 13456723 then
+    tbl4 = tbl10[tbl3[1]] tbl30 = 14045629438348 tbl9 = 14526193834604 tbl6 = tbl10[tbl3[2]] tbl8 = "s890E" tbl5 = tbl6(tbl8, tbl9) num1 = tbl4[tbl5] tbl39 = "\8220I0\242" tbl8 = "Enum" tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl41 = "\222\168N\227\169\183\n\178\254Z" tbl39 = 12751269189425 tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl39 = "'\179\174\129r\238\21" tbl4 = tbl6[tbl5] tbl41 = 22078645610537 tbl7[num1] = tbl4 tbl22 = "9X89" tbl6 = "Instance" tbl4 = tbl1[tbl6] tbl30 = 22771976792428 tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl5 = tbl10[tbl3[1]] tbl22 = "\247\254\144\197\197--\244" tbl41 = 31290909718762 tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl9 = "#\402\381\8212\26" tbl4 = num1(tbl6, tbl7) tbl22 = 12406652507793 tbl6 = tbl4 tbl4 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) num1 = tbl4[tbl8] tbl8 = "Color3" tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl4 = tbl5[tbl8] tbl8 = 3 tbl9 = 3 tbl22 = 3 tbl5 = tbl4(tbl8, tbl9, tbl22) tbl22 = 34161763925539 tbl6[num1] = tbl5 tbl9 = "\8224\2224\211\207F\3\239=" tbl4 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl22 = 26401763061766 num1 = tbl4[tbl8] tbl4 = .9 tbl6[num1] = tbl4 tbl4 = tbl10[tbl3[1]] tbl9 = "\250\1766\144\169\223\193\177\167\200gv" tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) num1 = tbl4[tbl8] tbl4 = .175 tbl6[num1] = tbl4 tbl6 = nil num1 = 2554748
+  elseif num1 >= 13469664 then
+    num1 = tbl5 num1 = 10282318 tbl4 = tbl6
+  elseif num1 >= 13541548 then
+    tbl22 = 29621984769505 tbl4 = "_G" num1 = tbl1[tbl4] tbl9 = "D\8249&\219\177\8224\n\167U" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl2[1] tbl4 = tbl6[tbl8] tbl6 = tbl7 num1[tbl4] = tbl6 tbl7 = nil num1 = tbl1["3QU5xOvhQyDN"] tbl4 = {}
+  elseif num1 >= 13566269 then
+    tbl4 = "l2" num1 = tbl1[tbl4] tbl7 = "l1" tbl4 = tbl1[tbl7] tbl7 = "l1" tbl1[tbl7] = num1 tbl7 = "l2" tbl1[tbl7] = tbl4 tbl7 = tbl10[tbl3[1]] num1 = 3063483 tbl6 = tbl7()
+  elseif num1 >= 13631278 then
+    tbl6, tbl9 = tbl5(tbl7, tbl6) num1 = tbl6 and 1080761
+  elseif num1 >= 13644848 then
+    fn14 = tbl10[tbl6] tbl4 = fn14 num1 = fn14 and 811920
+  elseif num1 >= 13662783 then
+    tbl4 = {} num1 = tbl1["wnUaat1xEBqO"] tbl7 = nil
+  elseif num1 >= 13685923 then
+    tbl41 = 31112716794007 tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl22 = "\218'\144\241\339\255" tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl22 = 23943914187661 tbl9 = "\353\17\251\182(oY" tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl4 = "FireServer" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = tbl1["rvq4b3Re8jZdm"] tbl4 = {}
+  elseif num1 >= 13849830 then
+    tbl5 = 1208.88 num1 = tbl10[tbl3[1]] tbl6 = 5.9 tbl7 = 71.63 tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["LuGntFSwNcbZMl"]
+  elseif num1 >= 13925518 then
+    tbl4 = {} num1 = tbl1["zdLOByXoR5Hwc"]
+  elseif num1 >= 14052145 then
+    tbl6 = fn12(tbl6) tbl41 = fn12(tbl41) tbl9 = fn12(tbl9) tbl40 = fn12(tbl40) tbl6 = nil fn21 = nil tbl40 = fn52() tbl43 = nil num3 = fn12(num3) tbl5 = fn12(tbl5) tbl25 = nil tbl5 = nil tbl41 = "math" tbl30 = fn12(tbl30) tbl45 = nil tbl39 = nil tbl22 = nil tbl8 = fn12(tbl8) tbl39 = "table" tbl8 = fn52() tbl43 = {} tbl22 = "math" num1 = 7410641 tbl10[tbl8] = tbl6 tbl6 = fn52() tbl25 = {} tbl10[tbl6] = tbl5 tbl9 = tbl1[tbl22] tbl22 = "floor" tbl5 = tbl9[tbl22] tbl9 = fn52() tbl10[tbl9] = tbl5 tbl22 = tbl1[tbl41] fn21 = fn52() tbl41 = "random" tbl5 = tbl22[tbl41] tbl41 = tbl1[tbl39] tbl39 = "remove" tbl45 = 1 num3 = 256 tbl22 = tbl41[tbl39] tbl30 = "string" tbl39 = tbl1[tbl30] tbl30 = "char" tbl41 = tbl39[tbl30] tbl39 = 0 tbl30 = fn52() tbl10[tbl30] = tbl39 tbl39 = 2 tbl10[tbl40] = tbl39 tbl39 = {} tbl21 = num3 num3 = 1 fn34 = num3 tbl10[fn21] = tbl25 tbl25 = 0 num3 = 0 tbl36 = fn34 < num3 num3 = tbl45 - fn34
+  elseif num1 >= 14109759 then
+    tbl25 = tbl10[tbl3[1]] num3 = 9002889744480 tbl45 = "O\8216\255\8222" fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl30 = tbl9[tbl40] tbl45 = "\212\200ky|" tbl25 = tbl10[tbl3[1]] num3 = 28357083902868 num1 = 15085228 fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = tbl30 == tbl40 tbl22 = tbl39
+  elseif num1 >= 14215293 then
+    tbl39 = 25894812020506 tbl7 = fn52() tbl10[tbl7] = tbl2[1] tbl4 = "Play" tbl41 = 14764733962971 num1 = tbl10[tbl3[1]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) tbl4 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = "\t\162\18K`" tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl40 = "\t\252\27" num1 = tbl4[tbl6] tbl6 = fn47(12445729, {tbl3[4];
+                                      tbl3[1]}) tbl4 = "Connect" tbl22 = "\216KQ@\8240" tbl4 = num1[tbl4] tbl41 = 30026467112606 tbl4 = tbl4(num1, tbl6) tbl4 = tbl10[tbl3[4]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl41 = 6361978751890 tbl4 = "Connect" tbl6 = fn46(14312154, {tbl3[4], tbl7}) tbl4 = num1[tbl4] tbl4 = tbl4(num1, tbl6) tbl6 = "Instance" tbl4 = tbl1[tbl6] tbl22 = "\240\206\353" tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl5 = tbl10[tbl3[2]] tbl22 = "e$\221\215=\3\26#\251" tbl8 = tbl10[tbl3[3]] tbl41 = 17923585630362 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl4 = num1(tbl6) tbl6 = fn52() tbl22 = "\6n\191\192" tbl10[tbl6] = tbl4 num1 = tbl10[tbl6] tbl41 = 11480109208801 tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl4 = tbl5[tbl9] tbl41 = "\163\11t\8250\242\"}\382-\168\210?\11F" tbl8 = tbl10[tbl3[2]] tbl25 = 19622041904049 tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1[tbl4] = tbl5 num1 = tbl10[tbl6] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl41 = 828722102657 tbl22 = "\1931|K\216\r" tbl9 = tbl8(tbl22, tbl41) tbl4 = tbl5[tbl9] tbl39 = 13827316996390 tbl5 = tbl10[tbl3[5]] num1[tbl4] = tbl5 tbl5 = "Instance" tbl4 = tbl1[tbl5] tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "\352\231\202" tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1 = tbl4[tbl5] tbl39 = 26782547275959 tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "`~\710\8364x" tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl8 = tbl10[tbl6] tbl4 = num1(tbl5, tbl8) tbl5 = fn52() tbl10[tbl5] = tbl4 num1 = tbl10[tbl5] tbl41 = "Bu\4x" tbl8 = tbl10[tbl3[2]] tbl39 = 442164003021 tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl22 = "UDim2" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl30 = 150 tbl25 = 17076938055440 tbl41 = 350 tbl22 = 0 tbl39 = 0 tbl9 = tbl8(tbl22, tbl41, tbl39, tbl30) tbl41 = "\12\2396\31\175\18\236\205" num1[tbl4] = tbl9 tbl40 = "\243\163\243" num1 = tbl10[tbl5] tbl39 = 33665362378044 tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl22 = "UDim2" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl22 = 0.5 tbl39 = 0.5 tbl41 = -175 tbl30 = -75 tbl9 = tbl8(tbl22, tbl41, tbl39, tbl30) num1[tbl4] = tbl9 num1 = tbl10[tbl5] tbl39 = 14604237183632 tbl25 = 24743857253634 tbl41 = "$n\191b\215\225\5\170\24\31R;B\195\157\180" tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl22 = "Color3" tbl40 = "\8216\252\165\8218D\177\251" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl12 = 22838987876747 tbl41 = 0 tbl8 = tbl9[tbl22] tbl39 = 5 tbl22 = 0 tbl9 = tbl8(tbl22, tbl41, tbl39) num1[tbl4] = tbl9 num1 = tbl10[tbl5] tbl41 = "L\8222L\246X\8226\227\19\216\187\160Wi\n^\163" tbl8 = tbl10[tbl3[2]] tbl25 = 26032214814554 tbl9 = tbl10[tbl3[3]] tbl39 = 25694806388413 tbl30 = 14204116556246 tbl22 = tbl9(tbl41, tbl39) tbl41 = "ql \338\244\228\27bzZU\12\238qh" tbl4 = tbl8[tbl22] tbl39 = 11420018382021 tbl8 = true num1[tbl4] = tbl8 fn21 = 17586740682749 num1 = tbl10[tbl5] tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl8 = 0 num1[tbl4] = tbl8 tbl8 = "Instance" tbl4 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl39 = "A\218\14" tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] num1 = tbl4[tbl8] tbl30 = 19570445394841 tbl9 = tbl10[tbl3[2]] tbl39 = "\172.+\732\211|\15d" tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl39 = 33509252021491 tbl41 = "%`6<Z!\228\179-0\195\251" tbl9 = tbl10[tbl5] tbl4 = num1(tbl8, tbl9) tbl8 = tbl10[tbl3[2]] tbl40 = "\170\31\732" tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) num1 = tbl8[tbl22] num3 = 19624706171826 tbl22 = "UDim" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl22 = 0 tbl41 = 15 tbl9 = tbl8(tbl22, tbl41) tbl8 = "Instance" tbl4[num1] = tbl9 tbl30 = 1211428012596 tbl4 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl39 = "\192\352\254" tbl22 = tbl10[tbl3[3]] tbl7 = fn12(tbl7) tbl41 = tbl22(tbl39, tbl30) tbl39 = "i\198)\196_\2183`\195X" tbl8 = tbl9[tbl41] num1 = tbl4[tbl8] tbl30 = 12851073750880 tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl43 = 19168829825758 tbl30 = 13962697218405 tbl9 = tbl10[tbl5] tbl4 = num1(tbl8, tbl9) tbl25 = 1000009777617 tbl41 = "\212!\8250\339" tbl39 = 4893472164070 tbl8 = tbl4 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl40 = "wh62" num1 = tbl4[tbl22] tbl39 = "\181\211v\248\230\8249\170\157.\216" tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl4 = tbl9[tbl41] tbl8[num1] = tbl4 tbl39 = 34929719377801 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "\8\23\2015" tbl22 = tbl9(tbl41, tbl39) num1 = tbl4[tbl22] tbl22 = "UDim2" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl41 = 0 tbl39 = 1 tbl4 = tbl9[tbl22] tbl30 = 0 tbl22 = 1 tbl9 = tbl4(tbl22, tbl41, tbl39, tbl30) tbl8[num1] = tbl9 tbl4 = tbl10[tbl3[2]] tbl39 = 26369349726199 tbl41 = "cSP\1835" tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl30 = 22517324065013 tbl25 = "\162u\141\8218/\204\240ji" num1 = tbl4[tbl22] tbl39 = "\249\231i\8226*z\r\248<m\179\208\185%\204\170\230fQ\171c\710\14t)\381r" tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl4 = tbl9[tbl41] tbl8[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "z+\18\179f+\8218+\211" tbl39 = 35161773703157 tbl22 = tbl9(tbl41, tbl39) tbl41 = "Enum" num1 = tbl4[tbl22] tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) fn30 = 1443308061344 tbl41 = tbl39[tbl40] tbl40 = "h\252X\163" tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl25 = 2097685922768 tbl30 = tbl39(tbl40, tbl25) tbl39 = 30003868726931 tbl25 = " 52\22N\2270E" tbl22 = tbl41[tbl30] tbl4 = tbl9[tbl22] tbl8[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl41 = "\189\30\161\174\6I\183k\231$b\179\26\214S\381\197" tbl9 = tbl10[tbl3[3]] tbl40 = 6299605830517 fn21 = 20126922826908 tbl22 = tbl9(tbl41, tbl39) tbl41 = "\168\181\8482\220\216\29\222\236\143\192\219s\190\181\238\1687\168g\249z+" num1 = tbl4[tbl22] tbl4 = .45 tbl8[num1] = tbl4 tbl39 = 23948719434639 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl39 = 20021271553131 num1 = tbl4[tbl22] tbl4 = 1 tbl8[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "7T\253\206\163;" tbl22 = tbl9(tbl41, tbl39) tbl30 = "\238JV" num1 = tbl4[tbl22] tbl4 = 1 tbl8[num1] = tbl4 tbl9 = "Instance" tbl4 = tbl1[tbl9] tbl22 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] num1 = tbl4[tbl9] tbl22 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl40 = 14659159349930 tbl30 = "\"\710_\218\8211\8225\8\220" tbl39 = tbl41(tbl30, tbl40) tbl30 = 20849993655789 tbl9 = tbl22[tbl39] tbl22 = tbl10[tbl5] tbl4 = num1(tbl9, tbl22) tbl9 = tbl4 tbl4 = tbl10[tbl3[2]] tbl39 = "\219.\225I\2" tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) num1 = tbl4[tbl41] tbl45 = 14477031332437 tbl41 = "Color3" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl30 = 200 tbl41 = tbl39[tbl40] tbl39 = 250 tbl4 = tbl22[tbl41] tbl41 = 255 tbl22 = tbl4(tbl41, tbl39, tbl30) tbl30 = 6257334520673 tbl9[num1] = tbl22 tbl4 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl39 = "_W\247\171\30E#\8250[" tbl41 = tbl22(tbl39, tbl30) tbl25 = 4564592625741 tbl40 = "\172\27\232" tbl39 = "\213di\17U\2" tbl30 = 21292157675194 num1 = tbl4[tbl41] tbl4 = 2 tbl9[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) num1 = tbl4[tbl41] tbl4 = 2 tbl9[num1] = tbl4 tbl22 = "Instance" tbl4 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] num1 = tbl4[tbl22] tbl40 = " |\230\169\174\18\217\19y" tbl41 = tbl10[tbl3[2]] tbl25 = 4738324793502 tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl30 = "[gf\251" tbl41 = tbl10[tbl5] tbl4 = num1(tbl22, tbl41) tbl22 = tbl4 tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl40 = 3184723625419 fn21 = "\179\246U" tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl39 = "UDim2" tbl9 = nil tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl40 = 0 tbl39 = tbl30[tbl25] tbl25 = 50 tbl43 = 13265603303457 tbl4 = tbl41[tbl39] tbl39 = 1 tbl30 = 0 tbl41 = tbl4(tbl39, tbl30, tbl40, tbl25) tbl40 = 29482182063520 tbl22[num1] = tbl41 tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl30 = "\218\8250o\234I\t\216t\170$:\238\170dA\4\236\21>\254\169E" tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl30 = "=q\3\221" fn21 = "Pz\24\186\23\2011" tbl4 = 1 tbl40 = 28879530013832 tbl22[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl25 = 30588848207780 tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl40 = "\220\171\16\243.@m\7\232p," tbl30 = tbl39(tbl40, tbl25) tbl4 = tbl41[tbl30] tbl40 = 8501926514551 tbl22[num1] = tbl4 tbl30 = "6\161Y,\376N\0\224\198\31" tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl39 = "Color3" tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl30 = 255 tbl40 = 255 tbl4 = tbl41[tbl39] tbl39 = 245 tbl41 = tbl4(tbl39, tbl30, tbl40) tbl30 = "Zv\8220\179,\376\240p" tbl22[num1] = tbl41 tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl40 = 28913728124056 tbl39 = tbl41(tbl30, tbl40) tbl30 = "\220\0V\243" num1 = tbl4[tbl39] tbl4 = 23 tbl40 = 34534141345489 tbl43 = "z\26\241\199" tbl22[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl30 = "Enum" tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl30 = tbl10[tbl3[2]] tbl43 = 6580429769720 fn21 = "F\8\236%\202\178\203\30ty" tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl25 = "Ar\211" tbl4 = tbl41[tbl39] tbl22[num1] = tbl4 tbl30 = "\30E\201\8212D\191" tbl4 = tbl10[tbl3[2]] tbl40 = 4243241404343 fn21 = 28439728550843 tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl41 = "Instance" tbl4 = 2 tbl22[num1] = tbl4 tbl4 = tbl1[tbl41] tbl45 = "\210\240\1" tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl22 = nil tbl40 = tbl30(tbl25, fn21) fn21 = 6325777042305 tbl41 = tbl39[tbl40] num1 = tbl4[tbl41] tbl39 = tbl10[tbl3[2]] tbl25 = "\248\163-\199\8249\20\22\232r" tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl25 = "\202\376\178J" tbl41 = tbl39[tbl40] tbl39 = tbl10[tbl5] tbl4 = num1(tbl41, tbl39) tbl41 = fn52() tbl10[tbl41] = tbl4 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] fn21 = 5243251181961 tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl40 = "UDim2" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl8 = nil tbl43 = 20 tbl25 = 0 tbl39 = tbl30[tbl40] fn21 = 0 tbl40 = 1 tbl30 = tbl39(tbl40, tbl25, fn21, tbl43) fn21 = 28843101107319 tbl25 = "\8249\402\161\402\220F\1294" num1[tbl4] = tbl30 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl45 = "\246\8250\222" tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] num3 = 5220652796287 tbl40 = "UDim2" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl43 = 0 tbl39 = tbl30[tbl40] fn21 = .45 tbl45 = "\r\1779)\23*\187" tbl40 = 0 tbl25 = 0 tbl30 = tbl39(tbl40, tbl25, fn21, tbl43) num1[tbl4] = tbl30 num1 = tbl10[tbl41] num3 = 15777686494387 tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl25 = "\1668{gd\193\17\353/5\240\243j\205\211\24\23\188I\239\240A" fn21 = 2027074749359 tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl39 = 1 num1[tbl4] = tbl39 num1 = tbl10[tbl41] fn21 = 30940787046471 tbl39 = tbl10[tbl3[2]] tbl25 = "K\165\288" tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl43 = 40149418002 tbl30 = tbl10[tbl3[2]] fn21 = "\7J\8249\710\226S\236\212g^1\176\216\163_\23 " tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] fn21 = 25975794183999 tbl25 = "\8217.MIl{\248#\2\144" num1[tbl4] = tbl39 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl40 = "Color3" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = tbl30[tbl40] fn21 = 255 tbl40 = 255 tbl25 = 255 num3 = "Q\199\180u" tbl30 = tbl39(tbl40, tbl25, fn21) num1[tbl4] = tbl30 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] fn21 = 6339755248520 tbl30 = tbl10[tbl3[3]] tbl25 = "F\352/\1688\206)\338" tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl39 = 16 tbl25 = "VP2:\27" num1[tbl4] = tbl39 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] fn21 = 5450581428714 tbl40 = tbl30(tbl25, fn21) tbl25 = "Enum" tbl4 = tbl39[tbl40] tbl40 = tbl1[tbl25] fn21 = tbl10[tbl3[2]] tbl43 = tbl10[tbl3[3]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl30 = tbl40[tbl25] tbl45 = "\7\6\193\18\252g" tbl25 = tbl10[tbl3[2]] num3 = 26466678091812 fn21 = tbl10[tbl3[3]] fn30 = "\246\339\\" tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = tbl30[tbl40] num1[tbl4] = tbl39 fn21 = 11707915949387 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl25 = "\250\190\211i\127\169" tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl39 = 3 num1[tbl4] = tbl39 fn21 = "8\180\12" tbl39 = "Instance" tbl4 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] tbl43 = 22735465736539 tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] num1 = tbl4[tbl39] tbl30 = tbl10[tbl3[2]] tbl43 = 31031270717554 fn21 = "\168\8222\16\242\129" num3 = 25920189361958 tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl30 = tbl10[tbl5] tbl4 = num1(tbl39, tbl30) tbl25 = "\27\184T7" tbl39 = tbl4 tbl4 = tbl10[tbl3[2]] fn21 = 16446240742890 tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl45 = "\204Vo" num1 = tbl4[tbl40] tbl40 = "UDim2" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] num3 = 10744050701195 fn21 = 0 tbl4 = tbl30[tbl40] tbl25 = 0 tbl40 = .8 tbl43 = 6 tbl30 = tbl4(tbl40, tbl25, fn21, tbl43) tbl39[num1] = tbl30 fn21 = 15015728438096 tbl25 = "\0\215\143\189\166\163\177\8221" tbl4 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) num1 = tbl4[tbl40] tbl40 = "UDim2" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] tbl45 = "\t\185}" fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) fn21 = .8 tbl40 = tbl25[tbl43] tbl43 = 0 tbl4 = tbl30[tbl40] tbl40 = .1 num3 = 10420204540660 tbl25 = 0 tbl30 = tbl4(tbl40, tbl25, fn21, tbl43) tbl39[num1] = tbl30 tbl4 = tbl10[tbl3[2]] fn21 = 19615347286958 tbl45 = "\203\224\251\12\254:A" tbl30 = tbl10[tbl3[3]] tbl25 = "\174\194\188\224\338\31:B\21\163\21\181\203\223L\227" tbl40 = tbl30(tbl25, fn21) num1 = tbl4[tbl40] tbl40 = "Color3" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl25 = 182 tbl43 = "\30E\18" tbl45 = 32880950590415 tbl4 = tbl30[tbl40] fn21 = 193 tbl40 = 255 tbl30 = tbl4(tbl40, tbl25, fn21) tbl25 = "N\191\247\16\8222|" fn21 = 19245977232130 tbl39[num1] = tbl30 tbl4 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) num1 = tbl4[tbl40] tbl4 = 3 tbl30 = "Instance" tbl39[num1] = tbl4 tbl4 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] num1 = tbl4[tbl30] tbl45 = 4149560559500 tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] tbl43 = "\19\231LX\204q\247G" fn21 = tbl25(tbl43, tbl45) tbl45 = 18595746472403 tbl30 = tbl40[fn21] tbl4 = num1(tbl30, tbl39) tbl30 = "Instance" tbl43 = "\206\191\6" tbl4 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl45 = 12173609817636 num1 = tbl4[tbl30] tbl40 = tbl10[tbl3[2]] tbl43 = "$\144\226\229\251" tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl4 = num1(tbl30, tbl39) tbl30 = fn52() tbl10[tbl30] = tbl4 tbl45 = 10729990345604 num1 = tbl10[tbl30] tbl40 = tbl10[tbl3[2]] tbl43 = "\8221\208~~" tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl4 = tbl40[fn21] fn21 = "UDim2" tbl25 = tbl1[fn21] tbl43 = tbl10[tbl3[2]] tbl45 = tbl10[tbl3[3]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] num3 = 0 tbl45 = 1 fn30 = "\191\239\2004\168\227\r" tbl40 = tbl25[fn21] tbl43 = 0 fn21 = 0 tbl25 = tbl40(fn21, tbl43, tbl45, num3) tbl43 = "k2&\186*\205\8217g6I\8230\240\339\8216\161q" num1[tbl4] = tbl25 num1 = tbl10[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] tbl45 = 5428966263264 fn21 = tbl25(tbl43, tbl45) tbl4 = tbl40[fn21] fn21 = "Color3" tbl25 = tbl1[fn21] tbl12 = 17055767387910 tbl43 = tbl10[tbl3[2]] tbl45 = tbl10[tbl3[3]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] num3 = 25053672435090 tbl43 = 250 tbl40 = tbl25[fn21] tbl45 = 255 fn21 = 255 tbl25 = tbl40(fn21, tbl43, tbl45) tbl43 = "\232k\254x \184" num1[tbl4] = tbl25 num1 = tbl10[tbl30] tbl45 = 28082239058708 tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl4 = tbl40[fn21] tbl40 = 4 num1[tbl4] = tbl40 tbl40 = "Instance" tbl4 = tbl1[tbl40] tbl45 = "\233cs" tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = nil num1 = tbl4[tbl40] tbl25 = tbl10[tbl3[2]] num3 = 10714496406397 tbl45 = "\214\240j\8212\224>\228\24" fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl25 = tbl10[tbl30] tbl4 = num1(tbl40, tbl25) tbl40 = "task" num3 = 33302891854995 tbl4 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl45 = "lC\167\177\253" tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] num1 = tbl4[tbl40] tbl40 = fn46(3441719, {tbl3[6], tbl30;
+                                      tbl3[2];
+                                      tbl3[3], tbl41;
+                                      tbl3[7], tbl5;
+                                      tbl6}) tbl30 = fn12(tbl30) tbl4 = num1(tbl40) tbl6 = fn12(tbl6) tbl4 = {} tbl5 = fn12(tbl5) num1 = tbl1["E8pNdBuGqIXIz"] tbl41 = fn12(tbl41)
+  elseif num1 >= 14245186 then
+    num1 = tbl10[tbl3[1]] tbl25 = 26262866980805 tbl5 = tbl2[3] tbl6 = tbl2[2] num3 = 24644631407828 tbl45 = 8617868316589 tbl40 = "\172$\189" tbl22 = "TweenInfo" tbl9 = tbl1[tbl22] tbl7 = tbl2[1] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl43 = "\253\246\31 &#|\2v&[" tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl30 = "Enum" tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl45 = "C\211\8220\30!r.\5#\201\26[<\223_" tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl4 = "Create" tbl30 = tbl10[tbl3[2]] fn21 = "\169\225\352\247-" tbl43 = 32000153287221 tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl40 = "Enum" tbl4 = num1[tbl4] tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl43 = "7\169\\" tbl39 = tbl30[tbl40] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] tbl45 = 29060011111644 fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl9 = tbl8(tbl6, tbl22, tbl41) tbl4 = tbl4(num1, tbl7, tbl9, tbl5) tbl8 = tbl4 num1 = "Play" num1 = tbl8[num1] tbl4 = {tbl8} num1 = num1(tbl8) num1 = tbl1["ul5djmA7HKRO"]
+  elseif num1 >= 14267960 then
+    num1 = tbl10[tbl3[1]] num1 = num1 and 3443208
+  elseif num1 >= 14340492 then
+    tbl4 = {} num1 = tbl1["SCrBPd578Prf"]
+  elseif num1 >= 14378437 then
+    num1 = tbl10[tbl3[1]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 4623229
+  elseif num1 >= 14417590 then
+    tbl6 = 5.25 tbl7 = -1226.98 tbl5 = 1240.85 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["WjVheP9mHKUQ"]
+  elseif num1 >= 14517475 then
+    tbl7 = nil num1 = 8480933
+  elseif num1 >= 14640704 then
+    tbl4 = "tonumber" tbl7 = tbl2[1] num1 = tbl1[tbl4] tbl4 = num1(tbl7) tbl6 = tbl4 num1 = tbl6 and 12221845 tbl4 = tbl6
+  elseif num1 >= 14644691 then
+    tbl6 = "settings" tbl4 = tbl1[tbl6] tbl6 = tbl4() tbl22 = "(di\248\179\180\402\8249\8225" tbl7 = tbl2[1] tbl41 = 34461684170415 tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl4 = tbl5[tbl9] num1 = tbl6[tbl4] tbl9 = "\27~\252\186\19\194\143\234>\n\224\203" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = 33130553162819 tbl8 = tbl5(tbl9, tbl22) tbl5 = num1 tbl22 = 1 tbl9 = num1 tbl4 = tbl6[tbl8] tbl8 = tbl7 and tbl22 tbl7 = nil tbl9 = 5 tbl6 = tbl8 or tbl9 num1[tbl4] = tbl6 num1 = tbl1["KnOw75jb04s2Y"] tbl4 = {}
+  elseif num1 >= 14648842 then
+    tbl6 = tbl5 num1 = tbl10[tbl3[1]] tbl30 = 255 tbl39 = 0 tbl41 = num1(tbl39, tbl30) tbl7[tbl6] = tbl41 num1 = 4696189 tbl6 = nil
+  elseif num1 >= 14652186 then
+    tbl41 = "GenerateGUID" tbl39 = false num1 = 12849884 tbl22 = tbl10[tbl3[3]] tbl41 = tbl22[tbl41] tbl41 = tbl41(tbl22, tbl39) tbl4 = tbl41
+  elseif num1 >= 14665412 then
+    num1 = tbl4 and 16508455
+  elseif num1 >= 14701250 then
+    tbl22 = "_G" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl40 = "OW\1\166-\223\207D(m\220\219\27\166|\8250UL" tbl25 = 13462574831741 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] num1 = 5346630 tbl8 = tbl9[tbl22] tbl6 = tbl8
+  elseif num1 >= 14734325 then
+    tbl39 = 11781387965806 tbl41 = "\25\211i\"\8240\181\225" tbl4 = tbl10[tbl3[3]] tbl8 = "\30\196\8211ABOb" tbl9 = 11914873968044 tbl6 = tbl10[tbl3[4]] tbl5 = tbl6(tbl8, tbl9) num1 = tbl4[tbl5] tbl8 = tbl10[tbl3[3]] tbl9 = tbl10[tbl3[4]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl5] tbl4 = not tbl6 tbl7[num1] = tbl4 num1 = 14623972
+  elseif num1 >= 14745016 then
+    num1 = true num1 = num1 and 11737498
+  elseif num1 >= 14772513 then
+    tbl4 = "pairs" tbl9 = "GetDescendants" num1 = tbl1[tbl4] tbl8 = "game" tbl5 = tbl1[tbl8] tbl9 = tbl5[tbl9] tbl8 = {tbl9(tbl5)} tbl5 = {num1(fn44(tbl8))} tbl7 = tbl5[2] tbl4 = tbl5[1] tbl6 = tbl5[3] num1 = 9316761 tbl5 = tbl4
+  elseif num1 >= 14820189 then
+    tbl40 = 20008764220517 tbl22 = tbl10[tbl3[1]] tbl30 = "\218\213a~x\26\222{" tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl30 = "Enum" tbl45 = 12594236987112 num1 = tbl22[tbl39] tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[1]] tbl25 = tbl10[tbl3[2]] tbl43 = "\239G1j\25\143\710\219" fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl43 = 9709677695401 tbl30 = tbl10[tbl3[1]] tbl40 = tbl10[tbl3[2]] fn21 = "\181\8249\11\195lZ4\25\253\252J\120" tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl9[num1] = tbl22 num1 = 8356789
+  elseif num1 >= 14907710 then
+    num1 = tbl10[tbl3[4]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 8960564
+  elseif num1 >= 14925826 then
+    tbl6 = tbl8 num1 = tbl9 num1 = 13479283
+  elseif num1 >= 14967414 then
+    tbl4 = "pairs" num1 = tbl1[tbl4] tbl9 = tbl10[tbl3[1]] tbl40 = "=\338\8225\5\25\226\221#\8240" tbl25 = 28262412989288 tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl22 = "GetDescendants" tbl22 = tbl8[tbl22] tbl9 = {tbl22(tbl8)} tbl8 = {num1(fn44(tbl9))} tbl4 = tbl8[1] tbl5 = tbl8[3] tbl6 = tbl8[2] num1 = 6683176 tbl8 = tbl4
+  elseif num1 >= 15037761 then
+    tbl6 = tbl10[tbl3[6]] num1 = tbl6 and 12238496 tbl4 = tbl6
+  elseif num1 >= 15080726 then
+    tbl4 = tbl22 num1 = tbl41 num1 = 4804388
+  elseif num1 >= 15086312 then
+    tbl7 = tbl2[1] num1 = tbl7 and 8237801
+  elseif num1 >= 15103838 then
+    num1 = tbl1["Mw2PGyVJgpDVg"] tbl4 = {} tbl7 = nil
+  elseif num1 >= 15112865 then
+    tbl30 = "_G" tbl39 = tbl1[tbl30] tbl43 = "\20\210\19\17\8225\255\218c\233f\222\176" tbl40 = tbl10[tbl3[2]] tbl22 = num1 tbl45 = 20258237474009 tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] num1 = tbl41 and 6922516 tbl4 = tbl41
+  elseif num1 >= 15177960 then
+    tbl4 = "error" num1 = tbl1[tbl4] tbl7 = "Tamper Detected!" tbl4 = num1(tbl7) num1 = tbl1["wq3YKo5wbFHhzR"] tbl4 = {}
+  elseif num1 >= 15208016 then
+    num1 = tbl10[tbl3[10]] tbl6 = tbl10[tbl3[11]] tbl7[num1] = tbl6 num1 = tbl10[tbl3[12]] tbl6 = {num1(tbl7)} tbl4 = {fn44(tbl6)} num1 = tbl1["E9zUEGqx75RH6w"]
+  elseif num1 >= 15268834 then
+    num1 = true tbl10[tbl3[1]] = num1 fn21 = 31223790139595 tbl5 = true tbl4 = tbl10[tbl3[5]] tbl41 = "Enum" tbl25 = "\8482\254RK\206\244\t" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[3]] tbl30 = tbl10[tbl3[4]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl6 = "SendKeyEvent" tbl41 = tbl10[tbl3[3]] tbl25 = 15918409112820 tbl39 = tbl10[tbl3[4]] tbl40 = "\173w\204" tbl30 = tbl39(tbl40, tbl25) tbl6 = tbl4[tbl6] tbl22 = tbl41[tbl30] tbl41 = "game" tbl8 = tbl9[tbl22] tbl22 = tbl1[tbl41] tbl39 = 33018322271247 tbl41 = "\211ZE\157" tbl9 = false tbl6 = tbl6(tbl4, tbl5, tbl8, tbl9, tbl22) fn21 = 1777052287803 tbl5 = "task" tbl6 = tbl1[tbl5] tbl8 = tbl10[tbl3[3]] tbl9 = tbl10[tbl3[4]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl4 = tbl6[tbl5] tbl5 = .05 tbl6 = tbl4(tbl5) tbl4 = tbl10[tbl3[5]] tbl5 = false tbl25 = "\2183\8364Z\8250L\230" tbl41 = "Enum" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[3]] tbl30 = tbl10[tbl3[4]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl40 = "QS~" tbl6 = "SendKeyEvent" tbl9 = tbl22[tbl41] num1 = 7363289 tbl25 = 17352932630416 tbl6 = tbl4[tbl6] tbl41 = tbl10[tbl3[3]] tbl39 = tbl10[tbl3[4]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl39 = 34501554192066 tbl8 = tbl9[tbl22] tbl9 = false tbl41 = "game" tbl22 = tbl1[tbl41] tbl6 = tbl6(tbl4, tbl5, tbl8, tbl9, tbl22) tbl5 = "task" tbl6 = tbl1[tbl5] tbl41 = "a\1j\193" tbl8 = tbl10[tbl3[3]] tbl9 = tbl10[tbl3[4]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl4 = tbl6[tbl5] tbl5 = .3 tbl6 = tbl4(tbl5) tbl4 = false tbl10[tbl3[1]] = tbl4
+  elseif num1 >= 15316124 then
+    tbl5 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = "\240\223\18\2129\246G\7\22" tbl22 = tbl10[tbl3[3]] tbl30 = 30148189075158 tbl41 = tbl22(tbl39, tbl30) num1 = 2482325 tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl4 = tbl6
+  elseif num1 >= 15353881 then
+    tbl25 = tbl10[tbl3[2]] num3 = 6973720005807 tbl45 = "\180\212" fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl12 = 2602261267643 fn21 = "game" tbl30 = tbl22[tbl40] tbl25 = tbl1[fn21] num1 = 11489629 fn30 = "\218\8212K\199K" tbl43 = tbl10[tbl3[2]] tbl45 = tbl10[tbl3[3]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] tbl40 = tbl25[fn21] tbl39 = tbl30 ~= tbl40 tbl41 = tbl39
+  elseif num1 >= 15367618 then
+    num1 = tbl10[tbl3[1]] tbl6 = 5.2 tbl7 = -1598.4 tbl5 = 1647.7 tbl4 = num1(tbl7, tbl6, tbl5) num1 = tbl1["s1mdJHgtEkdY"] tbl4 = {}
+  elseif num1 >= 15417704 then
+    tbl41 = 5207674603897 tbl7 = tbl2[1] tbl6 = "_G" tbl4 = tbl1[tbl6] tbl5 = tbl10[tbl3[1]] tbl22 = "nc\8224\163p\209\6v\20\223" tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl6 = tbl7 tbl4 = tbl10[tbl3[3]] num1[tbl4] = tbl6 num1 = tbl7 and 14920717
+  elseif num1 >= 15449880 then
+    tbl9 = tbl10[tbl3[1]] num1 = 422965 tbl22 = tbl10[tbl3[2]] tbl30 = 800155451764 tbl39 = "\8220\243[\189\230\165\243\207dH\197\8364_" tbl41 = tbl22(tbl39, tbl30) fn21 = 26396050059267 tbl8 = tbl9[tbl41] tbl5 = tbl7[tbl8] tbl25 = "\201\18\249\2101\141o\353\1-a\732\8221" tbl41 = "Enum" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[1]] tbl40 = "\246\237\200\352=" tbl39 = tbl10[tbl3[2]] tbl25 = 17729928814656 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl5 == tbl8 tbl4 = tbl6
+  elseif num1 >= 15461749 then
+    num1 = tbl1["Hb8ewP7cmUYv"] tbl6 = nil tbl7 = nil tbl4 = {}
+  elseif num1 >= 15535372 then
+    tbl41 = not tbl9 num1 = tbl41 and 3152305
+  elseif num1 >= 15651294 then
+    tbl41 = nil num1 = 5762685 tbl22 = nil tbl8 = nil
+  elseif num1 >= 15654385 then
+    num1 = false tbl10[tbl3[4]] = num1 num1 = 14348461
+  elseif num1 >= 15669061 then
+    num1 = 6945413 tbl22 = tbl10[tbl9] tbl4 = tbl22
+  elseif num1 >= 15676328 then
+    tbl6 = "task" tbl7 = tbl1[tbl6] tbl22 = "\190\193SK" tbl41 = 13586685401270 tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl7[tbl6] tbl6 = 5 tbl7 = num1(tbl6) num1 = 9667905
+  elseif num1 >= 15701447 then
+    tbl21 = "l2" num1 = tbl1[tbl21] tbl21 = "l1" tbl1[tbl21] = num1 num1 = 2988398
+  elseif num1 >= 15713767 then
+    num1 = tbl4 and 5120053
+  elseif num1 >= 15734483 then
+    num1 = 6842619 tbl8 = "HttpPost" tbl5 = tbl1[tbl8] tbl7 = tbl5
+  elseif num1 >= 15738861 then
+    tbl7 = fn12(tbl7) tbl4 = {} num1 = tbl1["4nd10g1vDhEOh3"]
+  elseif num1 >= 15853110 then
+    num1 = tbl22 num1 = tbl4 and 11333620
+  elseif num1 >= 15866731 then
+    tbl6 = tbl10[tbl3[2]] tbl4 = tbl6 num1 = 345352
+  elseif num1 >= 15867797 then
+    num1 = true num1 = num1 and 8394393
+  elseif num1 >= 15935096 then
+    num1 = tbl1["4lEbj5ZGOwto"] tbl4 = {}
+  elseif num1 >= 15965354 then
+    tbl4 = {} num1 = tbl1["UsZRolIvjbjHPu"] tbl7 = nil
+  elseif num1 >= 16008337 then
+    tbl6 = tbl7 tbl5 = num1 num1 = tbl7 and 11518145
+  elseif num1 >= 16196862 then
+    tbl39 = "'\234t[" tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl30 = 30173184128738 tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl39 = "" tbl5 = tbl7[tbl8] tbl30 = 7530033909170 tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] num1 = 2577488 tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5 ~= tbl8 tbl4 = tbl6
+  elseif num1 >= 16219629 then
+    num1 = {} tbl6 = 1 tbl7 = num1 tbl5 = tbl10[tbl3[9]] tbl8 = tbl5 tbl5 = 1 num1 = 4696189 tbl9 = tbl5 tbl5 = 0 tbl22 = tbl9 < tbl5 tbl5 = tbl6 - tbl9
+  elseif num1 >= 16328213 then
+    tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = "]\181\212OG&" tbl8 = tbl10[tbl3[3]] tbl41 = 19091294560954 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl22 = 18590045446608 tbl4 = tbl7[tbl6] tbl6 = tbl10[tbl3[2]] tbl9 = "\198\141f\230M\206\252W" tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl4 = "FireServer" tbl7 = tbl10[tbl3[4]] tbl4 = num1[tbl4] tbl4 = tbl4(num1, tbl7) num1 = tbl1["KQP5cuBk98KpYn"] tbl4 = {}
+  elseif num1 >= 16409950 then
+    num1 = tbl4 and 5875792
+  elseif num1 >= 16446179 then
+    num1 = 6910783
+  elseif num1 >= 16464145 then
+    num1 = tbl7 tbl10[tbl3[3]] = num1 num1 = 15969870
+  elseif num1 >= 16470662 then
+    num1 = 10357465
+  elseif num1 >= 16484179 then
+    tbl5 = "task" tbl39 = 9123941994648 tbl4 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl41 = "\26b\222\8240" tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1 = tbl4[tbl5] tbl5 = .1 tbl4 = num1(tbl5) tbl4 = .1 num1 = tbl6 + tbl4 tbl6 = num1 num1 = 3863470
+  elseif num1 >= 16610877 then
+    fn34 = fn52() tbl36 = "setmetatable" tbl50 = {} num3 = fn52() tbl45 = {} tbl21 = fn51(3395290, {num3;
+                                      tbl30, tbl40, tbl9}) tbl10[num3] = tbl45 tbl45 = fn52() tbl41 = nil tbl22 = nil tbl10[tbl45] = tbl21 tbl9 = fn12(tbl9) tbl39 = nil tbl5 = nil fn32 = "__index" tbl21 = {} tbl10[fn34] = tbl21 tbl21 = tbl1[tbl36] fn35 = nil tbl27 = tbl10[fn34] n = "__metatable" tbl34 = {[fn32] = tbl27, [n] = fn35} tbl36 = tbl21(tbl50, tbl34) tbl21 = fn48(477437, {fn34;
+                                      num3;
+                                      fn21;
+                                      tbl30;
+                                      tbl40;
+                                      tbl45}) tbl25 = nil tbl10[tbl6] = tbl36 num3 = fn12(num3) fn34 = fn12(fn34) tbl30 = fn12(tbl30) tbl25 = "\205Q\178\208_\21_" fn21 = fn12(fn21) tbl40 = fn12(tbl40) tbl10[tbl8] = tbl21 tbl45 = fn12(tbl45) tbl30 = 24371842477141 tbl43 = nil fn21 = 19380051862336 tbl39 = "\20\234o\20\710\382\8217O\193\8482TU#\24" tbl9 = tbl10[tbl6] tbl22 = tbl10[tbl8] tbl41 = tbl22(tbl39, tbl30) tbl22 = "game" tbl5 = tbl9[tbl41] tbl9 = tbl1[tbl22] tbl39 = tbl10[tbl6] tbl30 = tbl10[tbl8] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl22 = "GetService" tbl22 = tbl9[tbl22] tbl22 = tbl22(tbl9, tbl41) tbl9 = fn52() tbl10[tbl9] = tbl22 tbl41 = tbl10[tbl9] fn21 = "\18M\161\229\24\144\16Cco\231" tbl43 = 27167466369386 tbl30 = tbl10[tbl6] tbl45 = 1833585902421 tbl40 = tbl10[tbl8] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl39 = "game" tbl41 = fn52() tbl43 = "_\8224\18\15\192\220b" tbl10[tbl41] = tbl22 tbl22 = tbl1[tbl39] tbl40 = tbl10[tbl6] tbl25 = tbl10[tbl8] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl39 = "GetService" tbl25 = num1 tbl39 = tbl22[tbl39] tbl43 = "gethui" tbl39 = tbl39(tbl22, tbl30) tbl30 = num1 tbl22 = fn52() tbl10[tbl22] = tbl39 fn21 = tbl1[tbl43] num1 = fn21 and 6299019 tbl40 = fn21
+  elseif num1 >= 16639364 then
+    tbl4 = {} num1 = tbl1["yAEI75zfDzyc"]
+  end
 end
-            else
-              if num1 < 12068113 then
-                if num1 < 9504070 then
-                  if num1 < 8389058 then
-                    if num1 < 8070898 then
-                      if num1 < 7737225 then
-                        if num1 < 7511912 then
-                          if num1 < 7495948 then
-                            if num1 < 7463765 then
-                              num1 = tbl4 and 9153605
-                            else tbl7 = tbl7 + tbl5 tbl9 = not tbl8 tbl4 = tbl7 <= tbl6 tbl4 = tbl9 and tbl4 tbl9 = tbl7 >= tbl6 tbl9 = tbl8 and tbl9 tbl4 = tbl9 or tbl4 tbl9 = 1697641 num1 = tbl4 and tbl9 tbl4 = 9088452 num1 = num1 or tbl4
-                            end
-                          else
-                            if num1 < 7498274 then
-                              num1 = tbl40 num1 = tbl30 and 6702580 tbl4 = tbl30
-                            else tbl21 = # tbl43 tbl50 = 1 num3 = 1 tbl45 = tbl5(num3, tbl21) num1 = 7100071 num3 = tbl22(tbl43, tbl45) tbl21 = tbl10[fn21] tbl36 = num3 - tbl50 fn34 = tbl41(tbl36) tbl21[num3] = fn34 tbl45 = nil num3 = nil
-                            end
-                          end
-                        else
-                          if num1 < 7584358 then
-                            if num1 < 7530698 then
-                              tbl6 = 9.11 tbl7 = 1442.7 tbl5 = -1484.02 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["utAFVpCYUjDFPw"]
-                            else fn21, num3 = tbl43(tbl25, fn21) num1 = fn21 and 10548707
-                            end
-                          else tbl41 = tbl10[tbl3[1]] tbl8 = tbl6 tbl25 = 5757711698553 tbl39 = tbl10[tbl3[2]] tbl40 = "HZ\209\228\204\222\251R" tbl30 = tbl39(tbl40, tbl25) num1 = "IsA" tbl22 = tbl41[tbl30] num1 = tbl9[num1] num1 = num1(tbl9, tbl22) num1 = num1 and 14899531
-                          end
-                        end
-                      else
-                        if num1 < 7920217 then
-                          if num1 < 7915695 then
-                            if num1 < 7897497 then
-                              tbl41 = "\195\213vj\732\25 \253\178" tbl39 = 22089233639470 tbl7 = tbl2[1] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl6 = "IsA" tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl6] tbl6 = tbl6(tbl7, tbl5) tbl4 = tbl6 num1 = tbl6 and 4109513
-                            else tbl6 = tbl10[tbl3[4]] num1 = tbl6 and 15331671 tbl4 = tbl6
-                            end
-                          else tbl22 = tbl10[tbl3[1]] tbl30 = "\190\8217\15\187\164\129\21\207\1826" tbl8 = "IsA" tbl41 = tbl10[tbl3[2]] tbl40 = 16825354722970 tbl8 = tbl7[tbl8] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl8 = tbl8(tbl7, tbl9) num1 = 12981866 tbl6 = tbl8
-                          end
-                        else
-                          if num1 < 7999958 then
-                            if num1 < 7938124 then
-                              num1 = tbl10[tbl3[1]] tbl5 = -48.39 tbl6 = 9.28 tbl7 = -1202.46 tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["LeB0nJNVVZbyLi"]
-                            else tbl7 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl39 = 24529004637342 tbl9 = tbl10[tbl3[3]] tbl41 = "a\12J\165\243@" tbl6 = "WaitForChild" tbl6 = tbl7[tbl6] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl8 = 5 tbl6 = tbl6(tbl7, tbl5, tbl8) num1 = tbl6 and 6920454 tbl4 = tbl6
-                            end
-                          else tbl4 = {} num1 = tbl1["TUmm0txwNQvFR"]
-                          end
-                        end
-                      end
-                    else
-                      if num1 < 8231485 then
-                        if num1 < 8144566 then
-                          if num1 < 8097697 then
-                            if num1 < 8086383 then
-                              tbl5 = num1 tbl22 = "_G" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl25 = 31751517108673 tbl40 = "\245\253\163M%g<\238\244>\8226" tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl8 num1 = tbl8 and 13479283
-                            else tbl4 = "Play" num1 = tbl10[tbl3[3]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 12215246
-                            end
-                          else tbl4 = 15481716 tbl5 = 11292888 tbl6 = "KhnzhZG3" tbl7 = tbl6 ^ tbl5 num1 = tbl4 - tbl7 tbl4 = "cdrBq3UA8CITM" tbl7 = num1 num1 = tbl4 / tbl7 tbl4 = {num1} num1 = tbl1["k4oZwItpzt8cvh"]
-                          end
-                        else
-                          if num1 < 8211928 then
-                            if num1 < 8205680 then
-                              tbl5 = 0 tbl7 = "error" num1 = tbl1[tbl7] tbl6 = tbl10[tbl3[8]] tbl7 = num1(tbl6, tbl5) num1 = 16220349
-                            else num1 = tbl10[tbl3[7]] num1 = num1 and 8195153
-                            end
-                          else tbl30 = "\163\167\213\237S\144z" tbl40 = 11828098258307 tbl5 = num1 tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl8 = "IsA" tbl39 = tbl41(tbl30, tbl40) tbl8 = tbl7[tbl8] tbl9 = tbl22[tbl39] tbl8 = tbl8(tbl7, tbl9) num1 = tbl8 and 12981866 tbl6 = tbl8
-                          end
-                        end
-                      else
-                        if num1 < 8339106 then
-                          if num1 < 8297404 then
-                            if num1 < 8244684 then
-                              num1 = tbl10[tbl3[1]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 11870760
-                            else num1 = 14097646
-                            end
-                          else tbl9 = "game" tbl8 = tbl1[tbl9] tbl22 = tbl10[tbl3[1]] tbl30 = "\12;\\\17\229\193%" tbl41 = tbl10[tbl3[2]] tbl40 = 31965284252196 tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl39 = "\251\8482\167\225R\17\8482f\250\189\201" tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl30 = 2361011717195 tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl41 = "e\174j\8225)cRa\208" tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = 8441531289434 tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] num1 = tbl7 and 9391752 tbl4 = tbl7
-                          end
-                        else
-                          if num1 < 8373996 then
-                            if num1 < 8357988 then
-                              tbl9 = nil num1 = 9316761 tbl8 = nil
-                            else tbl4 = "pairs" num1 = tbl1[tbl4] tbl9 = "GetPlayers" tbl5 = tbl10[tbl3[3]] tbl9 = tbl5[tbl9] tbl8 = {tbl9(tbl5)} tbl5 = {num1(fn44(tbl8))} tbl7 = tbl5[2] tbl4 = tbl5[1] num1 = 13634983 tbl6 = tbl5[3] tbl5 = tbl4
-                            end
-                          else tbl9 = tbl10[tbl3[3]] tbl30 = 27274746196380 tbl5 = "FindFirstChildOfClass" tbl22 = tbl10[tbl3[4]] tbl39 = "gl\16\224" tbl5 = tbl7[tbl5] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] num1 = 9756170 tbl5 = tbl5(tbl7, tbl8) tbl6 = not tbl5 tbl4 = tbl6
-                          end
-                        end
-                      end
-                    end
-                  else
-                    if num1 < 9059511 then
-                      if num1 < 8726980 then
-                        if num1 < 8511335 then
-                          if num1 < 8478921 then
-                            if num1 < 8398038 then
-                              num1 = 12213649
-                            else tbl5 = "_G" tbl39 = 18610771157466 tbl6 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl41 = "\254\12[\248}\8226" tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl4 = tbl7 num1 = tbl7 and 639055
-                            end
-                          else num1 = 15954276
-                          end
-                        else
-                          if num1 < 8716128 then
-                            if num1 < 8547959 then
-                              num1 = true tbl10[tbl3[1]] = num1 tbl4 = {} num1 = tbl1["bYm5uvHF1TQ5m"]
-                            else tbl4 = "pairs" tbl9 = "GetDescendants" tbl9 = tbl7[tbl9] num1 = tbl1[tbl4] tbl8 = {tbl9(tbl7)} tbl9 = {num1(fn44(tbl8))} tbl5 = tbl9[3] tbl4 = tbl9[1] tbl6 = tbl9[2] num1 = 3480503 tbl8 = tbl4
-                            end
-                          else num1 = 2832744 tbl4 = tbl5
-                          end
-                        end
-                      else
-                        if num1 < 8881079 then
-                          if num1 < 8808769 then
-                            if num1 < 8789615 then
-                              tbl4 = {} num1 = tbl1["trq42p9WSUnU1S"]
-                            else tbl4 = "Play" num1 = tbl10[tbl3[1]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 4093937
-                            end
-                          else num1 = tbl1["qRsM4OEvAkil"] tbl4 = {}
-                          end
-                        else
-                          if num1 < 9054471 then
-                            if num1 < 8971772 then
-                              tbl7 = nil tbl4 = {} num1 = tbl1["3pmsOKJCu19wXZ"]
-                            else num1 = tbl10[tbl3[1]] num1 = num1 and 805532
-                            end
-                          else num1 = tbl1["LM3Xr1QHVpll"] tbl4 = {}
-                          end
-                        end
-                      end
-                    else
-                      if num1 < 9175878 then
-                        if num1 < 9146963 then
-                          if num1 < 9122877 then
-                            if num1 < 9064016 then
-                              tbl5, tbl22 = tbl8(tbl6, tbl5) num1 = tbl5 and 11602020
-                            else tbl39 = "\161\203=\211" tbl6 = 0.5 tbl30 = 23322750691948 num1 = tbl10[tbl3[6]] tbl7 = tbl10[tbl3[7]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl10[tbl3[4]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] fn21 = 23691905903384 tbl41 = "UDim2" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[3]] tbl25 = "\710\201\3" tbl30 = tbl10[tbl3[4]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl39 = 0 tbl30 = 0 tbl40 = 0 tbl41 = 0 tbl22 = tbl9(tbl41, tbl39, tbl30, tbl40) tbl41 = tbl10[tbl3[3]] tbl40 = "\234N.\200\209\244\177\8218\188l\163p\14eb\204nl\7\232\244\226" tbl39 = tbl10[tbl3[4]] tbl25 = 30965102524499 tbl30 = tbl39(tbl40, tbl25) tbl9 = tbl41[tbl30] tbl41 = 1 tbl5 = {[tbl8] = tbl22, [tbl9] = tbl41} tbl4 = num1(tbl7, tbl6, tbl5) tbl22 = 35030666641336 tbl7 = "task" tbl9 = "\176Z\235\199" tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[3]] tbl5 = tbl10[tbl3[4]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = 0.5 tbl4 = num1(tbl7) tbl4 = "Destroy" num1 = tbl10[tbl3[8]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) tbl4 = {} num1 = tbl1["UyebzhAvscbpII"]
-                            end
-                          else tbl4 = tbl10[tbl3[2]] tbl6 = tbl10[tbl3[3]] tbl5 = tbl10[tbl3[4]] tbl9 = "\255\402\381\210d\27" tbl22 = 31992652446257 tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] num1 = num1 and 3517732
-                          end
-                        else
-                          if num1 < 9175767 then
-                            if num1 < 9164315 then
-                              tbl39 = 19811606422537 tbl6 = tbl10[tbl3[3]] tbl41 = "\338\143y\186\211!" tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl41 = 26260398026692 tbl4 = tbl6[tbl5] tbl5 = tbl10[tbl3[1]] tbl22 = "\24\228N?\8221\8216C\141e\219A0\2550\184\5\170\165\212\251\0" tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl4 = "FireServer" tbl41 = "j(\8M9\164" tbl4 = num1[tbl4] tbl4 = tbl4(num1) tbl6 = tbl10[tbl3[3]] tbl8 = tbl10[tbl3[1]] tbl39 = 26412131119115 tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl41 = 16986184376037 tbl4 = tbl6[tbl5] tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl22 = "\191\175\178\141\176\8482\t\247\171\190T\220\8230\253G" tbl9 = tbl8(tbl22, tbl41) tbl39 = "\170\24G\18" tbl30 = 17191511154501 tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl6 = true tbl9 = tbl10[tbl3[1]] tbl4 = "FireServer" tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl4 = num1[tbl4] tbl8 = tbl9[tbl41] tbl5 = tbl7[tbl8] tbl4 = tbl4(num1, tbl6, tbl5) num1 = 15107300
-                            else tbl6 = tbl2[2] tbl5 = tbl2[3] tbl30 = 17245280280414 tbl39 = "$T\193" tbl7 = tbl2[1] tbl8 = "Instance" tbl4 = tbl1[tbl8] tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] num1 = tbl4[tbl8] tbl30 = 34839755407199 tbl39 = "I{g6\165" tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl39 = 693331165506 tbl8 = tbl9[tbl41] tbl4 = num1(tbl8) tbl8 = tbl4 tbl4 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl41 = "s\253#L" tbl22 = tbl9(tbl41, tbl39) num1 = tbl4[tbl22] tbl9 = num1 tbl4 = tbl5 num1 = tbl5 and 12849884
-                            end
-                          else num1 = tbl1["vi1jahfa74be5O"] tbl4 = {}
-                          end
-                        end
-                      else
-                        if num1 < 9390905 then
-                          if num1 < 9320643 then
-                            if num1 < 9222059 then
-                              tbl6 = nil tbl5 = nil tbl7 = nil num1 = tbl1["LOBO4jv4Mby5Sl"] tbl4 = {}
-                            else tbl6, tbl9 = tbl5(tbl7, tbl6) num1 = tbl6 and 7727190
-                            end
-                          else tbl6 = 9.76 tbl5 = -1406.38 tbl7 = -1370.04 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["Y0WlhR2f3I6m"]
-                          end
-                        else
-                          if num1 < 9398120 then
-                            if num1 < 9393239 then
-                              tbl9 = "game" tbl30 = "\170\141]\30#X\24" tbl40 = 3557735515768 tbl8 = tbl1[tbl9] tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl30 = 34824447229784 tbl5 = tbl8[tbl9] tbl9 = tbl10[tbl3[1]] tbl39 = "\19RM O\232J!\8249\8218\25" tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl8 = tbl10[tbl3[1]] tbl39 = 27520522351119 tbl41 = "a\n\8\214TIF\205\169" tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] num1 = 2106394 tbl41 = "\255\0isr\160\22s" tbl39 = 8311402336030 tbl22 = tbl9(tbl41, tbl39) tbl6 = "FindFirstChildOfClass" tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl6] tbl6 = tbl6(tbl7, tbl5) tbl4 = tbl6
-                            else tbl7 = "task" tbl4 = tbl1[tbl7] tbl9 = "\8249H\8222\157" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = 10481255879440 tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = 3 tbl4 = num1(tbl7) num1 = 3277639
-                            end
-                          else tbl40 = 17872169263234 num1 = tbl10[tbl3[5]] tbl30 = "\188\8240\382\382" tbl25 = 22248597842040 tbl22 = tbl10[tbl3[3]] tbl41 = tbl10[tbl3[4]] tbl39 = tbl41(tbl30, tbl40) tbl4 = tbl22[tbl39] tbl41 = tbl10[tbl3[3]] tbl39 = tbl10[tbl3[4]] tbl40 = "68\194/\382@Q\222\193H\127$\8220\8217qq\8240\190N\220\17\20\231\187\203\163" tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] num1[tbl4] = tbl22 num1 = 12829489
-                          end
-                        end
-                      end
-                    end
-                  end
-                else
-                  if num1 < 10907747 then
-                    if num1 < 10130308 then
-                      if num1 < 9776709 then
-                        if num1 < 9706749 then
-                          if num1 < 9670508 then
-                            if num1 < 9597618 then
-                              tbl7 = fn52() tbl10[tbl7] = tbl2[1] tbl4 = "pcall" tbl6 = fn49(9673241, {tbl3[1], tbl3[2];
-                                  tbl3[3], tbl7}) num1 = tbl1[tbl4] tbl7 = fn12(tbl7) tbl4 = num1(tbl6) tbl4 = {} num1 = tbl1["G9eZ9AerSFxo"]
-                            else num1 = true num1 = num1 and 1449480
-                            end
-                          else tbl22 = "\193/N\8250(n\212l\8226" tbl41 = 7001204935868 tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl9 = "\8212\8240\169\8225\16\8364\210;" tbl4 = tbl7[tbl6] tbl22 = 25955297455926 tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl9 = 17268330307433 tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = tbl10[tbl3[2]] tbl8 = "\12\8|\222\163\17\179j\189" tbl6 = tbl10[tbl3[3]] tbl5 = tbl6(tbl8, tbl9) tbl4 = tbl7[tbl5] tbl7 = tbl10[tbl3[4]] num1[tbl4] = tbl7 tbl4 = {} num1 = tbl1["zzgPQm7DzuaJV"]
-                          end
-                        else
-                          if num1 < 9755106 then
-                            if num1 < 9739215 then
-                              tbl12 = tbl10[tbl6] fn30 = tbl12 num1 = tbl12 and 5898892
-                            else num1 = 11741395 tbl7 = nil
-                            end
-                          else num1 = tbl4 and 15298580
-                          end
-                        end
-                      else
-                        if num1 < 9878231 then
-                          if num1 < 9863354 then
-                            if num1 < 9843578 then
-                              num1 = tbl1["ODUZTXHQeAhaHt"] tbl4 = {}
-                            else tbl4 = "pcall" tbl7 = fn48(11483398, {tbl3[1];
-                                  tbl3[2]}) num1 = tbl1[tbl4] tbl4 = num1(tbl7) num1 = tbl1["mZOAx56SXMwsN"] tbl4 = {}
-                            end
-                          else num1 = tbl10[tbl3[1]] num1 = num1 and 2242295
-                          end
-                        else
-                          if num1 < 10049307 then
-                            if num1 < 9899121 then
-                              n = 2 tbl36 = "math" tbl32 = 10000 tbl50 = 100 fn34 = fn52() tbl10[fn34] = fn30 tbl4 = tbl1[tbl36] tbl36 = "random" num1 = tbl4[tbl36] tbl34 = 255 tbl36 = 1 tbl4 = num1(tbl36, tbl50) tbl36 = fn52() tbl50 = 0 tbl10[tbl36] = tbl4 num1 = tbl10[tbl41] tbl4 = num1(tbl50, tbl34) tbl50 = fn52() tbl10[tbl50] = tbl4 num1 = tbl10[tbl41] tbl34 = 1 fn32 = tbl10[tbl36] tbl4 = num1(tbl34, fn32) tbl34 = fn52() tbl10[tbl34] = tbl4 tbl4 = tbl10[tbl41] tbl27 = 1 tbl38 = 0 fn32 = tbl4(tbl27, n) tbl4 = 1 num1 = fn32 == tbl4 tbl4 = ":(%d*):" fn32 = fn52() n = ":" tbl10[fn32] = num1 fn35 = "tostring" num1 = "gsub" num6 = tbl1[fn35] num4 = tbl10[tbl41] num5 = {num4(tbl38, tbl32)} fn35 = num6(fn44(num5)) num6 = ":" fn14 = fn35..num6 tbl27 = n..fn14 n = "pcall" num1 = tbl45[num1] num1 = num1(tbl45, tbl4, tbl27) tbl27 = fn52() tbl10[tbl27] = num1 tbl4 = tbl1[n] fn14 = fn48(1041130, {tbl41, fn34;
-                                  tbl40, tbl5;
-                                  tbl6;
-                                  num3;
-                                  fn32;
-                                  tbl27, tbl36, tbl34;
-                                  tbl50;
-                                  tbl30}) n = {tbl4(fn14)} num1 = {fn44(n)} n = num1 num1 = tbl10[fn32] num1 = num1 and 13653748
-                            else num1 = 15684533
-                            end
-                          else tbl4 = {} num1 = tbl1["RSLMrxAxdgwA"]
-                          end
-                        end
-                      end
-                    else
-                      if num1 < 10387729 then
-                        if num1 < 10279427 then
-                          if num1 < 10264919 then
-                            if num1 < 10204173 then
-                              tbl6 = "game" tbl7 = tbl2[1] tbl41 = 7047883918545 tbl4 = tbl1[tbl6] tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl22 = "\4\r\8212\179\8220P\175\252" tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl9 = "\16\25\244p=\228\205Os\175" tbl22 = 12599886141163 tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl22 = 2 tbl8 = tbl7 and tbl22 tbl9 = num1 tbl5 = num1 tbl7 = nil tbl9 = 1 tbl6 = tbl8 or tbl9 num1[tbl4] = tbl6 tbl4 = {} num1 = tbl1["CegYtqoajb0cHo"]
-                            else num1 = 7500330 num3 = # tbl43 tbl21 = 0 tbl45 = num3 == tbl21
-                            end
-                          else tbl9 = "N\203|\20\162\198\710" tbl22 = 16459210825200 tbl4 = "_G" num1 = tbl1[tbl4] tbl7 = tbl2[1] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 tbl7 = nil num1[tbl4] = tbl6 tbl4 = {} num1 = tbl1["qekL7QE9LGcESC"]
-                          end
-                        else
-                          if num1 < 10362988 then
-                            if num1 < 10301464 then
-                              num1 = tbl4 and 6542467
-                            else num1 = true num1 = num1 and 12393285
-                            end
-                          else num1 = tbl10[tbl3[1]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 10641935
-                          end
-                        end
-                      else
-                        if num1 < 10580368 then
-                          if num1 < 10533098 then
-                            if num1 < 10458754 then
-                              tbl10[tbl6] = fn30 num1 = tbl10[tbl6] num1 = num1 and 8275742
-                            else tbl4 = "pcall" num1 = tbl1[tbl4] tbl7 = fn10(16358129, {tbl3[4];
-                                  tbl3[1];
-                                  tbl3[2];
-                                  tbl3[3]}) tbl4 = num1(tbl7) num1 = 1010808
-                            end
-                          else tbl45 = fn21 num1 = fn52() tbl10[num1] = num3 num3 = num1 tbl36 = "\188\201\253\143\204" tbl31 = tbl10[tbl3[2]] tbl21 = tbl10[tbl3[3]] tbl50 = 15839891168464 fn34 = tbl21(tbl36, tbl50) tbl12 = tbl31[fn34] fn32 = 14073502620057 fn34 = tbl10[tbl3[2]] tbl36 = tbl10[tbl3[3]] tbl34 = "Q \184\197A\223\0P\8216\402\180" tbl50 = tbl36(tbl34, fn32) tbl34 = "\206\251\8240\8364\247\230%!" tbl21 = fn34[tbl50] fn34 = tbl10[num3] tbl31 = tbl21..fn34 fn34 = tbl10[tbl3[2]] num1 = "Toggle" tbl36 = tbl10[tbl3[3]] fn32 = 9848347595241 tbl50 = tbl36(tbl34, fn32) tbl21 = fn34[tbl50] num1 = tbl40[num1] tbl36 = "\200\200\8221\187\8221" fn34 = fn46(15425561, {tbl3[2], tbl3[3];
-                                num3, tbl3[9]}) tbl45 = nil fn30 = {[tbl12] = tbl31;
-                              [tbl21] = fn34} tbl12 = "task" num1 = num1(tbl40, fn30) fn30 = tbl1[tbl12] tbl50 = 7424436489601 tbl31 = tbl10[tbl3[2]] tbl21 = tbl10[tbl3[3]] fn34 = tbl21(tbl36, tbl50) tbl12 = tbl31[fn34] num1 = fn30[tbl12] tbl12 = fn48(16476495, {tbl3[2], tbl3[3];
-                                num3, tbl3[10]}) num3 = fn12(num3) fn30 = num1(tbl12) num1 = 7535927
-                          end
-                        else
-                          if num1 < 10700043 then
-                            if num1 < 10611918 then
-                              num1 = true num1 = 12582487
-                            else tbl4 = "_G" num1 = tbl1[tbl4] tbl9 = "\224\170\242" tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl22 = 8595850317730 tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 tbl7 = nil num1[tbl4] = tbl6 num1 = tbl1["xMPa78TkvIndLh"] tbl4 = {}
-                            end
-                          else num1 = tbl10[tbl3[4]] fn21 = 5975964764894 tbl22 = "Kick" tbl25 = "h\245\2\191\3J&\3819\225\\t\235\127\192" tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl22 = num1[tbl22] tbl22 = tbl22(num1, tbl41) num1 = 5843165
-                          end
-                        end
-                      end
-                    end
-                  else
-                    if num1 < 11447949 then
-                      if num1 < 11169347 then
-                        if num1 < 10961137 then
-                          if num1 < 10935801 then
-                            if num1 < 10908734 then
-                              tbl30 = "_G" tbl45 = 1881935168364 tbl39 = tbl1[tbl30] tbl8 = num1 tbl40 = tbl10[tbl3[1]] tbl43 = "\164l\21<K\179\202^\206\255j" tbl25 = tbl10[tbl3[2]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl22 = num1 tbl41 = tbl39[tbl30] num1 = tbl41 and 5383141 tbl9 = tbl41
-                            else tbl4 = tbl10[tbl3[2]] tbl9 = "z\174\222\217\184\220\160\8212\220" tbl6 = tbl10[tbl3[3]] tbl5 = tbl10[tbl3[4]] tbl22 = 22515273312500 tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = num1 num1 = tbl7 and 8383637 tbl4 = tbl7
-                            end
-                          else num1 = 5902492 fn35 = 1 num6 = n[fn35] fn14 = num6
-                          end
-                        else
-                          if num1 < 11069108 then
-                            if num1 < 11052743 then
-                              tbl5 = "pcall" num1 = 4750695 tbl8 = fn10(13456555, {tbl7, tbl3[1], tbl3[2], tbl3[6], tbl3[7];
-                                  tbl3[8]}) tbl4 = tbl1[tbl5] tbl6 = nil tbl5 = tbl4(tbl8)
-                            else num1 = tbl10[tbl41] tbl31 = 1 tbl21 = 6 tbl12 = num1(tbl31, tbl21) num1 = "l2" tbl1[num1] = tbl12 tbl21 = "l2" tbl31 = tbl1[tbl21] tbl21 = 2 num1 = tbl31 > tbl21 num1 = num1 and 2247874
-                            end
-                          else tbl39 = tbl40 num1 = tbl25 num1 = tbl40 and 2080841
-                          end
-                        end
-                      else
-                        if num1 < 11268805 then
-                          if num1 < 11247587 then
-                            if num1 < 11179077 then
-                              num1 = 11252416
-                            else tbl22 = 32921093979106 tbl7 = tbl2[1] tbl4 = "_G" num1 = tbl1[tbl4] tbl9 = "\175h\143,Y\8224+5>\165\338\144" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 num1[tbl4] = tbl6 num1 = tbl7 and 3636695
-                            end
-                          else num1 = true num1 = num1 and 3670598
-                          end
-                        else
-                          if num1 < 11437709 then
-                            if num1 < 11347204 then
-                              num1 = 15645302 tbl4 = true tbl9 = tbl4
-                            else tbl5 = 77 tbl6 = tbl10[tbl3[3]] tbl7 = tbl6 * tbl5 num1 = 6981498 tbl6 = 257 tbl4 = tbl7 % tbl6 tbl10[tbl3[3]] = tbl4
-                            end
-                          else tbl4 = tbl41 num1 = tbl39 num1 = 15859059
-                          end
-                        end
-                      end
-                    else
-                      if num1 < 11580429 then
-                        if num1 < 11507565 then
-                          if num1 < 11488195 then
-                            if num1 < 11463732 then
-                              tbl7 = tbl4 tbl4 = tbl7 num1 = tbl7 and 16207880
-                            else tbl5 = "_G" tbl41 = "\250\24\250" tbl6 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = 33641454157105 tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl7 = tbl6[tbl5] tbl4 = tbl7 num1 = tbl7 and 5715882
-                            end
-                          else num1 = tbl41 and 1651917
-                          end
-                        else
-                          if num1 < 11551307 then
-                            if num1 < 11518602 then
-                              tbl30 = "Oa=\24" tbl40 = 29844986099273 tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl8 = tbl7[tbl9] num1 = 3275861 tbl6 = tbl8
-                            else num1 = 1448629 tbl10[tbl6] = tbl4
-                            end
-                          else tbl6 = 45.378063201904 tbl5 = 1412.0883789062 tbl7 = 1536.8004150391 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["E2z3tqOztqSkU"]
-                          end
-                        end
-                      else
-                        if num1 < 11738202 then
-                          if num1 < 11727551 then
-                            if num1 < 11625689 then
-                              fn30 = 5114258737485 num3 = 16627384491582 tbl9 = tbl5 tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl45 = "A\141\382?\18\150" tbl43 = fn21(tbl45, num3) num3 = "k\240\194\8230\164\17\376\205t\205" tbl40 = tbl25[tbl43] tbl30 = tbl22[tbl40] fn21 = tbl10[tbl3[2]] tbl43 = tbl10[tbl3[3]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl40 = tbl22[tbl25] tbl39 = tbl30 < tbl40 num1 = tbl39 and 15353941 tbl41 = tbl39
-                            else tbl31 = 30173752948450 tbl40 = 6810710690915 tbl22 = "\18\168F" tbl5 = tbl10[tbl3[1]] tbl41 = 23229195397696 tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl9 = "_G" tbl30 = "\8\339\239\8226k\r" tbl8 = tbl1[tbl9] fn21 = "\141z\8211\255\230\8218w" tbl22 = tbl10[tbl3[1]] tbl7 = tbl4 tbl12 = "1\251-\24" tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl30 = 33989286788563 tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl39 = "\381\197\8364," tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl45 = "\216wR\8(\141\175\25\184\186H\180\143\219YE\29l0k\243\15|\203f\144\217\17\227\381\20" tbl9 = tbl10[tbl3[3]] tbl30 = tbl10[tbl3[1]] num3 = 32484249402134 tbl43 = 10683419710318 tbl22 = "JSONEncode" tbl40 = tbl10[tbl3[2]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl25 = tbl10[tbl3[1]] tbl22 = tbl9[tbl22] fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] fn21 = tbl10[tbl3[4]] tbl45 = tbl10[tbl3[1]] num3 = tbl10[tbl3[2]] fn30 = num3(tbl12, tbl31) tbl43 = tbl45[fn30] tbl25 = fn21[tbl43] tbl30 = tbl40..tbl25 tbl41 = {[tbl39] = tbl30} tbl22 = tbl22(tbl9, tbl41) fn21 = 6625402391565 tbl40 = "\212\352\240N\8212(" tbl41 = tbl10[tbl3[1]] tbl25 = 22821047478658 tbl39 = tbl10[tbl3[2]] tbl45 = "K\209zD\230\2;+\200\129$\2" num3 = 34977918484383 tbl30 = tbl39(tbl40, tbl25) tbl9 = tbl41[tbl30] tbl25 = "\8221\189Eo" tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) fn21 = "\207}\217!\184D" tbl41 = tbl39[tbl40] tbl43 = 22004551673862 tbl30 = tbl10[tbl3[1]] tbl40 = tbl10[tbl3[2]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl25 = tbl10[tbl3[1]] fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) num3 = "I\31m\240\1983\205\184\160J\27\240-@0[" tbl40 = tbl25[tbl43] fn21 = tbl10[tbl3[1]] fn30 = 22952132422079 tbl43 = tbl10[tbl3[2]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl30 = {[tbl40] = tbl25} tbl4 = {[tbl6] = tbl5, [tbl8] = tbl22, [tbl9] = tbl41;
-                                [tbl39] = tbl30} num1 = tbl7(tbl4) tbl7 = nil num1 = 9057667
-                            end
-                          else tbl7 = "_G" tbl4 = tbl1[tbl7] tbl9 = " \228d\6\15\206\402" tbl6 = tbl10[tbl3[1]] tbl22 = 31781371804111 tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] num1 = num1 and 1644147
-                          end
-                        else
-                          if num1 < 11968332 then
-                            if num1 < 11748685 then
-                              num1 = tbl1["YPYPa2g66k6Mot"] tbl4 = {}
-                            else tbl4 = {} num1 = tbl7 tbl7 = nil tbl10[tbl3[2]] = num1 num1 = tbl1["wZVWoZtEMgoD"]
-                            end
-                          else tbl7 = fn12(tbl7) num1 = 11252416
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              else
-                if num1 < 14665412 then
-                  if num1 < 13456075 then
-                    if num1 < 12620150 then
-                      if num1 < 12292536 then
-                        if num1 < 12215228 then
-                          if num1 < 12194879 then
-                            if num1 < 12125629 then
-                              num1 = 3063483
-                            else num1 = tbl10[tbl3[1]] tbl7 = -32.6 tbl6 = 19.3 tbl5 = 98.6 tbl4 = num1(tbl7, tbl6, tbl5) num1 = tbl1["IFF6zwMjwnVror"] tbl4 = {}
-                            end
-                          else num1 = true num1 = num1 and 11066902
-                          end
-                        else
-                          if num1 < 12227633 then
-                            if num1 < 12216601 then
-                              num1 = tbl1["lnBndtbpCIHan"] tbl4 = {} tbl7 = nil
-                            else tbl8 = "setfpscap" tbl5 = tbl1[tbl8] num1 = 6278284 tbl4 = tbl5
-                            end
-                          else tbl30 = 27979277054692 tbl5 = tbl10[tbl3[1]] tbl39 = "\243]V4\141{\219\8364\8" tbl9 = tbl10[tbl3[2]] num1 = 5654974 tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl4 = tbl6
-                          end
-                        end
-                      else
-                        if num1 < 12458306 then
-                          if num1 < 12414316 then
-                            if num1 < 12394529 then
-                              tbl6 = "_G" tbl7 = tbl1[tbl6] tbl5 = tbl10[tbl3[1]] tbl22 = "?4aO\202R\169k]\353" tbl41 = 2871894541625 tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl7 = tbl10[tbl3[3]] num1 = tbl4[tbl7] num1 = num1 and 10527138
-                            else tbl22 = 12709072082718 tbl7 = "task" tbl4 = tbl1[tbl7] tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl9 = "K\243\6\195" tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl7 = 700 tbl4 = num1(tbl7) num1 = 14746840
-                            end
-                          else num1 = tbl10[tbl3[1]] num1 = num1 and 8793896
-                          end
-                        else
-                          if num1 < 12570088 then
-                            if num1 < 12498723 then
-                              tbl7 = tbl2[1] tbl4 = "_G" tbl22 = 7289465851202 num1 = tbl1[tbl4] tbl9 = " \213\1674i\170\192\196)\28}" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl4 = tbl6[tbl8] tbl6 = tbl7 num1[tbl4] = tbl6 num1 = tbl7 and 5250705
-                            else tbl6 = 5.56 tbl7 = -227.55 tbl5 = 18.23 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["uD8k6H89d8sXv"]
-                            end
-                          else num1 = fn51(12108459, {tbl8}) tbl12 = {num1()} tbl4 = {fn44(tbl12)} num1 = tbl1["CKaizqXNXhXRrg"]
-                          end
-                        end
-                      end
-                    else
-                      if num1 < 13032931 then
-                        if num1 < 12848402 then
-                          if num1 < 12744459 then
-                            if num1 < 12717644 then
-                              tbl5 = 2.97 num1 = tbl10[tbl3[1]] tbl7 = 1270.9 tbl6 = 9.11 tbl4 = num1(tbl7, tbl6, tbl5) num1 = tbl1["ddNWHJGOfP8aw"] tbl4 = {}
-                            else tbl7 = tbl2[1] tbl22 = "_G" tbl9 = tbl1[tbl22] tbl40 = "6xn(\27\180@\r(\201" tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl5 = num1 tbl25 = 25413545258554 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl8 num1 = tbl8 and 1881042
-                            end
-                          else tbl22 = "task" tbl4 = tbl1[tbl22] tbl41 = tbl10[tbl3[3]] tbl39 = tbl10[tbl3[4]] tbl40 = "u\239A\t" tbl9 = nil tbl25 = 4498424432686 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] num1 = tbl4[tbl22] tbl22 = .04 tbl4 = num1(tbl22) num1 = 7488383
-                          end
-                        else
-                          if num1 < 13017714 then
-                            if num1 < 12897042 then
-                              tbl41 = "\212$\186\8482\167+\194" tbl39 = 2870854190392 num1 = tbl9 tbl8[num1] = tbl4 tbl4 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) tbl30 = "\8249\221\227\195\2030\231XDL\248\8224o" num1 = tbl4[tbl22] tbl22 = tbl10[tbl3[1]] tbl41 = tbl10[tbl3[2]] tbl40 = 13995110553972 tbl39 = tbl41(tbl30, tbl40) tbl41 = "tostring" tbl9 = tbl22[tbl39] tbl22 = tbl1[tbl41] tbl41 = tbl22(tbl7) tbl4 = tbl9..tbl41 tbl8[num1] = tbl4 tbl39 = 27177129275759 tbl41 = ":+y\206D\253" tbl4 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl22 = tbl9(tbl41, tbl39) num1 = tbl4[tbl22] tbl4 = tbl6 tbl40 = "\144\4+\127\215Sw\184\227\243gM" tbl8[num1] = tbl4 tbl41 = "\243 \209\6\223\204" tbl25 = 15144587795340 tbl4 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = 31049075292282 tbl22 = tbl9(tbl41, tbl39) num1 = tbl4[tbl22] tbl9 = "game" tbl4 = tbl1[tbl9] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl9 = "GetService" tbl9 = tbl4[tbl9] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl9 = tbl9(tbl4, tbl22) tbl4 = {tbl8} tbl8[num1] = tbl9 num1 = tbl1["7Cqk5xtkjlGDZj"]
-                            else tbl4 = tbl6 num1 = tbl5 num1 = 4109513
-                            end
-                          else tbl4 = "Play" num1 = tbl10[tbl3[1]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 3516329
-                          end
-                        end
-                      else
-                        if num1 < 13173851 then
-                          if num1 < 13117981 then
-                            if num1 < 13043947 then
-                              tbl39 = num1 num3 = "'Ovl$\179\352\211\14D\8222Q" tbl25 = "_G" tbl40 = tbl1[tbl25] fn21 = tbl10[tbl3[1]] tbl43 = tbl10[tbl3[2]] fn30 = 6988130389174 tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl30 = tbl40[tbl25] num1 = tbl30 and 1390218 tbl41 = tbl30
-                            else tbl7 = tbl2[1] tbl4 = "tonumber" num1 = tbl1[tbl4] tbl4 = num1(tbl7) tbl6 = tbl4 num1 = tbl6 and 340627
-                            end
-                          else tbl40 = tbl40 + tbl25 tbl43 = not fn21 tbl39 = tbl40 <= tbl30 tbl39 = tbl43 and tbl39 tbl43 = tbl40 >= tbl30 tbl43 = fn21 and tbl43 tbl39 = tbl43 or tbl39 tbl43 = 6361991 num1 = tbl39 and tbl43 tbl39 = 15652594 num1 = num1 or tbl39
-                          end
-                        else
-                          if num1 < 13454703 then
-                            if num1 < 13245149 then
-                              tbl4 = "setfpscap" num1 = tbl1[tbl4] tbl9 = "math" tbl8 = tbl1[tbl9] tbl22 = tbl10[tbl3[1]] tbl40 = 13726623193335 tbl41 = tbl10[tbl3[2]] tbl30 = "\144\213\1\235," tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] tbl5 = tbl8[tbl9] tbl22 = 240 tbl9 = 15 tbl8 = {tbl5(tbl6, tbl9, tbl22)} tbl4 = num1(fn44(tbl8)) num1 = 6389048
-                            else num1 = tbl10[tbl3[3]] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl25 = 9325525078262 tbl40 = "r:i\201\23" fn21 = 27015170814243 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl25 = "_h\8249\200^8\24" tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl43 = 12156871005724 tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl30 = tbl10[tbl3[1]] fn21 = "\241H)\232\8222e\234" tbl40 = tbl10[tbl3[2]] tbl8 = "Notify" tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl43 = "\232C\82128\251\200\127\215\167\234\22\24\181\8211P\8216\732/\218q\220(\23'\230\185\r\160\215r\382" tbl40 = tbl10[tbl3[1]] tbl45 = 16326730030514 tbl25 = tbl10[tbl3[2]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl8 = num1[tbl8] num3 = 17786096181338 tbl25 = tbl10[tbl3[1]] fn21 = tbl10[tbl3[2]] tbl45 = "kT\8216C\201\1P\191" tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl25 = 3 tbl9 = {[tbl22] = tbl41, [tbl39] = tbl30, [tbl40] = tbl25} tbl8 = tbl8(num1, tbl9) num1 = 2529856
-                            end
-                          else tbl5 = tbl10[tbl3[1]] tbl7 = tbl2[1] tbl6 = tbl7 == tbl5 num1 = tbl6 and 15867227 tbl4 = tbl6
-                          end
-                        end
-                      end
-                    end
-                  else
-                    if num1 < 14109759 then
-                      if num1 < 13644848 then
-                        if num1 < 13541548 then
-                          if num1 < 13469664 then
-                            if num1 < 13456723 then
-                              tbl41 = "o\168\19/\7&3)\161G\"L=i" tbl7 = tbl10[tbl3[1]] tbl6 = "FindFirstChild" tbl8 = tbl10[tbl3[2]] tbl39 = 25455579934285 tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl6] tbl6 = tbl6(tbl7, tbl5) num1 = tbl6 and 5587640 tbl4 = tbl6
-                            else tbl4 = tbl10[tbl3[1]] tbl30 = 14045629438348 tbl9 = 14526193834604 tbl6 = tbl10[tbl3[2]] tbl8 = "s890E" tbl5 = tbl6(tbl8, tbl9) num1 = tbl4[tbl5] tbl39 = "\8220I0\242" tbl8 = "Enum" tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl41 = "\222\168N\227\169\183\n\178\254Z" tbl39 = 12751269189425 tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl39 = "'\179\174\129r\238\21" tbl4 = tbl6[tbl5] tbl41 = 22078645610537 tbl7[num1] = tbl4 tbl22 = "9X89" tbl6 = "Instance" tbl4 = tbl1[tbl6] tbl30 = 22771976792428 tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl5 = tbl10[tbl3[1]] tbl22 = "\247\254\144\197\197--\244" tbl41 = 31290909718762 tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl9 = "#\402\381\8212\26" tbl4 = num1(tbl6, tbl7) tbl22 = 12406652507793 tbl6 = tbl4 tbl4 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) num1 = tbl4[tbl8] tbl8 = "Color3" tbl5 = tbl1[tbl8] tbl9 = tbl10[tbl3[1]] tbl22 = tbl10[tbl3[2]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl4 = tbl5[tbl8] tbl8 = 3 tbl9 = 3 tbl22 = 3 tbl5 = tbl4(tbl8, tbl9, tbl22) tbl22 = 34161763925539 tbl6[num1] = tbl5 tbl9 = "\8224\2224\211\207F\3\239=" tbl4 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl22 = 26401763061766 num1 = tbl4[tbl8] tbl4 = .9 tbl6[num1] = tbl4 tbl4 = tbl10[tbl3[1]] tbl9 = "\250\1766\144\169\223\193\177\167\200gv" tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) num1 = tbl4[tbl8] tbl4 = .175 tbl6[num1] = tbl4 tbl6 = nil num1 = 2554748
-                            end
-                          else num1 = tbl5 num1 = 10282318 tbl4 = tbl6
-                          end
-                        else
-                          if num1 < 13631278 then
-                            if num1 < 13566269 then
-                              tbl22 = 29621984769505 tbl4 = "_G" num1 = tbl1[tbl4] tbl9 = "D\8249&\219\177\8224\n\167U" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl2[1] tbl4 = tbl6[tbl8] tbl6 = tbl7 num1[tbl4] = tbl6 tbl7 = nil num1 = tbl1["3QU5xOvhQyDN"] tbl4 = {}
-                            else tbl4 = "l2" num1 = tbl1[tbl4] tbl7 = "l1" tbl4 = tbl1[tbl7] tbl7 = "l1" tbl1[tbl7] = num1 tbl7 = "l2" tbl1[tbl7] = tbl4 tbl7 = tbl10[tbl3[1]] num1 = 3063483 tbl6 = tbl7()
-                            end
-                          else tbl6, tbl9 = tbl5(tbl7, tbl6) num1 = tbl6 and 1080761
-                          end
-                        end
-                      else
-                        if num1 < 13849830 then
-                          if num1 < 13685923 then
-                            if num1 < 13662783 then
-                              fn14 = tbl10[tbl6] tbl4 = fn14 num1 = fn14 and 811920
-                            else tbl4 = {} num1 = tbl1["wnUaat1xEBqO"] tbl7 = nil
-                            end
-                          else tbl41 = 31112716794007 tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl22 = "\218'\144\241\339\255" tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl4 = tbl7[tbl6] tbl22 = 23943914187661 tbl9 = "\353\17\251\182(oY" tbl6 = tbl10[tbl3[2]] tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl4 = "FireServer" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = tbl1["rvq4b3Re8jZdm"] tbl4 = {}
-                          end
-                        else
-                          if num1 < 14052145 then
-                            if num1 < 13925518 then
-                              tbl5 = 1208.88 num1 = tbl10[tbl3[1]] tbl6 = 5.9 tbl7 = 71.63 tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["LuGntFSwNcbZMl"]
-                            else tbl4 = {} num1 = tbl1["zdLOByXoR5Hwc"]
-                            end
-                          else tbl6 = fn12(tbl6) tbl41 = fn12(tbl41) tbl9 = fn12(tbl9) tbl40 = fn12(tbl40) tbl6 = nil fn21 = nil tbl40 = fn52() tbl43 = nil num3 = fn12(num3) tbl5 = fn12(tbl5) tbl25 = nil tbl5 = nil tbl41 = "math" tbl30 = fn12(tbl30) tbl45 = nil tbl39 = nil tbl22 = nil tbl8 = fn12(tbl8) tbl39 = "table" tbl8 = fn52() tbl43 = {} tbl22 = "math" num1 = 7410641 tbl10[tbl8] = tbl6 tbl6 = fn52() tbl25 = {} tbl10[tbl6] = tbl5 tbl9 = tbl1[tbl22] tbl22 = "floor" tbl5 = tbl9[tbl22] tbl9 = fn52() tbl10[tbl9] = tbl5 tbl22 = tbl1[tbl41] fn21 = fn52() tbl41 = "random" tbl5 = tbl22[tbl41] tbl41 = tbl1[tbl39] tbl39 = "remove" tbl45 = 1 num3 = 256 tbl22 = tbl41[tbl39] tbl30 = "string" tbl39 = tbl1[tbl30] tbl30 = "char" tbl41 = tbl39[tbl30] tbl39 = 0 tbl30 = fn52() tbl10[tbl30] = tbl39 tbl39 = 2 tbl10[tbl40] = tbl39 tbl39 = {} tbl21 = num3 num3 = 1 fn34 = num3 tbl10[fn21] = tbl25 tbl25 = 0 num3 = 0 tbl36 = fn34 < num3 num3 = tbl45 - fn34
-                          end
-                        end
-                      end
-                    else
-                      if num1 < 14417590 then
-                        if num1 < 14267960 then
-                          if num1 < 14245186 then
-                            if num1 < 14215293 then
-                              tbl25 = tbl10[tbl3[1]] num3 = 9002889744480 tbl45 = "O\8216\255\8222" fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl30 = tbl9[tbl40] tbl45 = "\212\200ky|" tbl25 = tbl10[tbl3[1]] num3 = 28357083902868 num1 = 15085228 fn21 = tbl10[tbl3[2]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = tbl30 == tbl40 tbl22 = tbl39
-                            else tbl39 = 25894812020506 tbl7 = fn52() tbl10[tbl7] = tbl2[1] tbl4 = "Play" tbl41 = 14764733962971 num1 = tbl10[tbl3[1]] tbl4 = num1[tbl4] tbl4 = tbl4(num1) tbl4 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = "\t\162\18K`" tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl40 = "\t\252\27" num1 = tbl4[tbl6] tbl6 = fn47(12445729, {tbl3[4];
-                                  tbl3[1]}) tbl4 = "Connect" tbl22 = "\216KQ@\8240" tbl4 = num1[tbl4] tbl41 = 30026467112606 tbl4 = tbl4(num1, tbl6) tbl4 = tbl10[tbl3[4]] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl41 = 6361978751890 tbl4 = "Connect" tbl6 = fn46(14312154, {tbl3[4], tbl7}) tbl4 = num1[tbl4] tbl4 = tbl4(num1, tbl6) tbl6 = "Instance" tbl4 = tbl1[tbl6] tbl22 = "\240\206\353" tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl5 = tbl10[tbl3[2]] tbl22 = "e$\221\215=\3\26#\251" tbl8 = tbl10[tbl3[3]] tbl41 = 17923585630362 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl4 = num1(tbl6) tbl6 = fn52() tbl22 = "\6n\191\192" tbl10[tbl6] = tbl4 num1 = tbl10[tbl6] tbl41 = 11480109208801 tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl9 = tbl8(tbl22, tbl41) tbl4 = tbl5[tbl9] tbl41 = "\163\11t\8250\242\"}\382-\168\210?\11F" tbl8 = tbl10[tbl3[2]] tbl25 = 19622041904049 tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1[tbl4] = tbl5 num1 = tbl10[tbl6] tbl5 = tbl10[tbl3[2]] tbl8 = tbl10[tbl3[3]] tbl41 = 828722102657 tbl22 = "\1931|K\216\r" tbl9 = tbl8(tbl22, tbl41) tbl4 = tbl5[tbl9] tbl39 = 13827316996390 tbl5 = tbl10[tbl3[5]] num1[tbl4] = tbl5 tbl5 = "Instance" tbl4 = tbl1[tbl5] tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "\352\231\202" tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1 = tbl4[tbl5] tbl39 = 26782547275959 tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "`~\710\8364x" tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl8 = tbl10[tbl6] tbl4 = num1(tbl5, tbl8) tbl5 = fn52() tbl10[tbl5] = tbl4 num1 = tbl10[tbl5] tbl41 = "Bu\4x" tbl8 = tbl10[tbl3[2]] tbl39 = 442164003021 tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl22 = "UDim2" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl30 = 150 tbl25 = 17076938055440 tbl41 = 350 tbl22 = 0 tbl39 = 0 tbl9 = tbl8(tbl22, tbl41, tbl39, tbl30) tbl41 = "\12\2396\31\175\18\236\205" num1[tbl4] = tbl9 tbl40 = "\243\163\243" num1 = tbl10[tbl5] tbl39 = 33665362378044 tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl22 = "UDim2" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl22 = 0.5 tbl39 = 0.5 tbl41 = -175 tbl30 = -75 tbl9 = tbl8(tbl22, tbl41, tbl39, tbl30) num1[tbl4] = tbl9 num1 = tbl10[tbl5] tbl39 = 14604237183632 tbl25 = 24743857253634 tbl41 = "$n\191b\215\225\5\170\24\31R;B\195\157\180" tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl22 = "Color3" tbl40 = "\8216\252\165\8218D\177\251" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl12 = 22838987876747 tbl41 = 0 tbl8 = tbl9[tbl22] tbl39 = 5 tbl22 = 0 tbl9 = tbl8(tbl22, tbl41, tbl39) num1[tbl4] = tbl9 num1 = tbl10[tbl5] tbl41 = "L\8222L\246X\8226\227\19\216\187\160Wi\n^\163" tbl8 = tbl10[tbl3[2]] tbl25 = 26032214814554 tbl9 = tbl10[tbl3[3]] tbl39 = 25694806388413 tbl30 = 14204116556246 tbl22 = tbl9(tbl41, tbl39) tbl41 = "ql \338\244\228\27bzZU\12\238qh" tbl4 = tbl8[tbl22] tbl39 = 11420018382021 tbl8 = true num1[tbl4] = tbl8 fn21 = 17586740682749 num1 = tbl10[tbl5] tbl8 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl4 = tbl8[tbl22] tbl8 = 0 num1[tbl4] = tbl8 tbl8 = "Instance" tbl4 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl39 = "A\218\14" tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] num1 = tbl4[tbl8] tbl30 = 19570445394841 tbl9 = tbl10[tbl3[2]] tbl39 = "\172.+\732\211|\15d" tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl39 = 33509252021491 tbl41 = "%`6<Z!\228\179-0\195\251" tbl9 = tbl10[tbl5] tbl4 = num1(tbl8, tbl9) tbl8 = tbl10[tbl3[2]] tbl40 = "\170\31\732" tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) num1 = tbl8[tbl22] num3 = 19624706171826 tbl22 = "UDim" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl22 = 0 tbl41 = 15 tbl9 = tbl8(tbl22, tbl41) tbl8 = "Instance" tbl4[num1] = tbl9 tbl30 = 1211428012596 tbl4 = tbl1[tbl8] tbl9 = tbl10[tbl3[2]] tbl39 = "\192\352\254" tbl22 = tbl10[tbl3[3]] tbl7 = fn12(tbl7) tbl41 = tbl22(tbl39, tbl30) tbl39 = "i\198)\196_\2183`\195X" tbl8 = tbl9[tbl41] num1 = tbl4[tbl8] tbl30 = 12851073750880 tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl43 = 19168829825758 tbl30 = 13962697218405 tbl9 = tbl10[tbl5] tbl4 = num1(tbl8, tbl9) tbl25 = 1000009777617 tbl41 = "\212!\8250\339" tbl39 = 4893472164070 tbl8 = tbl4 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl40 = "wh62" num1 = tbl4[tbl22] tbl39 = "\181\211v\248\230\8249\170\157.\216" tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl4 = tbl9[tbl41] tbl8[num1] = tbl4 tbl39 = 34929719377801 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "\8\23\2015" tbl22 = tbl9(tbl41, tbl39) num1 = tbl4[tbl22] tbl22 = "UDim2" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl41 = 0 tbl39 = 1 tbl4 = tbl9[tbl22] tbl30 = 0 tbl22 = 1 tbl9 = tbl4(tbl22, tbl41, tbl39, tbl30) tbl8[num1] = tbl9 tbl4 = tbl10[tbl3[2]] tbl39 = 26369349726199 tbl41 = "cSP\1835" tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl30 = 22517324065013 tbl25 = "\162u\141\8218/\204\240ji" num1 = tbl4[tbl22] tbl39 = "\249\231i\8226*z\r\248<m\179\208\185%\204\170\230fQ\171c\710\14t)\381r" tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) tbl4 = tbl9[tbl41] tbl8[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "z+\18\179f+\8218+\211" tbl39 = 35161773703157 tbl22 = tbl9(tbl41, tbl39) tbl41 = "Enum" num1 = tbl4[tbl22] tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) fn30 = 1443308061344 tbl41 = tbl39[tbl40] tbl40 = "h\252X\163" tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl25 = 2097685922768 tbl30 = tbl39(tbl40, tbl25) tbl39 = 30003868726931 tbl25 = " 52\22N\2270E" tbl22 = tbl41[tbl30] tbl4 = tbl9[tbl22] tbl8[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl41 = "\189\30\161\174\6I\183k\231$b\179\26\214S\381\197" tbl9 = tbl10[tbl3[3]] tbl40 = 6299605830517 fn21 = 20126922826908 tbl22 = tbl9(tbl41, tbl39) tbl41 = "\168\181\8482\220\216\29\222\236\143\192\219s\190\181\238\1687\168g\249z+" num1 = tbl4[tbl22] tbl4 = .45 tbl8[num1] = tbl4 tbl39 = 23948719434639 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl22 = tbl9(tbl41, tbl39) tbl39 = 20021271553131 num1 = tbl4[tbl22] tbl4 = 1 tbl8[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl9 = tbl10[tbl3[3]] tbl41 = "7T\253\206\163;" tbl22 = tbl9(tbl41, tbl39) tbl30 = "\238JV" num1 = tbl4[tbl22] tbl4 = 1 tbl8[num1] = tbl4 tbl9 = "Instance" tbl4 = tbl1[tbl9] tbl22 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) tbl9 = tbl22[tbl39] num1 = tbl4[tbl9] tbl22 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl40 = 14659159349930 tbl30 = "\"\710_\218\8211\8225\8\220" tbl39 = tbl41(tbl30, tbl40) tbl30 = 20849993655789 tbl9 = tbl22[tbl39] tbl22 = tbl10[tbl5] tbl4 = num1(tbl9, tbl22) tbl9 = tbl4 tbl4 = tbl10[tbl3[2]] tbl39 = "\219.\225I\2" tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) num1 = tbl4[tbl41] tbl45 = 14477031332437 tbl41 = "Color3" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl30 = 200 tbl41 = tbl39[tbl40] tbl39 = 250 tbl4 = tbl22[tbl41] tbl41 = 255 tbl22 = tbl4(tbl41, tbl39, tbl30) tbl30 = 6257334520673 tbl9[num1] = tbl22 tbl4 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl39 = "_W\247\171\30E#\8250[" tbl41 = tbl22(tbl39, tbl30) tbl25 = 4564592625741 tbl40 = "\172\27\232" tbl39 = "\213di\17U\2" tbl30 = 21292157675194 num1 = tbl4[tbl41] tbl4 = 2 tbl9[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl41 = tbl22(tbl39, tbl30) num1 = tbl4[tbl41] tbl4 = 2 tbl9[num1] = tbl4 tbl22 = "Instance" tbl4 = tbl1[tbl22] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] num1 = tbl4[tbl22] tbl40 = " |\230\169\174\18\217\19y" tbl41 = tbl10[tbl3[2]] tbl25 = 4738324793502 tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl30 = "[gf\251" tbl41 = tbl10[tbl5] tbl4 = num1(tbl22, tbl41) tbl22 = tbl4 tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl40 = 3184723625419 fn21 = "\179\246U" tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl39 = "UDim2" tbl9 = nil tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl40 = 0 tbl39 = tbl30[tbl25] tbl25 = 50 tbl43 = 13265603303457 tbl4 = tbl41[tbl39] tbl39 = 1 tbl30 = 0 tbl41 = tbl4(tbl39, tbl30, tbl40, tbl25) tbl40 = 29482182063520 tbl22[num1] = tbl41 tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl30 = "\218\8250o\234I\t\216t\170$:\238\170dA\4\236\21>\254\169E" tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl30 = "=q\3\221" fn21 = "Pz\24\186\23\2011" tbl4 = 1 tbl40 = 28879530013832 tbl22[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl25 = 30588848207780 tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl40 = "\220\171\16\243.@m\7\232p," tbl30 = tbl39(tbl40, tbl25) tbl4 = tbl41[tbl30] tbl40 = 8501926514551 tbl22[num1] = tbl4 tbl30 = "6\161Y,\376N\0\224\198\31" tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl39 = "Color3" tbl41 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl30 = 255 tbl40 = 255 tbl4 = tbl41[tbl39] tbl39 = 245 tbl41 = tbl4(tbl39, tbl30, tbl40) tbl30 = "Zv\8220\179,\376\240p" tbl22[num1] = tbl41 tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl40 = 28913728124056 tbl39 = tbl41(tbl30, tbl40) tbl30 = "\220\0V\243" num1 = tbl4[tbl39] tbl4 = 23 tbl40 = 34534141345489 tbl43 = "z\26\241\199" tbl22[num1] = tbl4 tbl4 = tbl10[tbl3[2]] tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl30 = "Enum" tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl30 = tbl10[tbl3[2]] tbl43 = 6580429769720 fn21 = "F\8\236%\202\178\203\30ty" tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl25 = "Ar\211" tbl4 = tbl41[tbl39] tbl22[num1] = tbl4 tbl30 = "\30E\201\8212D\191" tbl4 = tbl10[tbl3[2]] tbl40 = 4243241404343 fn21 = 28439728550843 tbl41 = tbl10[tbl3[3]] tbl39 = tbl41(tbl30, tbl40) num1 = tbl4[tbl39] tbl41 = "Instance" tbl4 = 2 tbl22[num1] = tbl4 tbl4 = tbl1[tbl41] tbl45 = "\210\240\1" tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl22 = nil tbl40 = tbl30(tbl25, fn21) fn21 = 6325777042305 tbl41 = tbl39[tbl40] num1 = tbl4[tbl41] tbl39 = tbl10[tbl3[2]] tbl25 = "\248\163-\199\8249\20\22\232r" tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl25 = "\202\376\178J" tbl41 = tbl39[tbl40] tbl39 = tbl10[tbl5] tbl4 = num1(tbl41, tbl39) tbl41 = fn52() tbl10[tbl41] = tbl4 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] fn21 = 5243251181961 tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl40 = "UDim2" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl8 = nil tbl43 = 20 tbl25 = 0 tbl39 = tbl30[tbl40] fn21 = 0 tbl40 = 1 tbl30 = tbl39(tbl40, tbl25, fn21, tbl43) fn21 = 28843101107319 tbl25 = "\8249\402\161\402\220F\1294" num1[tbl4] = tbl30 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl45 = "\246\8250\222" tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] num3 = 5220652796287 tbl40 = "UDim2" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl43 = 0 tbl39 = tbl30[tbl40] fn21 = .45 tbl45 = "\r\1779)\23*\187" tbl40 = 0 tbl25 = 0 tbl30 = tbl39(tbl40, tbl25, fn21, tbl43) num1[tbl4] = tbl30 num1 = tbl10[tbl41] num3 = 15777686494387 tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl25 = "\1668{gd\193\17\353/5\240\243j\205\211\24\23\188I\239\240A" fn21 = 2027074749359 tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl39 = 1 num1[tbl4] = tbl39 num1 = tbl10[tbl41] fn21 = 30940787046471 tbl39 = tbl10[tbl3[2]] tbl25 = "K\165\288" tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl43 = 40149418002 tbl30 = tbl10[tbl3[2]] fn21 = "\7J\8249\710\226S\236\212g^1\176\216\163_\23 " tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] fn21 = 25975794183999 tbl25 = "\8217.MIl{\248#\2\144" num1[tbl4] = tbl39 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl40 = "Color3" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = tbl30[tbl40] fn21 = 255 tbl40 = 255 tbl25 = 255 num3 = "Q\199\180u" tbl30 = tbl39(tbl40, tbl25, fn21) num1[tbl4] = tbl30 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] fn21 = 6339755248520 tbl30 = tbl10[tbl3[3]] tbl25 = "F\352/\1688\206)\338" tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl39 = 16 tbl25 = "VP2:\27" num1[tbl4] = tbl39 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] fn21 = 5450581428714 tbl40 = tbl30(tbl25, fn21) tbl25 = "Enum" tbl4 = tbl39[tbl40] tbl40 = tbl1[tbl25] fn21 = tbl10[tbl3[2]] tbl43 = tbl10[tbl3[3]] tbl45 = tbl43(num3, fn30) tbl25 = fn21[tbl45] tbl30 = tbl40[tbl25] tbl45 = "\7\6\193\18\252g" tbl25 = tbl10[tbl3[2]] num3 = 26466678091812 fn21 = tbl10[tbl3[3]] fn30 = "\246\339\\" tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = tbl30[tbl40] num1[tbl4] = tbl39 fn21 = 11707915949387 num1 = tbl10[tbl41] tbl39 = tbl10[tbl3[2]] tbl25 = "\250\190\211i\127\169" tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl4 = tbl39[tbl40] tbl39 = 3 num1[tbl4] = tbl39 fn21 = "8\180\12" tbl39 = "Instance" tbl4 = tbl1[tbl39] tbl30 = tbl10[tbl3[2]] tbl40 = tbl10[tbl3[3]] tbl43 = 22735465736539 tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] num1 = tbl4[tbl39] tbl30 = tbl10[tbl3[2]] tbl43 = 31031270717554 fn21 = "\168\8222\16\242\129" num3 = 25920189361958 tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl30 = tbl10[tbl5] tbl4 = num1(tbl39, tbl30) tbl25 = "\27\184T7" tbl39 = tbl4 tbl4 = tbl10[tbl3[2]] fn21 = 16446240742890 tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) tbl45 = "\204Vo" num1 = tbl4[tbl40] tbl40 = "UDim2" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] num3 = 10744050701195 fn21 = 0 tbl4 = tbl30[tbl40] tbl25 = 0 tbl40 = .8 tbl43 = 6 tbl30 = tbl4(tbl40, tbl25, fn21, tbl43) tbl39[num1] = tbl30 fn21 = 15015728438096 tbl25 = "\0\215\143\189\166\163\177\8221" tbl4 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) num1 = tbl4[tbl40] tbl40 = "UDim2" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] tbl45 = "\t\185}" fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) fn21 = .8 tbl40 = tbl25[tbl43] tbl43 = 0 tbl4 = tbl30[tbl40] tbl40 = .1 num3 = 10420204540660 tbl25 = 0 tbl30 = tbl4(tbl40, tbl25, fn21, tbl43) tbl39[num1] = tbl30 tbl4 = tbl10[tbl3[2]] fn21 = 19615347286958 tbl45 = "\203\224\251\12\254:A" tbl30 = tbl10[tbl3[3]] tbl25 = "\174\194\188\224\338\31:B\21\163\21\181\203\223L\227" tbl40 = tbl30(tbl25, fn21) num1 = tbl4[tbl40] tbl40 = "Color3" tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl25 = 182 tbl43 = "\30E\18" tbl45 = 32880950590415 tbl4 = tbl30[tbl40] fn21 = 193 tbl40 = 255 tbl30 = tbl4(tbl40, tbl25, fn21) tbl25 = "N\191\247\16\8222|" fn21 = 19245977232130 tbl39[num1] = tbl30 tbl4 = tbl10[tbl3[2]] tbl30 = tbl10[tbl3[3]] tbl40 = tbl30(tbl25, fn21) num1 = tbl4[tbl40] tbl4 = 3 tbl30 = "Instance" tbl39[num1] = tbl4 tbl4 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] num1 = tbl4[tbl30] tbl45 = 4149560559500 tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] tbl43 = "\19\231LX\204q\247G" fn21 = tbl25(tbl43, tbl45) tbl45 = 18595746472403 tbl30 = tbl40[fn21] tbl4 = num1(tbl30, tbl39) tbl30 = "Instance" tbl43 = "\206\191\6" tbl4 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl45 = 12173609817636 num1 = tbl4[tbl30] tbl40 = tbl10[tbl3[2]] tbl43 = "$\144\226\229\251" tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl4 = num1(tbl30, tbl39) tbl30 = fn52() tbl10[tbl30] = tbl4 tbl45 = 10729990345604 num1 = tbl10[tbl30] tbl40 = tbl10[tbl3[2]] tbl43 = "\8221\208~~" tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl4 = tbl40[fn21] fn21 = "UDim2" tbl25 = tbl1[fn21] tbl43 = tbl10[tbl3[2]] tbl45 = tbl10[tbl3[3]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] num3 = 0 tbl45 = 1 fn30 = "\191\239\2004\168\227\r" tbl40 = tbl25[fn21] tbl43 = 0 fn21 = 0 tbl25 = tbl40(fn21, tbl43, tbl45, num3) tbl43 = "k2&\186*\205\8217g6I\8230\240\339\8216\161q" num1[tbl4] = tbl25 num1 = tbl10[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] tbl45 = 5428966263264 fn21 = tbl25(tbl43, tbl45) tbl4 = tbl40[fn21] fn21 = "Color3" tbl25 = tbl1[fn21] tbl12 = 17055767387910 tbl43 = tbl10[tbl3[2]] tbl45 = tbl10[tbl3[3]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] num3 = 25053672435090 tbl43 = 250 tbl40 = tbl25[fn21] tbl45 = 255 fn21 = 255 tbl25 = tbl40(fn21, tbl43, tbl45) tbl43 = "\232k\254x \184" num1[tbl4] = tbl25 num1 = tbl10[tbl30] tbl45 = 28082239058708 tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl4 = tbl40[fn21] tbl40 = 4 num1[tbl4] = tbl40 tbl40 = "Instance" tbl4 = tbl1[tbl40] tbl45 = "\233cs" tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl39 = nil num1 = tbl4[tbl40] tbl25 = tbl10[tbl3[2]] num3 = 10714496406397 tbl45 = "\214\240j\8212\224>\228\24" fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl25 = tbl10[tbl30] tbl4 = num1(tbl40, tbl25) tbl40 = "task" num3 = 33302891854995 tbl4 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl45 = "lC\167\177\253" tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] num1 = tbl4[tbl40] tbl40 = fn46(3441719, {tbl3[6], tbl30;
-                                  tbl3[2];
-                                  tbl3[3], tbl41;
-                                  tbl3[7], tbl5;
-                                  tbl6}) tbl30 = fn12(tbl30) tbl4 = num1(tbl40) tbl6 = fn12(tbl6) tbl4 = {} tbl5 = fn12(tbl5) num1 = tbl1["E8pNdBuGqIXIz"] tbl41 = fn12(tbl41)
-                            end
-                          else num1 = tbl10[tbl3[1]] tbl25 = 26262866980805 tbl5 = tbl2[3] tbl6 = tbl2[2] num3 = 24644631407828 tbl45 = 8617868316589 tbl40 = "\172$\189" tbl22 = "TweenInfo" tbl9 = tbl1[tbl22] tbl7 = tbl2[1] tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl43 = "\253\246\31 &#|\2v&[" tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl30 = "Enum" tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl45 = "C\211\8220\30!r.\5#\201\26[<\223_" tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl4 = "Create" tbl30 = tbl10[tbl3[2]] fn21 = "\169\225\352\247-" tbl43 = 32000153287221 tbl40 = tbl10[tbl3[3]] tbl25 = tbl40(fn21, tbl43) tbl40 = "Enum" tbl4 = num1[tbl4] tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl30 = tbl1[tbl40] tbl25 = tbl10[tbl3[2]] fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl43 = "7\169\\" tbl39 = tbl30[tbl40] tbl40 = tbl10[tbl3[2]] tbl25 = tbl10[tbl3[3]] tbl45 = 29060011111644 fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl9 = tbl8(tbl6, tbl22, tbl41) tbl4 = tbl4(num1, tbl7, tbl9, tbl5) tbl8 = tbl4 num1 = "Play" num1 = tbl8[num1] tbl4 = {tbl8} num1 = num1(tbl8) num1 = tbl1["ul5djmA7HKRO"]
-                          end
-                        else
-                          if num1 < 14378437 then
-                            if num1 < 14340492 then
-                              num1 = tbl10[tbl3[1]] num1 = num1 and 3443208
-                            else tbl4 = {} num1 = tbl1["SCrBPd578Prf"]
-                            end
-                          else num1 = tbl10[tbl3[1]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 4623229
-                          end
-                        end
-                      else
-                        if num1 < 14644691 then
-                          if num1 < 14640704 then
-                            if num1 < 14517475 then
-                              tbl6 = 5.25 tbl7 = -1226.98 tbl5 = 1240.85 num1 = tbl10[tbl3[1]] tbl4 = num1(tbl7, tbl6, tbl5) tbl4 = {} num1 = tbl1["WjVheP9mHKUQ"]
-                            else tbl7 = nil num1 = 8480933
-                            end
-                          else tbl4 = "tonumber" tbl7 = tbl2[1] num1 = tbl1[tbl4] tbl4 = num1(tbl7) tbl6 = tbl4 num1 = tbl6 and 12221845 tbl4 = tbl6
-                          end
-                        else
-                          if num1 < 14652186 then
-                            if num1 < 14648842 then
-                              tbl6 = "settings" tbl4 = tbl1[tbl6] tbl6 = tbl4() tbl22 = "(di\248\179\180\402\8249\8225" tbl7 = tbl2[1] tbl41 = 34461684170415 tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl4 = tbl5[tbl9] num1 = tbl6[tbl4] tbl9 = "\27~\252\186\19\194\143\234>\n\224\203" tbl6 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = 33130553162819 tbl8 = tbl5(tbl9, tbl22) tbl5 = num1 tbl22 = 1 tbl9 = num1 tbl4 = tbl6[tbl8] tbl8 = tbl7 and tbl22 tbl7 = nil tbl9 = 5 tbl6 = tbl8 or tbl9 num1[tbl4] = tbl6 num1 = tbl1["KnOw75jb04s2Y"] tbl4 = {}
-                            else tbl6 = tbl5 num1 = tbl10[tbl3[1]] tbl30 = 255 tbl39 = 0 tbl41 = num1(tbl39, tbl30) tbl7[tbl6] = tbl41 num1 = 4696189 tbl6 = nil
-                            end
-                          else tbl41 = "GenerateGUID" tbl39 = false num1 = 12849884 tbl22 = tbl10[tbl3[3]] tbl41 = tbl22[tbl41] tbl41 = tbl41(tbl22, tbl39) tbl4 = tbl41
-                          end
-                        end
-                      end
-                    end
-                  end
-                else
-                  if num1 < 15651294 then
-                    if num1 < 15103838 then
-                      if num1 < 14907710 then
-                        if num1 < 14745016 then
-                          if num1 < 14734325 then
-                            if num1 < 14701250 then
-                              num1 = tbl4 and 16508455
-                            else tbl22 = "_G" tbl9 = tbl1[tbl22] tbl41 = tbl10[tbl3[1]] tbl39 = tbl10[tbl3[2]] tbl40 = "OW\1\166-\223\207D(m\220\219\27\166|\8250UL" tbl25 = 13462574831741 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] num1 = 5346630 tbl8 = tbl9[tbl22] tbl6 = tbl8
-                            end
-                          else tbl39 = 11781387965806 tbl41 = "\25\211i\"\8240\181\225" tbl4 = tbl10[tbl3[3]] tbl8 = "\30\196\8211ABOb" tbl9 = 11914873968044 tbl6 = tbl10[tbl3[4]] tbl5 = tbl6(tbl8, tbl9) num1 = tbl4[tbl5] tbl8 = tbl10[tbl3[3]] tbl9 = tbl10[tbl3[4]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl6 = tbl7[tbl5] tbl4 = not tbl6 tbl7[num1] = tbl4 num1 = 14623972
-                          end
-                        else
-                          if num1 < 14820189 then
-                            if num1 < 14772513 then
-                              num1 = true num1 = num1 and 11737498
-                            else tbl4 = "pairs" tbl9 = "GetDescendants" num1 = tbl1[tbl4] tbl8 = "game" tbl5 = tbl1[tbl8] tbl9 = tbl5[tbl9] tbl8 = {tbl9(tbl5)} tbl5 = {num1(fn44(tbl8))} tbl7 = tbl5[2] tbl4 = tbl5[1] tbl6 = tbl5[3] num1 = 9316761 tbl5 = tbl4
-                            end
-                          else tbl40 = 20008764220517 tbl22 = tbl10[tbl3[1]] tbl30 = "\218\213a~x\26\222{" tbl41 = tbl10[tbl3[2]] tbl39 = tbl41(tbl30, tbl40) tbl30 = "Enum" tbl45 = 12594236987112 num1 = tbl22[tbl39] tbl39 = tbl1[tbl30] tbl40 = tbl10[tbl3[1]] tbl25 = tbl10[tbl3[2]] tbl43 = "\239G1j\25\143\710\219" fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] tbl43 = 9709677695401 tbl30 = tbl10[tbl3[1]] tbl40 = tbl10[tbl3[2]] fn21 = "\181\8249\11\195lZ4\25\253\252J\120" tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl9[num1] = tbl22 num1 = 8356789
-                          end
-                        end
-                      else
-                        if num1 < 15037761 then
-                          if num1 < 14967414 then
-                            if num1 < 14925826 then
-                              num1 = tbl10[tbl3[4]] tbl4 = "Play" tbl4 = num1[tbl4] tbl4 = tbl4(num1) num1 = 8960564
-                            else tbl6 = tbl8 num1 = tbl9 num1 = 13479283
-                            end
-                          else tbl4 = "pairs" num1 = tbl1[tbl4] tbl9 = tbl10[tbl3[1]] tbl40 = "=\338\8225\5\25\226\221#\8240" tbl25 = 28262412989288 tbl41 = tbl10[tbl3[2]] tbl39 = tbl10[tbl3[3]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl22 = "GetDescendants" tbl22 = tbl8[tbl22] tbl9 = {tbl22(tbl8)} tbl8 = {num1(fn44(tbl9))} tbl4 = tbl8[1] tbl5 = tbl8[3] tbl6 = tbl8[2] num1 = 6683176 tbl8 = tbl4
-                          end
-                        else
-                          if num1 < 15086312 then
-                            if num1 < 15080726 then
-                              tbl6 = tbl10[tbl3[6]] num1 = tbl6 and 12238496 tbl4 = tbl6
-                            else tbl4 = tbl22 num1 = tbl41 num1 = 4804388
-                            end
-                          else tbl7 = tbl2[1] num1 = tbl7 and 8237801
-                          end
-                        end
-                      end
-                    else
-                      if num1 < 15353881 then
-                        if num1 < 15208016 then
-                          if num1 < 15177960 then
-                            if num1 < 15112865 then
-                              num1 = tbl1["Mw2PGyVJgpDVg"] tbl4 = {} tbl7 = nil
-                            else tbl30 = "_G" tbl39 = tbl1[tbl30] tbl43 = "\20\210\19\17\8225\255\218c\233f\222\176" tbl40 = tbl10[tbl3[2]] tbl22 = num1 tbl45 = 20258237474009 tbl25 = tbl10[tbl3[3]] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl41 = tbl39[tbl30] num1 = tbl41 and 6922516 tbl4 = tbl41
-                            end
-                          else tbl4 = "error" num1 = tbl1[tbl4] tbl7 = "Tamper Detected!" tbl4 = num1(tbl7) num1 = tbl1["wq3YKo5wbFHhzR"] tbl4 = {}
-                          end
-                        else
-                          if num1 < 15316124 then
-                            if num1 < 15268834 then
-                              num1 = tbl10[tbl3[10]] tbl6 = tbl10[tbl3[11]] tbl7[num1] = tbl6 num1 = tbl10[tbl3[12]] tbl6 = {num1(tbl7)} tbl4 = {fn44(tbl6)} num1 = tbl1["E9zUEGqx75RH6w"]
-                            else num1 = true tbl10[tbl3[1]] = num1 fn21 = 31223790139595 tbl5 = true tbl4 = tbl10[tbl3[5]] tbl41 = "Enum" tbl25 = "\8482\254RK\206\244\t" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[3]] tbl30 = tbl10[tbl3[4]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl6 = "SendKeyEvent" tbl41 = tbl10[tbl3[3]] tbl25 = 15918409112820 tbl39 = tbl10[tbl3[4]] tbl40 = "\173w\204" tbl30 = tbl39(tbl40, tbl25) tbl6 = tbl4[tbl6] tbl22 = tbl41[tbl30] tbl41 = "game" tbl8 = tbl9[tbl22] tbl22 = tbl1[tbl41] tbl39 = 33018322271247 tbl41 = "\211ZE\157" tbl9 = false tbl6 = tbl6(tbl4, tbl5, tbl8, tbl9, tbl22) fn21 = 1777052287803 tbl5 = "task" tbl6 = tbl1[tbl5] tbl8 = tbl10[tbl3[3]] tbl9 = tbl10[tbl3[4]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl4 = tbl6[tbl5] tbl5 = .05 tbl6 = tbl4(tbl5) tbl4 = tbl10[tbl3[5]] tbl5 = false tbl25 = "\2183\8364Z\8250L\230" tbl41 = "Enum" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[3]] tbl30 = tbl10[tbl3[4]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl40 = "QS~" tbl6 = "SendKeyEvent" tbl9 = tbl22[tbl41] num1 = 7363289 tbl25 = 17352932630416 tbl6 = tbl4[tbl6] tbl41 = tbl10[tbl3[3]] tbl39 = tbl10[tbl3[4]] tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl39 = 34501554192066 tbl8 = tbl9[tbl22] tbl9 = false tbl41 = "game" tbl22 = tbl1[tbl41] tbl6 = tbl6(tbl4, tbl5, tbl8, tbl9, tbl22) tbl5 = "task" tbl6 = tbl1[tbl5] tbl41 = "a\1j\193" tbl8 = tbl10[tbl3[3]] tbl9 = tbl10[tbl3[4]] tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] tbl4 = tbl6[tbl5] tbl5 = .3 tbl6 = tbl4(tbl5) tbl4 = false tbl10[tbl3[1]] = tbl4
-                            end
-                          else tbl5 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl39 = "\240\223\18\2129\246G\7\22" tbl22 = tbl10[tbl3[3]] tbl30 = 30148189075158 tbl41 = tbl22(tbl39, tbl30) num1 = 2482325 tbl8 = tbl9[tbl41] tbl6 = tbl5[tbl8] tbl4 = tbl6
-                          end
-                        end
-                      else
-                        if num1 < 15449880 then
-                          if num1 < 15417704 then
-                            if num1 < 15367618 then
-                              tbl25 = tbl10[tbl3[2]] num3 = 6973720005807 tbl45 = "\180\212" fn21 = tbl10[tbl3[3]] tbl43 = fn21(tbl45, num3) tbl40 = tbl25[tbl43] tbl12 = 2602261267643 fn21 = "game" tbl30 = tbl22[tbl40] tbl25 = tbl1[fn21] num1 = 11489629 fn30 = "\218\8212K\199K" tbl43 = tbl10[tbl3[2]] tbl45 = tbl10[tbl3[3]] num3 = tbl45(fn30, tbl12) fn21 = tbl43[num3] tbl40 = tbl25[fn21] tbl39 = tbl30 ~= tbl40 tbl41 = tbl39
-                            else num1 = tbl10[tbl3[1]] tbl6 = 5.2 tbl7 = -1598.4 tbl5 = 1647.7 tbl4 = num1(tbl7, tbl6, tbl5) num1 = tbl1["s1mdJHgtEkdY"] tbl4 = {}
-                            end
-                          else tbl41 = 5207674603897 tbl7 = tbl2[1] tbl6 = "_G" tbl4 = tbl1[tbl6] tbl5 = tbl10[tbl3[1]] tbl22 = "nc\8224\163p\209\6v\20\223" tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl4[tbl6] tbl6 = tbl7 tbl4 = tbl10[tbl3[3]] num1[tbl4] = tbl6 num1 = tbl7 and 14920717
-                          end
-                        else
-                          if num1 < 15535372 then
-                            if num1 < 15461749 then
-                              tbl9 = tbl10[tbl3[1]] num1 = 422965 tbl22 = tbl10[tbl3[2]] tbl30 = 800155451764 tbl39 = "\8220\243[\189\230\165\243\207dH\197\8364_" tbl41 = tbl22(tbl39, tbl30) fn21 = 26396050059267 tbl8 = tbl9[tbl41] tbl5 = tbl7[tbl8] tbl25 = "\201\18\249\2101\141o\353\1-a\732\8221" tbl41 = "Enum" tbl22 = tbl1[tbl41] tbl39 = tbl10[tbl3[1]] tbl30 = tbl10[tbl3[2]] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl9 = tbl22[tbl41] tbl41 = tbl10[tbl3[1]] tbl40 = "\246\237\200\352=" tbl39 = tbl10[tbl3[2]] tbl25 = 17729928814656 tbl30 = tbl39(tbl40, tbl25) tbl22 = tbl41[tbl30] tbl8 = tbl9[tbl22] tbl6 = tbl5 == tbl8 tbl4 = tbl6
-                            else num1 = tbl1["Hb8ewP7cmUYv"] tbl6 = nil tbl7 = nil tbl4 = {}
-                            end
-                          else tbl41 = not tbl9 num1 = tbl41 and 3152305
-                          end
-                        end
-                      end
-                    end
-                  else
-                    if num1 < 15965354 then
-                      if num1 < 15734483 then
-                        if num1 < 15676328 then
-                          if num1 < 15669061 then
-                            if num1 < 15654385 then
-                              tbl41 = nil num1 = 5762685 tbl22 = nil tbl8 = nil
-                            else num1 = false tbl10[tbl3[4]] = num1 num1 = 14348461
-                            end
-                          else num1 = 6945413 tbl22 = tbl10[tbl9] tbl4 = tbl22
-                          end
-                        else
-                          if num1 < 15713767 then
-                            if num1 < 15701447 then
-                              tbl6 = "task" tbl7 = tbl1[tbl6] tbl22 = "\190\193SK" tbl41 = 13586685401270 tbl5 = tbl10[tbl3[1]] tbl8 = tbl10[tbl3[2]] tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] num1 = tbl7[tbl6] tbl6 = 5 tbl7 = num1(tbl6) num1 = 9667905
-                            else tbl21 = "l2" num1 = tbl1[tbl21] tbl21 = "l1" tbl1[tbl21] = num1 num1 = 2988398
-                            end
-                          else num1 = tbl4 and 5120053
-                          end
-                        end
-                      else
-                        if num1 < 15866731 then
-                          if num1 < 15853110 then
-                            if num1 < 15738861 then
-                              num1 = 6842619 tbl8 = "HttpPost" tbl5 = tbl1[tbl8] tbl7 = tbl5
-                            else tbl7 = fn12(tbl7) tbl4 = {} num1 = tbl1["4nd10g1vDhEOh3"]
-                            end
-                          else num1 = tbl22 num1 = tbl4 and 11333620
-                          end
-                        else
-                          if num1 < 15935096 then
-                            if num1 < 15867797 then
-                              tbl6 = tbl10[tbl3[2]] tbl4 = tbl6 num1 = 345352
-                            else num1 = true num1 = num1 and 8394393
-                            end
-                          else num1 = tbl1["4lEbj5ZGOwto"] tbl4 = {}
-                          end
-                        end
-                      end
-                    else
-                      if num1 < 16446179 then
-                        if num1 < 16219629 then
-                          if num1 < 16196862 then
-                            if num1 < 16008337 then
-                              tbl4 = {} num1 = tbl1["UsZRolIvjbjHPu"] tbl7 = nil
-                            else tbl6 = tbl7 tbl5 = num1 num1 = tbl7 and 11518145
-                            end
-                          else tbl39 = "'\234t[" tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] tbl30 = 30173184128738 tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl39 = "" tbl5 = tbl7[tbl8] tbl30 = 7530033909170 tbl9 = tbl10[tbl3[2]] tbl22 = tbl10[tbl3[3]] num1 = 2577488 tbl41 = tbl22(tbl39, tbl30) tbl8 = tbl9[tbl41] tbl6 = tbl5 ~= tbl8 tbl4 = tbl6
-                          end
-                        else
-                          if num1 < 16409950 then
-                            if num1 < 16328213 then
-                              num1 = {} tbl6 = 1 tbl7 = num1 tbl5 = tbl10[tbl3[9]] tbl8 = tbl5 tbl5 = 1 num1 = 4696189 tbl9 = tbl5 tbl5 = 0 tbl22 = tbl9 < tbl5 tbl5 = tbl6 - tbl9
-                            else tbl7 = tbl10[tbl3[1]] tbl5 = tbl10[tbl3[2]] tbl22 = "]\181\212OG&" tbl8 = tbl10[tbl3[3]] tbl41 = 19091294560954 tbl9 = tbl8(tbl22, tbl41) tbl6 = tbl5[tbl9] tbl22 = 18590045446608 tbl4 = tbl7[tbl6] tbl6 = tbl10[tbl3[2]] tbl9 = "\198\141f\230M\206\252W" tbl5 = tbl10[tbl3[3]] tbl8 = tbl5(tbl9, tbl22) tbl7 = tbl6[tbl8] num1 = tbl4[tbl7] tbl4 = "FireServer" tbl7 = tbl10[tbl3[4]] tbl4 = num1[tbl4] tbl4 = tbl4(num1, tbl7) num1 = tbl1["KQP5cuBk98KpYn"] tbl4 = {}
-                            end
-                          else num1 = tbl4 and 5875792
-                          end
-                        end
-                      else
-                        if num1 < 16484179 then
-                          if num1 < 16470662 then
-                            if num1 < 16464145 then
-                              num1 = 6910783
-                            else num1 = tbl7 tbl10[tbl3[3]] = num1 num1 = 15969870
-                            end
-                          else num1 = 10357465
-                          end
-                        else
-                          if num1 < 16639364 then
-                            if num1 < 16610877 then
-                              tbl5 = "task" tbl39 = 9123941994648 tbl4 = tbl1[tbl5] tbl8 = tbl10[tbl3[1]] tbl9 = tbl10[tbl3[2]] tbl41 = "\26b\222\8240" tbl22 = tbl9(tbl41, tbl39) tbl5 = tbl8[tbl22] num1 = tbl4[tbl5] tbl5 = .1 tbl4 = num1(tbl5) tbl4 = .1 num1 = tbl6 + tbl4 tbl6 = num1 num1 = 3863470
-                            else fn34 = fn52() tbl36 = "setmetatable" tbl50 = {} num3 = fn52() tbl45 = {} tbl21 = fn51(3395290, {num3;
-                                  tbl30, tbl40, tbl9}) tbl10[num3] = tbl45 tbl45 = fn52() tbl41 = nil tbl22 = nil tbl10[tbl45] = tbl21 tbl9 = fn12(tbl9) tbl39 = nil tbl5 = nil fn32 = "__index" tbl21 = {} tbl10[fn34] = tbl21 tbl21 = tbl1[tbl36] fn35 = nil tbl27 = tbl10[fn34] n = "__metatable" tbl34 = {[fn32] = tbl27, [n] = fn35} tbl36 = tbl21(tbl50, tbl34) tbl21 = fn48(477437, {fn34;
-                                  num3;
-                                  fn21;
-                                  tbl30;
-                                  tbl40;
-                                  tbl45}) tbl25 = nil tbl10[tbl6] = tbl36 num3 = fn12(num3) fn34 = fn12(fn34) tbl30 = fn12(tbl30) tbl25 = "\205Q\178\208_\21_" fn21 = fn12(fn21) tbl40 = fn12(tbl40) tbl10[tbl8] = tbl21 tbl45 = fn12(tbl45) tbl30 = 24371842477141 tbl43 = nil fn21 = 19380051862336 tbl39 = "\20\234o\20\710\382\8217O\193\8482TU#\24" tbl9 = tbl10[tbl6] tbl22 = tbl10[tbl8] tbl41 = tbl22(tbl39, tbl30) tbl22 = "game" tbl5 = tbl9[tbl41] tbl9 = tbl1[tbl22] tbl39 = tbl10[tbl6] tbl30 = tbl10[tbl8] tbl40 = tbl30(tbl25, fn21) tbl41 = tbl39[tbl40] tbl22 = "GetService" tbl22 = tbl9[tbl22] tbl22 = tbl22(tbl9, tbl41) tbl9 = fn52() tbl10[tbl9] = tbl22 tbl41 = tbl10[tbl9] fn21 = "\18M\161\229\24\144\16Cco\231" tbl43 = 27167466369386 tbl30 = tbl10[tbl6] tbl45 = 1833585902421 tbl40 = tbl10[tbl8] tbl25 = tbl40(fn21, tbl43) tbl39 = tbl30[tbl25] tbl22 = tbl41[tbl39] tbl39 = "game" tbl41 = fn52() tbl43 = "_\8224\18\15\192\220b" tbl10[tbl41] = tbl22 tbl22 = tbl1[tbl39] tbl40 = tbl10[tbl6] tbl25 = tbl10[tbl8] fn21 = tbl25(tbl43, tbl45) tbl30 = tbl40[fn21] tbl39 = "GetService" tbl25 = num1 tbl39 = tbl22[tbl39] tbl43 = "gethui" tbl39 = tbl39(tbl22, tbl30) tbl30 = num1 tbl22 = fn52() tbl10[tbl22] = tbl39 fn21 = tbl1[tbl43] num1 = fn21 and 6299019 tbl40 = fn21
-                            end
-                          else tbl4 = {} num1 = tbl1["yAEI75zfDzyc"]
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
           end
           num1 = # fn45
           return fn44(tbl4)

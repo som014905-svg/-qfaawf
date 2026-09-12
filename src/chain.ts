@@ -212,6 +212,71 @@ function mergeUrls(lists: ScriptUrl[][]): ScriptUrl[] {
   return [...byUrl.values()].sort((a, b) => b.score - a.score);
 }
 
+
+// Embedded payload chain: many "luast"/wrapper protectors keep the next Lua
+// program in a string and execute it with loadstring(payload)(). This is not a
+// URL chain, so URL-only extraction would stop too early.
+export interface EmbeddedLuaPayload {
+  source: string;
+  label: string;
+  score: number;
+}
+
+export function extractEmbeddedLuaPayloads(src: string): EmbeddedLuaPayload[] {
+  const out: EmbeddedLuaPayload[] = [];
+  let literals: StringLiteral[];
+  try {
+    literals = [...iterStringLiterals(src)];
+  } catch {
+    return out;
+  }
+
+  const byValue = new Set<string>();
+  const assigned = new Map<string, string>();
+
+  for (const lit of literals) {
+    const value = lit.value;
+    if (value.length < 80 || !looksLikeLuaSource(value)) continue;
+    const before = src.slice(Math.max(0, lit.start - 180), lit.start);
+    const direct = /\bloadstring\s*\(\s*$/.test(before);
+    const assign = before.match(/\b(?:local\s+)?([A-Za-z_]\w*)\s*=\s*$/);
+    if (direct) {
+      if (!byValue.has(value)) {
+        out.push({ source: value, label: "embedded-loadstring", score: 100 });
+        byValue.add(value);
+      }
+    } else if (assign) {
+      assigned.set(assign[1], value);
+    }
+  }
+
+  // luast and similar wrappers often do:
+  //   local payload = "<Lua...>"
+  //   loadstring(payload)()
+  for (const [name, value] of assigned) {
+    const useRe = new RegExp(`\\bloadstring\\s*\\(\\s*${escapeRe(name)}\\s*\\)`, "m");
+    if (!useRe.test(src)) continue;
+    if (!byValue.has(value)) {
+      out.push({ source: value, label: `embedded-loadstring:${name}`, score: 95 });
+      byValue.add(value);
+    }
+  }
+
+  // Prefer the largest/highest-confidence payload first.
+  out.sort((a, b) => b.score - a.score || b.source.length - a.source.length);
+  return out.slice(0, 8);
+}
+
+function mergeEmbeddedPayloads(groups: EmbeddedLuaPayload[][]): EmbeddedLuaPayload[] {
+  const map = new Map<string, EmbeddedLuaPayload>();
+  for (const group of groups) for (const p of group) {
+    const key = sha256Hex(p.source);
+    const prev = map.get(key);
+    if (!prev || p.score > prev.score) map.set(key, p);
+  }
+  return [...map.values()].sort((a, b) => b.score - a.score || b.source.length - a.source.length);
+}
+
 // ---------------------------------------------------------------------------
 // Chain runner
 // ---------------------------------------------------------------------------
@@ -508,6 +573,39 @@ export async function runDeobfChain(
       );
     } catch (e: unknown) {
       log(`[chain] deobf lỗi bước ${depth}: ${e instanceof Error ? e.message : String(e)}`);
+    }
+
+    // ---- embedded Lua payload chain (luast/loadstring wrappers) ----
+    // Run only when chain mode is enabled and a real Lua payload is statically
+    // present. This stays source-only: no loadstring/eval is ever executed.
+    if (maxDepth > 0 && report) {
+      const embedded = mergeEmbeddedPayloads([
+        extractEmbeddedLuaPayloads(source),
+        report.best?.output ? extractEmbeddedLuaPayloads(report.best.output) : [],
+      ]);
+      const payload = embedded.find((x) => !seenHashes.has(sha256Hex(x.source)));
+      if (payload) {
+        const payloadHash = sha256Hex(payload.source);
+        seenHashes.add(payloadHash);
+        log(`[chain] (bước ${depth}) phát hiện embedded Lua payload: ${payload.label} (${Math.round(payload.source.length / 1024)}KB)`);
+        try {
+          const nested = await runDeobfuscation(
+            {
+              input: payload.source,
+              baseName: `${label}.${payload.label}`,
+              source: "text",
+              log,
+            },
+            oopts,
+          );
+          if (nested.best && (!report.best || nested.best.confidence >= report.best.confidence || nested.validation?.ok)) {
+            report = nested;
+            log(`[chain] embedded payload recovered by ${nested.best.deobfuscator} (${Math.round(nested.best.confidence * 100)}%)`);
+          }
+        } catch (e) {
+          log(`[chain] embedded payload deobf failed: ${e instanceof Error ? e.message : String(e)}`);
+        }
+      }
     }
 
     // ---- next URL: from raw source AND recovered output ----

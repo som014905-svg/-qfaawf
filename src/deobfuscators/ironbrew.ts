@@ -23,6 +23,7 @@ import {
   decodeLuaEscapes,
 } from "../utils/lua-utils";
 import { encodeLuaString } from "../passes/constant-fold";
+import { liftCustomVm } from "../vm/static-opcode-lifter";
 
 export class IronBrewDeobfuscator implements Deobfuscator {
   id = "ironbrew" as const;
@@ -164,7 +165,16 @@ export class IronBrewDeobfuscator implements Deobfuscator {
     }
     output = beautifyLua(output);
 
-    notes.push("IronBrew VM devirtualisation is partial — opcode semantics require runtime tracing for a full recovery.");
+    try {
+      const lifted = liftCustomVm(output, "IronBrew2");
+      notes.push(...lifted.notes);
+      if (lifted.changed) {
+        output = lifted.output;
+        notes.push(`Conservative IronBrew2 VM lift recovered ${lifted.recovered} instruction(s).`);
+      }
+    } catch (e) {
+      notes.push(`IronBrew2 VM lift skipped: ${e instanceof Error ? e.message : String(e)}`);
+    }
 
     return {
       success: true,

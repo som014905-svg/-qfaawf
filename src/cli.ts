@@ -107,11 +107,19 @@ async function main(): Promise<void> {
     baseName = "script";
     input = ""; // chain runner sẽ tự fetch
   } else {
-    input = readFileSync(args.input, "utf8");
+    // Đọc như latin1 (1 byte gốc = 1 char code), KHÔNG phải utf8. Lua string
+    // là mảng byte, không phải Unicode text — nhiều obfuscator (WeAreDevs,
+    // HeavyWeightFishing profile, IronBrew payload blob, ...) nhúng byte cao
+    // (0x80-0xFF) trực tiếp trong chuỗi ký tự để mã hoá dữ liệu. Đọc bằng utf8
+    // sẽ khiến Node gộp/nuốt các byte đó thành codepoint Unicode sai lệch
+    // (không thể phục hồi), làm hỏng toàn bộ bảng chuỗi trước khi bất kỳ bước
+    // giải mã nào chạy tới. latin1 giữ nguyên byte-for-byte, có thể ghi lại
+    // y hệt bằng writeFileSync(..., "latin1").
+    input = readFileSync(args.input, "latin1");
     baseName = basename(args.input).replace(/\.(lua|luau|txt|md)$/i, "") || "script";
   }
 
-  if (Buffer.byteLength(input, "utf8") > 8_000_000) {
+  if (input.length > 8_000_000) {
     throw new Error("File quá lớn (>8MB)");
   }
 
@@ -220,7 +228,7 @@ async function main(): Promise<void> {
       ? `${baseName || "script"}.deobf.lua`
       : `${args.input.replace(/\.(lua|luau|txt|md)$/i, "")}.deobf.lua`);
   mkdirSync(dirname(outPath) || ".", { recursive: true });
-  writeFileSync(outPath, best.output, "utf8");
+  writeFileSync(outPath, best.output, "latin1");
   const outKB = Math.round(best.output.length / 1024);
   console.log(`──────────────────────────────────────────────`);
   console.log(`💾 Output              : ${outPath} (${outKB} KB)`);
@@ -232,7 +240,7 @@ async function main(): Promise<void> {
       artPath,
       `-- Artifacts: constants recovered from ${baseName}\n-- Engine: ${best.deobfuscator}\n\n` +
         best.artifacts.join("\n\n"),
-      "utf8"
+      "latin1"
     );
     console.log(`💾 Artifacts           : ${artPath} (${best.artifacts.length} mục)`);
   }

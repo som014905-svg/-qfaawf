@@ -14,7 +14,7 @@ import {
   reencodeLuaString,
 } from "../utils/lua-utils";
 import { foldConstants } from "../passes/constant-fold";
-import { inlineStaticTables, normalizeStdlibAliases, normalizeEnvStdlibAliases, unwrapLiteralLoadstring, foldSimpleXorDecoderFunctions, foldEncodedStringTableLiterals } from "../passes/static-resolve";
+import { inlineStaticTables, inlineIndexedObjectTableLookups, normalizeStdlibAliases, normalizeEnvStdlibAliases, unwrapLiteralLoadstring, foldSimpleXorDecoderFunctions, foldEncodedStringTableLiterals } from "../passes/static-resolve";
 import { ModernVMDeobfuscator } from "./modern-vm";
 
 export class GenericDeobfuscator implements Deobfuscator {
@@ -139,6 +139,12 @@ export class GenericDeobfuscator implements Deobfuscator {
         work = xorDec.result;
         notes.push(...xorDec.notes);
         confidence += Math.min(0.12, xorDec.changed * 0.01);
+      }
+      const indexed = inlineIndexedObjectTableLookups(work);
+      if (indexed.changed > 0) {
+        work = indexed.result;
+        notes.push(...indexed.notes);
+        confidence += Math.min(0.18, indexed.changed * 0.0008);
       }
       const tables = inlineStaticTables(work);
       if (tables.changed > 0) {

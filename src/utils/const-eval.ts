@@ -399,7 +399,12 @@ function isTruthy(v: ConstValue): boolean {
 }
 
 function byteLength(s: string): number {
-  return Buffer.byteLength(s, "utf8");
+  // The pipeline is byte-transparent (1 JS char = 1 raw Lua byte, see
+  // cli.ts/utils/fetcher.ts), so the JS string length already equals the
+  // Lua byte length. Using Buffer.byteLength(s, "utf8") here would overcount
+  // every non-ASCII byte (encoding it as if it were a real UTF-8 codepoint),
+  // producing a wrong folded `#s` result.
+  return s.length;
 }
 
 /** Lua number → string (for concat and literal output). Mimics %.14g. */
@@ -740,10 +745,14 @@ export function reencodeLuaLiteral(value: string): string {
     else if (ch === "\t") out += "\\t";
     else if (code < 0x20 || code === 0x7f) {
       out += "\\" + code.toString(10).padStart(3, "0");
-    } else if (code > 0x7f) {
-      // encode non-ASCII as \xxx byte escapes (UTF-8 bytes)
+    } else if (code > 0xff) {
+      // Defensive fallback only: a real multi-byte codepoint slipped through
+      // (should not happen post-fix — see utils/lua-utils.ts#utf8Encode).
       const bytes = Buffer.from(ch, "utf8");
       for (const b of bytes) out += "\\" + b.toString(10).padStart(3, "0");
+    } else if (code > 0x7f) {
+      // Already a raw byte under the pipeline's latin1 convention.
+      out += "\\" + code.toString(10).padStart(3, "0");
     } else {
       out += ch;
     }
