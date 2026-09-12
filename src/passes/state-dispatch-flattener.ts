@@ -73,8 +73,13 @@ function delta(stack: string[], sig: Tok[], i: number): void {
   if (x === "if" && isBlockIf(sig, i)) stack.push("if");
   else if (x === "for" || x === "while" || x === "function" || x === "repeat") stack.push(x);
   else if (x === "do") {
+    // A `do` immediately after a `for`/`while` header opens that loop's block;
+    // any other `do` opens a standalone block. Converting the pending loop
+    // marker (instead of ignoring it) keeps standalone `do ... end` blocks
+    // balanced, which matters for dispatchers wrapped in `do ... end`.
     const top = stack[stack.length - 1];
-    if (top !== "for" && top !== "while") stack.push("do");
+    if (top === "for" || top === "while") stack[stack.length - 1] = "do";
+    else stack.push("do");
   } else if (x === "end") {
     if (stack.length) stack.pop();
   } else if (x === "until" && stack[stack.length - 1] === "repeat") stack.pop();
@@ -110,11 +115,18 @@ function parseIfChain(sig: Tok[], ifIndex: number, overallEnd: number): Array<{ 
     let elseStart = overallEnd;
     let elseEnd = overallEnd;
     let next: number | null = null;
+    // Luau if-EXPRESSIONS (`x = if c then A else B`) are not blocks, but their
+    // `then`/`else` tokens sit at stack depth 0 and would otherwise be mistaken
+    // for the dispatcher chain's own `then`/`else`. Track their nesting so we
+    // only treat the chain's real `then`/`elseif`/`else` as boundaries.
+    let exprIf = 0;
     for (let i = current + 4; i < overallEnd; i++) {
       const x = sig[i].text;
-      if (x === "then" && stack.length === 0 && thenStart < 0) { thenStart = i + 1; continue; }
-      if (x === "elseif" && stack.length === 0 && thenEnd < 0) { thenEnd = i; next = i; break; }
-      if (x === "else" && stack.length === 0 && thenEnd < 0) { thenEnd = i; elseStart = i + 1; break; }
+      if (x === "if" && !isBlockIf(sig, i)) { exprIf++; continue; }
+      if (x === "then" && stack.length === 0 && exprIf === 0 && thenStart < 0) { thenStart = i + 1; continue; }
+      if (x === "elseif" && stack.length === 0 && exprIf === 0 && thenEnd < 0) { thenEnd = i; next = i; break; }
+      if (x === "else" && stack.length === 0 && exprIf === 0 && thenEnd < 0) { thenEnd = i; elseStart = i + 1; break; }
+      if (x === "else" && exprIf > 0) { exprIf--; continue; }
       delta(stack, sig, i);
     }
     if (thenStart < 0) return null;

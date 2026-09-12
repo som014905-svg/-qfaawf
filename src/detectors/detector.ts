@@ -119,6 +119,17 @@ const ALL_IDS: string[] = [
 // common Lua obfuscation conventions — if the actual banner differs, the
 // generic fallback will still run.
 const RULES: Rule[] = [
+  // === Luast v1.x split object-pool VM ===
+  {
+    id: "luast",
+    patterns: [
+      { re: /generated\s+by\s+luast\s+v?\d+(?:\.\d+){0,2}/i, weight: 0.98, desc: "Luast generator banner" },
+      { re: /luast\.clv\.cloud/i, weight: 0.92, desc: "Luast cloud origin" },
+      { re: /\b[A-Za-z_]\w*\s*=\s*\{\s*\}\s*;\s*\b[A-Za-z_]\w*\s*\[\s*\d+\.?\s*\]\s*=\s*nil(?:\s*;\s*\b[A-Za-z_]\w*\s*\[\s*\d+\.?\s*\]\s*=\s*nil){3,}/i, weight: 0.86, desc: "Luast numeric nil predeclarations" },
+      { re: /\b[A-Za-z_]\w*\s*\[\s*\d+\.?\s*\]\s*=\s*\{[\s\S]{0,1200}?\bfunction\s*\(/i, weight: 0.9, desc: "Luast literal object pool containing functions" },
+      { re: /\b(?:num|value|fn)\d*\s*\([^)]*\)|\b[A-Za-z_]\w*\s*=\s*\d+\.?\s*-\s*[A-Za-z_]\w*/i, weight: 0.58, desc: "Luast callable/state role signals" },
+    ],
+  },
   // === Luraph family ===
   {
     id: "luraph",
@@ -905,6 +916,10 @@ export interface StructuralFeatures {
   envChecks: boolean;
   /** nested obfuscation: an inner layer visible inside a decoded payload */
   nestedLayers: number;
+  /** Luast split object-pool layout with numeric predeclarations and literal pool. */
+  luastObjectPool: boolean;
+  /** Luast-style callable aliases and numeric dispatcher candidates. */
+  luastRoleSignals: boolean;
 }
 
 export interface DetailedDetection {
@@ -934,6 +949,8 @@ export function scanStructuralFeatures(input: string): StructuralFeatures {
     loaderWrapper: false,
     envChecks: false,
     nestedLayers: 0,
+    luastObjectPool: false,
+    luastRoleSignals: false,
   };
 
   // VM dispatcher: `while true do` / `while 1 == 1 do` followed (within a
@@ -949,6 +966,16 @@ export function scanStructuralFeatures(input: string): StructuralFeatures {
   // Control-flow flattening: repeated `state`/`vN == CONST` dispatch tests
   const dispatchTests = (sample.match(/\b\w+\s*==\s*\d+\s*then/g) || []).length;
   feats.controlFlowFlattening = dispatchTests >= 8;
+
+  const poolLiteral = /\b[A-Za-z_]\w*\s*\[\s*\d+\.?\s*\]\s*=\s*\{/g;
+  const poolNil = /\b[A-Za-z_]\w*\s*\[\s*\d+\.?\s*\]\s*=\s*nil\b/g;
+  const poolLiteralCount = (sample.match(poolLiteral) || []).length;
+  const poolNilCount = (sample.match(poolNil) || []).length;
+  feats.luastObjectPool = poolLiteralCount >= 1 && poolNilCount >= 4 &&
+    /generated\s+by\s+luast|luast\.clv\.cloud/i.test(sample);
+  const callableNames = (sample.match(/\b(?:num|value|fn)\d*\s*\([^)]*\)/g) || []).length;
+  const numericSelfUpdates = (sample.match(/\b[A-Za-z_]\w*\s*=\s*\d+\.?\s*-\s*[A-Za-z_]\w*/g) || []).length;
+  feats.luastRoleSignals = callableNames >= 1 || numericSelfUpdates >= 2;
 
   // Encoded constants: \xNN / \dNN escapes dominate
   const escCount = (sample.match(/\\x[0-9a-fA-F]{2}|\\\d{1,3}/g) || []).length;
@@ -1070,6 +1097,14 @@ export function detectObfuscatorsDetailed(input: string): DetailedDetection {
     genericScore = Math.max(genericScore, 0.5);
     genericSignals.push("control-flow flattening (state == const dispatch)");
   }
+  if (features.luastObjectPool) {
+    genericSignals.push("Luast split object-pool layout");
+    const luast = scores.get("luast");
+    if (!luast || luast.score < 0.9) {
+      scores.set("luast", { score: 0.9, evidence: "Luast object-pool structure" });
+    }
+  }
+  if (features.luastRoleSignals) genericSignals.push("Luast callable/state role signals");
   if (features.encodedConstants) genericSignals.push("escape-encoded constants dominate");
   if (features.customDecoder) genericSignals.push("custom decoder function (xor/byte/sub)");
   if (features.loaderWrapper) genericSignals.push("loadstring(loader) wrapper");

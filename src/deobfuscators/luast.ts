@@ -18,6 +18,7 @@ import { flattenStateDispatchers } from "../passes/state-dispatch-flattener";
 import { recoverFunctionLevelVm } from "../passes/function-level-vm";
 import { recoverBinaryTreeDispatch } from "../passes/binary-tree-dispatch";
 import { validateLuaSource } from "../utils/validate";
+import { analyzeLuastSource, rejectLuastBadRewrites } from "../passes/luast-analysis";
 
 function applyPass(
   current: string,
@@ -92,10 +93,32 @@ export class LuastDeobfuscator implements Deobfuscator {
 
     // The Luast object-table pass is syntax-preserving and is the key
     // recovery step for this format. Re-run it around structural rewrites.
+    work = applyPass(work, "Luast pool/type analysis", () => analyzeLuastSource(work), notes, log);
     const beforeIndexed = work.length;
     work = applyPass(work, "object-table recovery", () => inlineIndexedObjectTableLookups(work), notes, log);
     work = applyPass(work, "object-table recovery (2nd pass)", () => inlineIndexedObjectTableLookups(work), notes, log);
     totalChanged += Math.max(0, beforeIndexed - work.length);
+
+    // Luast emits a numeric dispatcher around nearly every recovered helper.
+    // Recover those branches before arithmetic folding; otherwise the state
+    // variable and its branch-local values are easily mistaken for constants.
+    try {
+      const flattened = flattenStateDispatchers(work, {
+        maxLoops: 96,
+        maxStates: 512,
+        maxOutput: Math.max(900_000, work.length * 3),
+      });
+      if (flattened.changed > 0 && flattened.result !== work && validateLuaSource(flattened.result).ok) {
+        work = flattened.result;
+        totalChanged += flattened.changed;
+        notes.push(...flattened.notes.slice(0, 8));
+        log(`luast: state dispatcher recovery changed ${flattened.changed} (${flattened.loops} loop(s), ${flattened.states} state(s))`);
+      } else if (flattened.changed > 0) {
+        log("luast: state dispatcher candidate rejected by syntax validation");
+      }
+    } catch (e: unknown) {
+      log(`luast: state dispatcher recovery skipped (${e instanceof Error ? e.message : String(e)})`);
+    }
 
     // Several generic arithmetic/VM passes are intentionally conservative,
     // but Luast's huge one-line dispatcher is sensitive to source-shape
@@ -151,6 +174,8 @@ export class LuastDeobfuscator implements Deobfuscator {
     } catch {
       // best effort
     }
+
+    work = applyPass(work, "Luast bad-rewrite quarantine", () => rejectLuastBadRewrites(work), notes, log);
 
     try {
       const renamed = renameObfuscatedIdentifiers(work);
